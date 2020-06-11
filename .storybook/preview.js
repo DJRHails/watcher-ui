@@ -1,4 +1,13 @@
-import { addParameters } from "@storybook/react";
+import { addParameters, addDecorator } from "@storybook/react";
+import { withA11y } from '@storybook/addon-a11y';
+import ThemeDecorator from "./themeDecorator";
+
+
+// Add Addon Decorators
+addDecorator(withA11y);
+
+// Add Theme Decorator
+addDecorator(ThemeDecorator);
 
 addParameters({
   options: {

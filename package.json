@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rimble/icons": "^1.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -13,6 +14,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -48,12 +51,15 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.3.0",

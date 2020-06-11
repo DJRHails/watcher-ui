@@ -22,6 +22,15 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -s public",
+    "type": "tsc --noEmit",
+    "type:watch": "npm run type -- --watch",
+    "lint": "yarn lint:ts && yarn lint:js",
+    "lint:fix": "yarn lint:ts:fix && yarn lint:js:fix",
+    "lint:ts": "tslint -c tslint.json \"src/**/*.ts?(x)\"",
+    "lint:ts:fix": "tslint -c tslint.json \"src/**/*.ts?(x)\" --fix",
+    "lint:ts:check": "tslint-config-prettier-check ./tslint.json",
+    "lint:js": "prettier --ignore-path .gitignore --check \"**/*.{js,json}\"",
+    "lint:js:fix": "prettier --ignore-path .gitignore --write \"**/*.{js,json}\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,5 +54,9 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^5.0.0"
   }
 }

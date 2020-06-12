@@ -1,23 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  :nail_care: <strong>Watcher </strong> UI
+</h1>
 
-## Available Scripts
+<h4 align="center">
 
-In the project directory, you can run:
+[![Stars](https://img.shields.io/github/stars/DJRHails/watcher-ui.svg?style=plasticr)](https://github.com/DJRHails/watcher-ui/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/DJRHails/watcher-ui.svg?style=plasticr)](https://github.com/DJRHails/watcher-ui/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues-raw/DJRHails/watcher-ui?style=flat)](https://github.com/DJRHails/watcher-ui/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/DJRHails/watcher-ui)](https://github.com/DJRHails/watcher-ui/pulls)
+</h4>
 
-### `yarn start`
+<h3 align="center">
+  <a href="https://hails.info/">Built by Daniel Hails</a> |
+  <a href="https://github.com/DJRHails/watcher-ui/issues/new">Leave feedback</a>
+</h3>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :wrench: Technology
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Watcher UI is built on the shoulders of giants!
 
-### `yarn test`
+At it's core it is uses [Styled Components] & [Styled System]. For its layout components it utilises [Reflexbox] and to keep the components modular and documentation inline I use [Storybook]. It uses [Rimble] Icons.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Inspiration
+- [World Food Programme UI Kit]
+- [Rimble]
+- [Aragon UI]
 
-### `yarn build`
+
+[Styled Components]:https://github.com/styled-components/styled-components
+[Styled System]:https://https://styled-system.com/
+[Reflexbox]:https://rebassjs.org/reflexbox/
+[Storybook]:https://storybook.js.org/
+[Rimble]:https://rimble.consensys.design/
+[World Food Programme UI Kit]:https://github.com/wfp/ui/tree/next
+[Aragon UI]:https://github.com/aragon/aragon-ui
+
+## :gear: Installation
+
+```sh
+# Go to your favourite directory and clone
+git clone git@github.com:DJRHails/watcher-ui.git && cd watcher-ui
+
+# Install all depedencies
+yarn install
+
+# 🎉 that’s it, you've installed repo locally. One last step!
+```
+
+### Running the code locally
+
+##### `yarn storybook`
+
+Runs Storybook in the development mode.<br />
+Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
+
+The stories will reload if you make edits.
+
+#### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,18 +66,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

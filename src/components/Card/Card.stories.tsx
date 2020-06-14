@@ -40,3 +40,62 @@ export const airbnbCard: StoryMeta = () => (
   </Card>
 )
 
+export const cryptoKittiesCard: StoryMeta = () => (
+  <Card maxWidth='20em'>
+    <Box bg="#e5f3e2" sx={{
+      borderRadius: "lg",
+      transition: "box-shadow 200ms cubic-bezier(0.4,0,0.2,1)",
+      // transitionProperty: "shadow",
+      // transitionDuration: "300",
+      // transitionTimingFunction: "in-out",
+      "&:hover": {
+        "--outline-color": "#e5f3e2",
+        boxShadow: "outline",
+      }
+    }}>
+      <Image ml="-8.25%" maxWidth="116.5%" src="https://img.cryptokitties.co/0x06012c8cf97bead5deae237070f9587f8e7a266d/1675025.png"/>
+    </Box>
+    <Flex
+      alignItems="baseline"
+      mt={2}
+      justifyContent="space-between"
+    >
+      <Flex alignItems="center">
+        <Text
+          fontWeight="bold"
+        >#</Text>
+        <Text
+          ml={1}
+          lineHeight="snug"
+          letterSpacing="tight"
+          fontSize={1}
+          fontWeight="bold"
+        >
+        1675025
+        </Text>
+      </Flex>
+      <Flex alignItems="center" color="muted">
+        <Icon name="FavoriteBorder" size="16px"/>
+        <Text ml={1} fontSize={1} fontWeight="bold">
+          2
+        </Text>
+      </Flex>
+    </Flex>
+    <hr/>
+    <Flex alignItems="center" color="muted">
+      <Icon name="AllInclusive" size="16px"/>
+      <Text ml={1} fontSize={1}>
+        Gen 1
+      </Text>
+      <Icon ml={3} name="AccessTime" size="16px"/>
+      <Text ml={1} fontSize={1}>
+        Fast (1m)
+      </Text>
+    </Flex>
+  </Card>
+)
+
+cryptoKittiesCard.story = {
+  name: "CryptoKitties Card"
+}
+

@@ -99,3 +99,77 @@ cryptoKittiesCard.story = {
   name: "CryptoKitties Card"
 }
 
+interface TokenCardProps extends CardProps {
+  name: string;
+  quantity: number;
+  value: number;
+}
+
+const TokenCard: React.FC<TokenCardProps> = ({name, quantity, value, ...props}: TokenCardProps) => {
+  const upper = Math.floor(quantity)
+  const lower = (quantity % 1).toFixed(4).substring(2)
+  return (
+    <Card maxWidth='10em' {...props}>
+      <Flex alignItems="center">
+        <Icon name={name} size="25%"/>
+        <Text
+          ml={2}
+          color="muted"
+          fontSize={1}
+          fontWeight="light"
+          textTransform="uppercase"
+        >
+          {name}
+        </Text>
+      </Flex>
+      <Flex mt={3} alignItems="baseline">
+        <Text fontSize={4} fontWeight="light">
+          {upper}
+        </Text>
+        { lower != "0000" &&
+          <Text fontSize={1} fontWeight="light">
+          .{lower}
+          </Text>
+        }
+      </Flex>
+      <Text mt={3} fontSize={1} fontWeight="light" color="muted">
+        {value >= 0 ? `$${value}` : "-"}
+      </Text>
+    </Card>
+  )
+}
+
+export const tokenCard: StoryMeta = () => (
+  <Flex ml={-2}>
+    <TokenCard
+      ml={2}
+      name="Eth"
+      quantity={1.5}
+      value={348.11}
+    />
+    <TokenCard
+      ml={2}
+      name="Ant"
+      quantity={588}
+      value={648.22}
+    />
+    <TokenCard
+      ml={2}
+      name="Bcc"
+      quantity={500}
+      value={-1}
+    />
+    <TokenCard
+      ml={2}
+      name="Dai"
+      quantity={1000}
+      value={1005.03}
+    />
+    <TokenCard
+      ml={3}
+      name="Mana"
+      quantity={501}
+      value={20.59}
+    />
+  </Flex>
+) 

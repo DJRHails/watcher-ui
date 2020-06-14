@@ -1,13 +1,12 @@
+import React from "react";
 import { addParameters, addDecorator } from "@storybook/react";
-import { withA11y } from '@storybook/addon-a11y';
-import ThemeDecorator from "./themeDecorator";
-
+import { withA11y } from "@storybook/addon-a11y";
+import Container from "./Container";
 
 // Add Addon Decorators
 addDecorator(withA11y);
 
-// Add Theme Decorator
-addDecorator(ThemeDecorator);
+addDecorator((story, context) => <Container story={story} context={context} />);
 
 addParameters({
   options: {

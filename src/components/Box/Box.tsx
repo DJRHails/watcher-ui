@@ -1,10 +1,11 @@
-import styled from 'styled-components';
-import { space, layout, color } from 'styled-system';
+import React from "react"
+import * as Reflex from "reflexbox/styled-components"
+import { BoxProps } from "."
 
-export const Box = styled.div`
-  ${space}
-  ${layout}
-  ${color}
-`;
-
-export default Box;
+export const Box: React.FC<BoxProps> = props => (
+  <Reflex.Box
+    // eslint-disable-next-line react/prop-types,@typescript-eslint/no-explicit-any
+    color={props.color as any} // https://github.com/rebassjs/rebass/issues/921
+    {...props}
+  />
+)

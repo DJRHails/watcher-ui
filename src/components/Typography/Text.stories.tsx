@@ -1,22 +1,22 @@
-import React from "react"
-import { Text } from "./Text"
-import { StoryMeta, KindMeta } from "../../types/storybook"
-import { withKnobs, select, text } from "@storybook/addon-knobs"
-import theme from "../../themes/theme"
+import React from "react";
+import { Text } from "./Text";
+import { StoryMeta, KindMeta } from "../../types/storybook";
+import { withKnobs, select, text } from "@storybook/addon-knobs";
+import theme from "../../themes/theme";
 
 export default {
   title: "Components/Typography/Text",
   component: Text,
   decorators: [withKnobs]
-} as KindMeta<typeof Text>
+} as KindMeta<typeof Text>;
 
 export const standard: StoryMeta = () => {
-  const txt=text("Text", "A QUICK BROWN FOX JUMPS OVER THE LAZY DOG while the five boxing wizards jump quickly.")
-  const font=select("Font Family", Object.keys(theme.fonts), "body")
-  const fontSize=select("Font Size", Object.keys(theme.fontSizes), undefined)
-  const fontWeight=select("Font Weight", Object.keys(theme.fontWeights), "medium")
-  const lineHeight=select("Line Height", Object.keys(theme.lineHeights), "normal")
-  const letterSpacing=select("Letter Spacings", Object.keys(theme.letterSpacings), "normal")
+  const txt=text("Text", "A QUICK BROWN FOX JUMPS OVER THE LAZY DOG while the five boxing wizards jump quickly.");
+  const font=select("Font Family", Object.keys(theme.fonts), "body");
+  const fontSize=select("Font Size", Object.keys(theme.fontSizes), undefined);
+  const fontWeight=select("Font Weight", Object.keys(theme.fontWeights), "medium");
+  const lineHeight=select("Line Height", Object.keys(theme.lineHeights), "normal");
+  const letterSpacing=select("Letter Spacings", Object.keys(theme.letterSpacings), "normal");
 
   return (
     <Text
@@ -28,8 +28,8 @@ export const standard: StoryMeta = () => {
     >
       {txt}
     </Text>
-  )
-}
+  );
+};
 
 export const fontSizes: StoryMeta = () => (
   <>
@@ -41,7 +41,7 @@ export const fontSizes: StoryMeta = () => (
     <Text fontSize={6}><b>Font Size 6</b></Text>
     <Text fontSize={7}><b>Font Size 7</b> (H1)</Text>
   </>
-)
+);
 
 export const fontWeights: StoryMeta = () => (
   <>
@@ -51,7 +51,7 @@ export const fontWeights: StoryMeta = () => (
     <Text fontWeight='bold'>bold</Text>
     <Text fontWeight='black'>black</Text>
   </>
-)
+);
 
 export const lineHeight: StoryMeta = () => (
   <>
@@ -62,7 +62,7 @@ export const lineHeight: StoryMeta = () => (
     <Text lineHeight='relaxed' bg="#eaeaea" pl={2}>relaxed</Text>
     <Text lineHeight='loose' bg="#dadada" pl={2}>loose</Text>
   </>
-)
+);
 
 export const letterSpacing: StoryMeta = () => (
   <>
@@ -73,4 +73,4 @@ export const letterSpacing: StoryMeta = () => (
     <Text letterSpacing='wider'>wider</Text>
     <Text letterSpacing='widest'>widest</Text>
   </>
-)
+);

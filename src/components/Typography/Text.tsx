@@ -1,7 +1,7 @@
-import React from "react"
-import { TypographyVariants } from "../../themes/theme"
-import { Box } from "../Box"
-import { TextKnownProps } from "."
+import React from "react";
+import { TypographyVariants } from "../../themes/theme";
+import { Box } from "../Box";
+import { TextKnownProps } from ".";
 
 export interface TextProps
   extends TextKnownProps,
@@ -10,8 +10,12 @@ export interface TextProps
   textTransform?: "uppercase"
 }
 
-export const Text: React.FC<TextProps> = ({ textTransform, ...props }: TextProps) => (
-  <Box tx="typography" variant="body" {...props} css={textTransform && {
-    "text-transform": textTransform,
-  }} />
-)
+export const Text: React.FC<TextProps> = ({ textTransform, ...props }: TextProps) => {
+  return (
+    // For some reason as const fails to prevent type widening here
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    <Box tx={"typography" as any} variant="body" {...props} css={textTransform && {
+      "text-transform": textTransform,
+    }} />
+  );
+};

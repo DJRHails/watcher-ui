@@ -1,5 +1,5 @@
-import React, { FC } from "react"
-import { Box, BoxProps } from "../Box"
+import React, { FC } from "react";
+import { Box, BoxProps } from "../Box";
 
 interface BadgeProps extends BoxProps,
 Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
@@ -20,4 +20,4 @@ export const Badge: FC<BadgeProps> = ({
   >
     {children}
   </Box>
-)
+);

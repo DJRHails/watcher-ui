@@ -1,20 +1,21 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 // Based on: https://github.com/DefinitelyTyped/DefinitelyTyped/blob/0bd28530564c3da2e728518084f22648af3a683c/types/rebass/index.d.ts
 
-import { ResponsiveStyleValue, SystemStyleObject } from "@styled-system/css"
-import * as React from "react"
-import * as StyledComponents from "styled-components"
-import * as StyledSystem from "styled-system"
+import { ResponsiveStyleValue, SystemStyleObject } from "@styled-system/css";
+import * as React from "react";
+import * as StyledComponents from "styled-components";
+import * as StyledSystem from "styled-system";
 
-export {}
+export {};
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface BaseProps extends React.RefAttributes<any> {
   as?: React.ElementType;
   css?:
     | StyledComponents.CSSObject
-    | StyledComponents.FlattenSimpleInterpolation
+    | StyledComponents.InterpolationWithTheme<any>
     | string;
 }
 

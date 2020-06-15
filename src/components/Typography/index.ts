@@ -1,8 +1,8 @@
-import Heading from "./Headings"
-import { Text } from "./Text" 
+import Heading from "./Headings";
+import { Text } from "./Text"; 
 
-import StyledSystem from "styled-system"
-import { BoxKnownProps } from "../../types/rebass"
+import StyledSystem from "styled-system";
+import { BoxKnownProps } from "../../types/rebass";
 
 export interface TextKnownProps
   extends BoxKnownProps,
@@ -16,4 +16,4 @@ export interface TextKnownProps
 export {
   Heading,
   Text
-}
+};

@@ -1,8 +1,8 @@
-import React, { FC } from "react"
-import { Box, BoxProps } from "../Box"
-import { CardVariants } from "../../themes/theme"
-import styled from "styled-components"
-import { boxShadow, BoxShadowProps } from "styled-system"
+import React, { FC } from "react";
+import { Box, BoxProps } from "../Box";
+import { CardVariants } from "../../themes/theme";
+import styled from "styled-components";
+import { boxShadow, BoxShadowProps } from "styled-system";
 
 export interface CardProps
   extends BoxProps, BoxShadowProps,
@@ -10,7 +10,7 @@ export interface CardProps
     variant?: CardVariants
   }
 
-const CardBox = styled(Box)(boxShadow)
+const CardBox = styled(Box)(boxShadow);
 
 export const Card: FC<CardProps> = ({
   children,
@@ -24,4 +24,4 @@ export const Card: FC<CardProps> = ({
   >
     {children}
   </CardBox>
-)
+);

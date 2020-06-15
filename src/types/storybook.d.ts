@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 export type StoryId = string;
 export type StoryKind = string;

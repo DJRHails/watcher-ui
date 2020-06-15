@@ -2,14 +2,6 @@
 // Reference: https://github.com/styled-system/styled-system/blob/master/docs/src/gatsby-plugin-theme-ui/index.js
 // Reference Tailwind: https://github.com/system-ui/theme-ui/blob/76207a732fba4da145abf9535f33704b8811546c/packages/preset-tailwind/src/index.ts
 
-export const coreButtonStyles = {
-  py: 2,
-  px: 3,
-  cursor: "pointer",
-  fontSize: "100%",
-  lineHeight: "inherit"
-}
-
 export const shadows = {
   xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
   sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
@@ -22,7 +14,7 @@ export const shadows = {
   inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
   outline: "0 0 0 2px var(--outline-color)",
   none: "none"
-}
+};
 
 export const colors = {
   text: "#000000",
@@ -33,12 +25,14 @@ export const colors = {
   interactiveText: "#ffffff",
   accent: "#f7b825",
   success: "#22543d",
-  muted: "#82817d",
+  danger: "#dc3545",
+  muted: "#cccccc", //#82817d
   badge: {
     brand: "#d7efff",
-    success: "#c6f6d5",
+    danger: "#f5c6cb",
+    success: "#c3e6cb",
   }
-}
+};
 
 export const radii = {
   "none": "0",
@@ -47,9 +41,9 @@ export const radii = {
   "md": "0.375rem",
   "lg": "0.8rem",
   "full": "9999px",
-}
+};
 
-export const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem"]
+export const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem"];
 
 // TODO: Check support doesn't
 export const transitions = {
@@ -79,7 +73,7 @@ export const transitions = {
     "700": "700ms",
     "1000": "1000ms",
   },
-}
+};
 
 
 // === Fonts
@@ -89,13 +83,13 @@ export const baseFonts = {
     "\"Muli\",system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
   serif: "Georgia,Cambria,\"Times New Roman\",Times,serif",
   mono: "Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace"
-}
+};
 
 export const fonts = {
   ...baseFonts,
   body: baseFonts.sans,
   heading: "inherit"
-}
+};
 
 export const fontSizes = [
   "0.75rem",
@@ -107,7 +101,7 @@ export const fontSizes = [
   "4.5rem",
   "5.5rem",
   "6rem"
-]
+];
 
 export const fontWeights = {
   light: "300",
@@ -115,7 +109,7 @@ export const fontWeights = {
   semibold: "600",
   bold: "700",
   black: "900",
-}
+};
 
 export const lineHeights = {
   none: "1",
@@ -124,7 +118,7 @@ export const lineHeights = {
   normal: "1.5",
   relaxed: "1.625",
   loose: "2",
-}
+};
 
 export const letterSpacings = {
   tighter: "-0.05em",
@@ -133,9 +127,9 @@ export const letterSpacings = {
   wide: "0.025em",
   wider: "0.05em",
   widest: "0.1em"
-}
+};
 
-export type TypographyVariants = "h1" | "body";
+export type TypographyVariants = "h1" | "body" | "button";
 export const typography = {
   h1: {
     fontFamily: "body",
@@ -149,29 +143,22 @@ export const typography = {
   body: {
     fontFamily: "body",
     fontSize: 2
-  }
-}
-
-export type ButtonVariants = "simple";
-export const buttons = {
-  simple: {
-    ...coreButtonStyles,
-    backgroundColor: "interactive",
-    border: "none",
-    color: "interactiveText",
+  },
+  button: {
+    position: "relative",
+    fontSize: 1,
     fontWeight: "bold",
-    borderRadius: "lg",
-    "&:hover": {
-      backgroundColor: "interactiveHover"
-    }
+    zIndex: 1,
+    userSelect: "none",
+    pointerEvents: "none",
   }
-}
+};
 
 const baseCard = {
   p: 3,
   borderRadius: "md",
   bg: "surface",
-}
+};
 
 export type CardVariants = "outline" | "default";
 export const cards = {
@@ -183,7 +170,7 @@ export const cards = {
   default: {
     ...baseCard,
   }
-}
+};
 
 export type Variants = "badge" | "link";
 export const variants = {
@@ -200,7 +187,7 @@ export const variants = {
   link: {
     color: "brand"
   }
-}
+};
 
 export type VariantTypes = "variants" | "cards" | "typography" | "buttons";
 
@@ -219,9 +206,8 @@ const theme = {
 
   // Variants
   typography,
-  buttons,
   cards,
   variants
-}
+};
 
-export default theme
+export default theme;

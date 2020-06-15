@@ -1,18 +1,18 @@
-import React from "react"
-import { Icon } from "@rimble/icons"
+import React from "react";
+import { Icon } from "@rimble/icons";
 
-import { StoryMeta } from "../../types/storybook"
-import { Card } from "./Card"
-import { Box } from "../Box"
-import { Image } from "../Image"
-import { Text } from "../Typography"
-import { Flex } from "reflexbox/styled-components"
-import { Badge } from "../Badge"
+import { StoryMeta } from "../../types/storybook";
+import { Card } from "./Card";
+import { Box } from "../Box";
+import { Image } from "../Image";
+import { Text } from "../Typography";
+import { Flex } from "reflexbox/styled-components";
+import { Badge } from "../Badge";
 
 export default {
   title: "Components/Card",
   component: Card
-}
+};
 
 export const airbnbCard: StoryMeta = () => (
   <Card variant="outline" maxWidth='20em' p={3}>
@@ -38,7 +38,7 @@ export const airbnbCard: StoryMeta = () => (
       <Text ml={1} fontSize={2}><b>4.84</b> (190)</Text>
     </Flex>
   </Card>
-)
+);
 
 export const cryptoKittiesCard: StoryMeta = () => (
   <Card maxWidth='20em'>
@@ -93,9 +93,9 @@ export const cryptoKittiesCard: StoryMeta = () => (
       </Text>
     </Flex>
   </Card>
-)
+);
 
 cryptoKittiesCard.story = {
   name: "CryptoKitties Card"
-}
+};
 

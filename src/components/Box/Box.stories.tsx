@@ -1,27 +1,25 @@
-import React from "react"
-import { Flex } from "reflexbox/styled-components"
-import { Text } from "../Typography/Text"
-import { Box } from "./Box"
-import { StoryMeta } from "../../types/storybook"
+import React from "react";
+import { Flex } from "reflexbox/styled-components";
+import { Text } from "../Typography/Text";
+import { Box } from "./Box";
+import { StoryMeta } from "../../types/storybook";
 
 export default {
   title: "Components/Box",
   component: Box
-}
+};
 
 export const withColor: StoryMeta = () => (
   <Box p={3} color="brand" backgroundColor="surface">
     Brand Colour on Surface
   </Box>
-)
+);
 
 export const withResponsive: StoryMeta = () => (
   <Box p={5} fontSize={4} width={[1, 1, 1 / 2]} color="white" bg="brand">
     Box
   </Box>
-)
-
-export const asCard: StoryMeta = () => <Box variant="card">Card</Box>
+);
 
 export const asFlexGrid: StoryMeta = () => (
   <Flex mx={-2}>
@@ -36,7 +34,7 @@ export const asFlexGrid: StoryMeta = () => (
       </Text>
     </Box>
   </Flex>
-)
+);
 
 export const backgroundImageCard: StoryMeta = () => (
   <Box
@@ -50,11 +48,11 @@ export const backgroundImageCard: StoryMeta = () => (
       bg: "gray"
     }}
   >
-    <Box textAlign="center" fontSize={6}>
+    <Text textAlign="center" fontSize={6}>
       Background Image
-    </Box>
+    </Text>
   </Box>
-)
+);
 
 export const asFlexWrap: StoryMeta = () => (
   <Flex flexWrap="wrap" mx={-2}>
@@ -104,4 +102,4 @@ export const asFlexWrap: StoryMeta = () => (
       </Text>
     </Box>
   </Flex>
-)
+);

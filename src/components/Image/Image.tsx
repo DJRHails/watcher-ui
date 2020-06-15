@@ -1,5 +1,5 @@
-import React, { FC } from "react"
-import { Box, BoxProps } from "../Box"
+import React, { FC } from "react";
+import { Box, BoxProps } from "../Box";
 
 export interface ImageProps
   extends BoxProps,
@@ -14,4 +14,4 @@ export const Image: FC<ImageProps> = (props: ImageProps) => (
       height: "auto"
     }}
   />
-)
+);

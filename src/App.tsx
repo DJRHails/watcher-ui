@@ -1,8 +1,8 @@
-import React, { ReactNode } from "react"
-import "./App.css"
-import logo from "./logo.svg"
+import React from "react";
+import "./App.css";
+import logo from "./logo.svg";
 
-function App(): ReactNode {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +20,7 @@ function App(): ReactNode {
         </a>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

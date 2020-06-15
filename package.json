@@ -59,6 +59,7 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "@types/lodash": "^4.14.155",
     "@types/reflexbox": "^4.0.1",
     "@types/styled-components": "^5.1.0",
     "@types/styled-system": "^5.1.9",

@@ -7,7 +7,7 @@ import { BoxKnownProps } from "../../types/rebass";
 
 export interface ButtonProps extends BoxKnownProps, Omit<React.HTMLProps<HTMLImageElement>, keyof BoxKnownProps> {
   onClick?: VoidFunction;
-  variant?: "solid" | "outline";
+  variant?: "solid" | "outline" | "text";
   buttonColor?: string;
   textColor?: string;
 }

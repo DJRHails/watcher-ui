@@ -5,9 +5,10 @@ import { StoryMeta } from "../../types/storybook";
 import { Card } from "./Card";
 import { Box } from "../Box";
 import { Image } from "../Image";
-import { Text } from "../Typography";
+import { Text, Heading } from "../Typography";
 import { Flex } from "reflexbox/styled-components";
 import { Badge } from "../Badge";
+import { Button } from "../Button";
 
 export default {
   title: "Components/Card",
@@ -48,6 +49,40 @@ export const namedCard: StoryMeta = () => (
     </Card>
   </Flex>
 );
+
+export const imageCardWithSub: StoryMeta = () => (
+  <Flex
+    width="full"
+    height="calc(100vh - 16px)"
+    bg="rgba(0, 0, 0, 0.02)"
+    alignItems="center"
+  >
+    <Card width={"auto"} maxWidth={"420px"} mx={"auto"} my={5} p={0}>
+      <Image
+        width={"full"}
+        src="https://source.unsplash.com/random/1280x720"
+        alt="random image from unsplash.com"
+      />
+
+      <Box px={[3, 3, 4]} py={3}>
+        <Heading.h4>Card title</Heading.h4>
+        <Heading.h5 color="#666">Card sub-title</Heading.h5>
+      </Box>
+
+      <Flex px={[3, 3, 4]} pb={3} borderTop={1} borderColor={"#E8E8E8"}>
+        <Button variant="text" p={"0"} mr={[2, 3, 4]} height={"auto"}>
+      Text Button
+        </Button>
+
+        <Button variant="text" p={"0"} height={"auto"}>
+      Text Button
+        </Button>
+      </Flex>
+    </Card>
+  </Flex>
+);
+
+
 export const airbnbCard: StoryMeta = () => (
   <Card variant="outline" maxWidth='20em' p={3}>
     <Image src="https://bit.ly/2k1H1t6" sx={{borderRadius: 1}}/>

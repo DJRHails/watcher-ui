@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, TextProps } from "./Text";
-import { TypographyVariants } from "../../themes/typography";
+import { TypographyVariants } from "../../themes/theme";
 
 export interface HeadingProps
   extends TextProps,

@@ -1,5 +1,5 @@
 import React from "react";
-import { TypographyVariants } from "../../themes/theme";
+import { TypographyVariants } from "../../themes";
 import { Box } from "../Box";
 import { TextKnownProps } from ".";
 

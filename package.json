@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@rimble/icons": "^1.1.0",
+    "@storybook/addon-knobs": "^5.3.19",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -58,6 +59,7 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "@types/reflexbox": "^4.0.1",
     "@types/styled-components": "^5.1.0",
     "@types/styled-system": "^5.1.9",
     "@types/styled-system__css": "^5.0.11",

@@ -70,13 +70,11 @@ export const doCard: StoryMeta = () => (
         <Heading.h5 ml={3}>Do</Heading.h5> 
       </Flex>
 
-      <Text fontSize={0} as="p">
-        Use specific language throughout. If the
-        transaction is actually transfering a crypto asset, refer to that. Or if
-        your users are casting a vote on the blockchain, reference the vote.
-        This will spare users having to make connections in their head. Echo the
-        language you'd use in the button to initiate the transaction e.g. Send
-        Cryptokitty or Cast vote.
+      <Text fontSize={1} as="p" mb={2}>
+        Use specific language throughout. If the transaction is actually transfering a crypto asset, refer to that. Or if your users are casting a vote on the blockchain, reference the vote. This will spare users having to make connections in their head. 
+      </Text>
+      <Text fontSize={1} as="p">
+      Echo the language you&apos;d use in the button to initiate the transaction e.g. Send Cryptokitty or Cast vote.
       </Text>
     </Card>
   </Flex>

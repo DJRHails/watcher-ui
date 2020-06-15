@@ -1,3 +1,9 @@
-import { Button } from "./Button"
+import { Button } from "./Button";
+import { SolidButton } from "./SolidButton";
+import { OutlineButton } from "./OutlineButton";
 
-export { Button }
+export {
+  Button,
+  SolidButton,
+  OutlineButton
+};

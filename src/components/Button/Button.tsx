@@ -1,17 +1,18 @@
-import React, { FC } from "react"
-import { Box, BoxProps } from "../Box"
-
-interface ButtonProps extends BoxProps,
-Omit<React.HTMLProps<HTMLImageElement>, keyof BoxProps> {
-  onClick?: VoidFunction;
-}
+import React, { FC } from "react";
+import { Text } from "../Typography";
+import { VariantButton } from "./VariantButton";
+import { ButtonProps } from "./BaseButton";
 
 export const Button: FC<ButtonProps> = ({
   children,
-  variant = "simple",
+  variant = "solid",
   ...props
 }: ButtonProps) => (
-  <Box tx="buttons" variant={variant} as="button" {...props}>
-    {children}
-  </Box>
-)
+  <VariantButton
+    as="button"
+    variant={variant}
+    {...props}
+  >
+    <Text variant="button">{children}</Text>
+  </VariantButton>
+);

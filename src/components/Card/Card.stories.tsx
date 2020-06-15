@@ -14,6 +14,40 @@ export default {
   component: Card
 };
 
+export const namedCard: StoryMeta = () => (
+  <Flex
+    width="full"
+    height="calc(100vh - 16px)"
+    bg="rgba(0, 0, 0, 0.02)"
+    alignItems="center"
+  >
+    <Card
+      width={"auto"}
+      maxWidth={"420px"}
+      mx={"auto"}
+      px={[4, 4, 5]}
+    >
+      <Heading.h3>Heading</Heading.h3>
+
+      <Box>
+        <Text mb={4}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem
+          ratione doloribus quidem neque provident eius error dignissimos delectus
+          architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore.
+          Amet!
+        </Text>
+      </Box>
+
+      <Button width={[1, "auto", "auto"]} mr={3}>
+        Accept
+      </Button>
+
+      <Button variant="outline" width={[1, "auto", "auto"]} mt={[2, 0, 0]}>
+        Cancel
+      </Button>
+    </Card>
+  </Flex>
+);
 export const airbnbCard: StoryMeta = () => (
   <Card variant="outline" maxWidth='20em' p={3}>
     <Image src="https://bit.ly/2k1H1t6" sx={{borderRadius: 1}}/>
@@ -41,7 +75,10 @@ export const airbnbCard: StoryMeta = () => (
 );
 
 export const cryptoKittiesCard: StoryMeta = () => (
-  <Card maxWidth='20em'>
+  <Card
+    maxWidth='20em'
+    boxShadow='none'
+  >
     <Box bg="#e5f3e2" sx={{
       borderRadius: "lg",
       transition: "box-shadow 200ms cubic-bezier(0.4,0,0.2,1)",

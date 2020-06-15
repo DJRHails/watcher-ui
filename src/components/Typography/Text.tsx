@@ -1,7 +1,7 @@
 import React from "react";
-import { TypographyVariants } from "../../themes";
 import { Box } from "../Box";
 import { TextKnownProps } from ".";
+import { TypographyVariants } from "../../themes/theme";
 
 export interface TextProps
   extends TextKnownProps,

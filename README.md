@@ -12,6 +12,7 @@
 
 <h3 align="center">
   <a href="https://hails.info/">Built by Daniel Hails</a> |
+  <a href="https://djrhails.github.io/watcher-ui/"> Storybook Docs </a> |
   <a href="https://github.com/DJRHails/watcher-ui/issues/new">Leave feedback</a>
 </h3>
 

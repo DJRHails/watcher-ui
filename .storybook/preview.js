@@ -1,10 +1,12 @@
 import React from "react";
 import { addParameters, addDecorator } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
+import { withKnobs } from "@storybook/addon-knobs";
 import Container from "./Container";
 
 // Add Addon Decorators
 addDecorator(withA11y);
+addDecorator(withKnobs);
 
 addDecorator((story, context) => <Container story={story} context={context} />);
 

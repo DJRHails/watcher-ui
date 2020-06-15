@@ -1,13 +1,35 @@
 import React from "react"
 import { Text } from "./Text"
 import { StoryMeta, KindMeta } from "../../types/storybook"
+import { withKnobs, select, text } from "@storybook/addon-knobs"
+import theme from "../../themes/theme"
 
 export default {
   title: "Components/Typography/Text",
-  component: Text
+  component: Text,
+  decorators: [withKnobs]
 } as KindMeta<typeof Text>
 
-export const standard: StoryMeta = () => <Text>Body Text</Text>
+export const standard: StoryMeta = () => {
+  const txt=text("Text", "A QUICK BROWN FOX JUMPS OVER THE LAZY DOG while the five boxing wizards jump quickly.")
+  const font=select("Font Family", Object.keys(theme.fonts), "body")
+  const fontSize=select("Font Size", Object.keys(theme.fontSizes), undefined)
+  const fontWeight=select("Font Weight", Object.keys(theme.fontWeights), "medium")
+  const lineHeight=select("Line Height", Object.keys(theme.lineHeights), "normal")
+  const letterSpacing=select("Letter Spacings", Object.keys(theme.letterSpacings), "normal")
+
+  return (
+    <Text
+      fontFamily={font}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      lineHeight={lineHeight}
+      letterSpacing={letterSpacing}
+    >
+      {txt}
+    </Text>
+  )
+}
 
 export const fontSizes: StoryMeta = () => (
   <>

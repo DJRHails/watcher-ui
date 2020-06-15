@@ -17,7 +17,7 @@ export const shadows = {
 };
 
 export const colors = {
-  text: "#000000",
+  text: "#3f3d4b",
   surface: "#ffffff",
   brand: "#0A6EB4",
   interactive: "#0b77c2",
@@ -206,6 +206,7 @@ export type TypographyVariants = "heading" | "body" | "button";
 export const typography = {
   heading: {
     fontFamily: "body",
+    color: "text",
     fontWeight: "bold",
     lineHeight: "none",
     m: 0,

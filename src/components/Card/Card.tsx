@@ -2,15 +2,15 @@ import React, { FC } from "react";
 import { Box, BoxProps } from "../Box";
 import { CardVariants } from "../../themes/theme";
 import styled from "styled-components";
-import { boxShadow, BoxShadowProps } from "styled-system";
+import { boxShadow, border, BoxShadowProps, BordersProps } from "styled-system";
 
 export interface CardProps
-  extends BoxProps, BoxShadowProps,
+  extends BoxProps, BoxShadowProps, BordersProps,
     Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
     variant?: CardVariants
   }
 
-const CardBox = styled(Box)(boxShadow);
+const CardBox = styled(Box)(boxShadow, border);
 
 export const Card: FC<CardProps> = ({
   children,

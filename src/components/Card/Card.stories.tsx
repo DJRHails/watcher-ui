@@ -9,6 +9,7 @@ import { Text, Heading } from "../Typography";
 import { Flex } from "reflexbox/styled-components";
 import { Badge } from "../Badge";
 import { Button } from "../Button";
+import { CircleWithEmphasis } from "./CircleWithEmphasis";
 
 export default {
   title: "Components/Card",
@@ -23,9 +24,9 @@ export const namedCard: StoryMeta = () => (
     alignItems="center"
   >
     <Card
-      width={"auto"}
-      maxWidth={"420px"}
-      mx={"auto"}
+      width="auto"
+      maxWidth="md"
+      mx="auto"
       px={[4, 4, 5]}
     >
       <Heading.h3>Heading</Heading.h3>
@@ -50,6 +51,37 @@ export const namedCard: StoryMeta = () => (
   </Flex>
 );
 
+export const doCard: StoryMeta = () => (
+  <Flex
+    width="full"
+    minHeight="calc(100vh - 16px)"
+    bg="rgba(0, 0, 0, 0.02)"
+    alignItems="center"
+  >
+    <Card
+      width="auto"
+      maxWidth="md"
+      mx="auto"
+      borderTop="4px solid"
+      borderTopColor="green"
+    >
+      <Flex alignItems="center" mb={4}>
+        <CircleWithEmphasis/>   
+        <Heading.h5 ml={3}>Do</Heading.h5> 
+      </Flex>
+
+      <Text fontSize={0} as="p">
+        Use specific language throughout. If the
+        transaction is actually transfering a crypto asset, refer to that. Or if
+        your users are casting a vote on the blockchain, reference the vote.
+        This will spare users having to make connections in their head. Echo the
+        language you'd use in the button to initiate the transaction e.g. Send
+        Cryptokitty or Cast vote.
+      </Text>
+    </Card>
+  </Flex>
+);
+
 export const imageCardWithSub: StoryMeta = () => (
   <Flex
     width="full"
@@ -57,9 +89,9 @@ export const imageCardWithSub: StoryMeta = () => (
     bg="rgba(0, 0, 0, 0.02)"
     alignItems="center"
   >
-    <Card width={"auto"} maxWidth={"420px"} mx={"auto"} my={5} p={0}>
+    <Card width="auto" maxWidth="md" mx="auto" my={5} p={0}>
       <Image
-        width={"full"}
+        width="full"
         src="https://source.unsplash.com/random/1280x720"
         alt="random image from unsplash.com"
       />
@@ -68,13 +100,13 @@ export const imageCardWithSub: StoryMeta = () => (
         <Heading.h4>Card title</Heading.h4>
         <Heading.h5 color="#666">Card sub-title</Heading.h5>
       </Box>
-
-      <Flex px={[3, 3, 4]} pb={3} borderTop={1} borderColor={"#E8E8E8"}>
-        <Button variant="text" p={"0"} mr={[2, 3, 4]} height={"auto"}>
+      <hr/>
+      <Flex px={[3, 3, 4]} pb={3}>
+        <Button variant="text" p="0" mr={[2, 3, 4]} height="auto">
       Text Button
         </Button>
 
-        <Button variant="text" p={"0"} height={"auto"}>
+        <Button variant="text" p="0" height="auto">
       Text Button
         </Button>
       </Flex>

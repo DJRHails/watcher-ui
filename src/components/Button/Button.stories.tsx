@@ -15,6 +15,14 @@ export const Text: StoryMeta = () => (
   <Button onClick={action("clicked")}>Hello Button</Button>
 );
 
+export const fullSize: StoryMeta = () => (
+  <Button size="full">Hello Button</Button>
+);
+
+export const bigger: StoryMeta = () => (
+  <Button fontSize={5}>Hello Button</Button>
+);
+
 export const Emoji: StoryMeta = () => (
   <Button onClick={action("clicked")}>
     <span role="img" aria-label="so cool">

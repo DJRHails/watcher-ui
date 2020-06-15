@@ -6,6 +6,7 @@ import { ButtonProps } from "./BaseButton";
 export const Button: FC<ButtonProps> = ({
   children,
   variant = "solid",
+  fontSize,
   ...props
 }: ButtonProps) => (
   <VariantButton
@@ -13,6 +14,6 @@ export const Button: FC<ButtonProps> = ({
     variant={variant}
     {...props}
   >
-    <Text variant="button">{children}</Text>
+    <Text variant="button" fontSize={fontSize}>{children}</Text>
   </VariantButton>
 );

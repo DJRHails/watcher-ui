@@ -17,3 +17,4 @@ export const Button: FC<ButtonProps> = ({
     <Text variant="button" fontSize={fontSize}>{children}</Text>
   </VariantButton>
 );
+Button.displayName="Button";

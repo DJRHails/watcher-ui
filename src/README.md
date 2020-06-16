@@ -13,6 +13,7 @@ This source structure is designed to maintain modularity and keep clear.
 | `types/`     | Any additional types, type utilities required for libraries.|
 
 ## Components
+
 ```bash
 components
 ├── <ComponentName>
@@ -20,5 +21,7 @@ components
 │   ├── <ComponentName>.test.tsx
 │   ├── <ComponentName>.tsx
 │   └── index.ts
-├── index.ts
+└── index.ts
 ```
+
+<!-- `tree` output -->

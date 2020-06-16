@@ -25,3 +25,4 @@ export const Card: FC<CardProps> = ({
     {children}
   </CardBox>
 );
+Card.displayName="Card";

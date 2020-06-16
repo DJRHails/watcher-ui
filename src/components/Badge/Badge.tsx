@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Box, BoxProps } from "../Box";
 
-interface BadgeProps extends BoxProps,
+export interface BadgeProps extends BoxProps,
 Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
   variantColor?: "success" | "brand"
 }
@@ -21,3 +21,4 @@ export const Badge: FC<BadgeProps> = ({
     {children}
   </Box>
 );
+Badge.displayName = "Badge";

@@ -1,3 +1,5 @@
-import { Card } from "./Card";
+export { Card } from "./Card";
+export type { CardProps } from "./Card";
 
-export { Card };
+export { TokenCard } from "./TokenCard";
+export type { TokenCardProps } from "./TokenCard";

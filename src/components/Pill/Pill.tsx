@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import { Text, TextProps } from "../Typography/Text";
+import { Text, TextProps } from "../Typography";
 import styled from "styled-components";
 import { css } from "@styled-system/css";
 import { borders, BordersProps } from "styled-system";
 
-interface PillProps extends TextProps, BordersProps,
+export interface PillProps extends TextProps, BordersProps,
 Omit<React.HTMLProps<HTMLDivElement>, keyof TextProps> {}
 
 const StyledPill = styled(Text)(
@@ -51,3 +51,4 @@ export const Pill: FC<PillProps> = ({
     {children}
   </StyledPill>
 );
+Pill.displayName = "Pill";

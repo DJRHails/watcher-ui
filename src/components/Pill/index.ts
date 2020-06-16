@@ -1,3 +1,2 @@
-import { Pill } from "./Pill";
-
-export { Pill };
+export { Pill } from "./Pill";
+export type { PillProps } from "./Pill";

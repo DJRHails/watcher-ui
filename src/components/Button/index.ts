@@ -1,9 +1,4 @@
-import { Button } from "./Button";
-import { SolidButton } from "./SolidButton";
-import { OutlineButton } from "./OutlineButton";
-
-export {
-  Button,
-  SolidButton,
-  OutlineButton
-};
+export { Button } from "./Button";
+export { SolidButton } from "./SolidButton";
+export { OutlineButton } from "./OutlineButton";
+export type { ButtonProps } from "./BaseButton";

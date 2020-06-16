@@ -44,3 +44,4 @@ export const TokenCard: React.FC<TokenCardProps> = ({ name, quantity, value, ...
     </Card>
   );
 };
+TokenCard.displayName="Token Card";

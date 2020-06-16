@@ -10,8 +10,11 @@ export default {
 };
 
 export const Brand: StoryMeta = () => (
-  <Pill>{text("Pill Text", "Brand")}</Pill>
+  <Pill color="brand">{text("Pill Text", "Brand")}</Pill>
 );
 export const Success: StoryMeta = () => (
-  <Pill>{text("Pill Text", "Success")}</Pill>
+  <Pill color="success">{text("Pill Text", "Success")}</Pill>
+);
+export const Muted: StoryMeta = () => (
+  <Pill>{text("Pill Text", "Muted")}</Pill>
 );

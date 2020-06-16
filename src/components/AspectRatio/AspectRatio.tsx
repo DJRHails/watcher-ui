@@ -3,17 +3,20 @@
 import React from "react";
 import { Box, BoxProps } from "../Box";
 
-interface AspectRatioOptions {
+export interface AspectRatioProps extends BoxProps {
   ratio?: number
 }
-
-export interface AspectRatioProps extends BoxProps, AspectRatioOptions {}
 
 /**
  * React component used to cropping media (videos, images and maps)
  * to a desired aspect ratio.
  */
-export const AspectRatio: React.FC<AspectRatioProps> = ({ ratio = 4 / 3, maxWidth="sm", children, ...rest }: AspectRatioProps) => {
+export const AspectRatio: React.FC<AspectRatioProps> = ({
+  ratio = 4 / 3,
+  maxWidth="sm",
+  children,
+  ...rest
+}: AspectRatioProps) => {
   const child = React.Children.only(children);
 
   return (
@@ -22,6 +25,9 @@ export const AspectRatio: React.FC<AspectRatioProps> = ({ ratio = 4 / 3, maxWidt
       css={{
         "&": {
           position: "relative",
+        },
+        "&:before": {
+          content: "''",
           height: 0,
           display: "block",
           paddingBottom: `${(1 / ratio) * 100}%`,
@@ -47,3 +53,4 @@ export const AspectRatio: React.FC<AspectRatioProps> = ({ ratio = 4 / 3, maxWidt
     </Box>
   );
 };
+AspectRatio.displayName="AspectRatio";

@@ -1,19 +1,5 @@
-import Heading from "./Headings";
-import { Text } from "./Text"; 
+export { Heading } from "./Headings";
+export type { HeadingProps } from "./Headings";
 
-import StyledSystem from "styled-system";
-import { BoxKnownProps } from "../../types/rebass";
-
-export interface TextKnownProps
-  extends BoxKnownProps,
-    StyledSystem.FontFamilyProps,
-    StyledSystem.FontWeightProps,
-    StyledSystem.FontStyleProps,
-    StyledSystem.TextAlignProps,
-    StyledSystem.LineHeightProps,
-    StyledSystem.LetterSpacingProps {}
-
-export {
-  Heading,
-  Text
-};
+export { Text } from "./Text";
+export type { TextProps } from "./Text";

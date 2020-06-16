@@ -15,3 +15,4 @@ export const Image: FC<ImageProps> = (props: ImageProps) => (
     }}
   />
 );
+Image.displayName = "Image";

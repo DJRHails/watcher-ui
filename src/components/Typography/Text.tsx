@@ -1,7 +1,18 @@
 import React from "react";
 import { Box } from "../Box";
-import { TextKnownProps } from ".";
 import { TypographyVariants } from "../../themes/theme";
+
+import StyledSystem from "styled-system";
+import { BoxKnownProps } from "../../types/rebass";
+
+export interface TextKnownProps
+  extends BoxKnownProps,
+    StyledSystem.FontFamilyProps,
+    StyledSystem.FontWeightProps,
+    StyledSystem.FontStyleProps,
+    StyledSystem.TextAlignProps,
+    StyledSystem.LineHeightProps,
+    StyledSystem.LetterSpacingProps {}
 
 export interface TextProps
   extends TextKnownProps,
@@ -19,3 +30,4 @@ export const Text: React.FC<TextProps> = ({ textTransform, ...props }: TextProps
     }} />
   );
 };
+Text.displayName="Text";

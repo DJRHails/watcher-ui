@@ -24,3 +24,4 @@ export const Box: React.FC<BoxProps> = React.forwardRef((props, ref) => (
     {...props}
   />
 ));
+Box.displayName = "Box";

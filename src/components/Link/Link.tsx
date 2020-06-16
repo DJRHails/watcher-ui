@@ -8,3 +8,4 @@ export interface LinkProps
 export const Link: FC<LinkProps> = (props: LinkProps) => (
   <Box as="a" variant="link" {...props} />
 );
+Link.displayName="Link";

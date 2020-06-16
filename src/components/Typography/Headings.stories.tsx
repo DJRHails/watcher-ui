@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./Headings";
+import { Heading } from "./Headings";
 import { StoryMeta } from "../../types/storybook";
 
 export default {

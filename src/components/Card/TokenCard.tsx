@@ -21,7 +21,7 @@ export const TokenCard: React.FC<TokenCardProps> = ({ name, quantity, value, ...
         <Icon name={name} size="25%" />
         <Text
           ml={2}
-          color="muted"
+          color="gray"
           fontSize={1}
           fontWeight="light"
           textTransform="uppercase"
@@ -38,7 +38,7 @@ export const TokenCard: React.FC<TokenCardProps> = ({ name, quantity, value, ...
             .{lower}
           </Text>}
       </Flex>
-      <Text mt={3} fontSize={1} fontWeight="light" color="muted">
+      <Text mt={3} fontSize={1} fontWeight="light" color="gray">
         {value >= 0 ? `$${value}` : "-"}
       </Text>
     </Card>

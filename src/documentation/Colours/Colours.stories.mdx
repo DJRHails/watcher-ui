@@ -1,0 +1,39 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { linkTo } from "@storybook/react";
+import { List, Link, Heading } from "../../components";
+import { Color } from "./Color";
+import { ThemeProvider } from 'styled-components';
+import theme from '../../themes/theme';
+
+<Meta title="Intro/Colours" />
+
+<ThemeProvider theme={theme}>
+
+<Heading.h5 textTransform="uppercase" color="brand">Core</Heading.h5>
+<Heading.h1>Colours</Heading.h1>
+
+<Color color="brand" />
+<Heading.h5 color="gray" fontStyle="italic">Primary corporate colour</Heading.h5>
+<p>
+  Some description about usage.
+</p>
+<section className="dodonot">
+<div>
+  <Heading.h5>Use brand-01 for:</Heading.h5>
+  <List kind="bullet">
+    <ListItem kind="checkmark">brand elements</ListItem>
+    <ListItem kind="checkmark">dark background</ListItem>
+  </List>
+</div>
+<div>
+  <Heading.h5>Do not use for:</Heading.h5>
+  <List kind="bullet">
+    <ListItem kind="cross">
+      interactive elements like buttons or links
+    </ListItem>
+    <ListItem kind="cross">Primary and secondary colours</ListItem>
+  </List>
+</div>
+</section>
+
+</ThemeProvider>

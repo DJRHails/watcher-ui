@@ -1,7 +1,7 @@
 // Ref: https://chakra-ui.com/aspectratiobox
 
 import React from "react";
-import { BoxProps, Box } from "../Box";
+import { Box, BoxProps } from "../Box";
 
 interface AspectRatioOptions {
   ratio?: number

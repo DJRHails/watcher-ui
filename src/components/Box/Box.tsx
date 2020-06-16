@@ -1,6 +1,20 @@
 import React from "react";
 import * as Reflex from "reflexbox/styled-components";
-import { BoxProps } from ".";
+import {
+  TypographyVariants,
+  Variants,
+  VariantTypes,
+  CardVariants
+} from "../../themes/theme";
+import { BoxKnownProps } from "../../types/rebass";
+
+
+export interface BoxProps
+  extends BoxKnownProps,
+  Omit<React.HTMLProps<HTMLDivElement>, keyof BoxKnownProps> {
+  variant?: Variants | TypographyVariants | CardVariants;
+  tx?: VariantTypes;
+}
 
 export const Box: React.FC<BoxProps> = React.forwardRef((props, ref) => (
   <Reflex.Box

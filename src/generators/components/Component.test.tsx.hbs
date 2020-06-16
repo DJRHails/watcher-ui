@@ -1,0 +1,26 @@
+import React from "react";
+import { render } from "@testing-library/react";
+import { ThemeProvider } from "styled-components";
+import theme from "../../themes/theme";
+
+import { {{pascalCase name}} } from "./{{pascalCase name}}";
+
+describe("{{name}} component sanity", () => {
+  it("has name", () => {
+    expect({{pascalCase name}}.displayName).toBe("{{name}}");
+  });
+
+  it("matches default snapshot", () => {
+    const component = render(<{{pascalCase name}} />);
+    expect(component).toMatchSnapshot();
+  });
+
+  it("matches themed snapshot", () => {
+    const component = render(
+      <ThemeProvider theme={theme}>
+        <{{pascalCase name}} />
+      </ThemeProvider>
+    );
+    expect(component).toMatchSnapshot();
+  });
+});

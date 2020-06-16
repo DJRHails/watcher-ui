@@ -1,0 +1,15 @@
+import React from "react";
+
+export interface {{pascalCase name}}Props {} 
+
+export const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({
+  ...props
+}: {{pascalCase name}}Props) => {
+  console.log("{{pascalCase name}}.tsx:8:", props);
+  return (
+    <div>
+      {{name}}
+    </div>
+  );
+};
+{{pascalCase name}}.displayName="{{name}}";

@@ -25,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "generate": "plop --plopfile src/generators/plobfile.ts",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -s public",
     "storybook:deploy": "storybook-to-ghpages",
@@ -72,6 +73,7 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
-    "plop": "^2.7.1"
+    "plop": "^2.7.1",
+    "ts-node": "^8.10.2"
   }
 }

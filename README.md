@@ -69,4 +69,14 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## :wave: Contributing
 
-Plob is used to generate new 
+Plob is used to speed up generating new components.
+
+```bash
+# Generate a reusable component
+yarn generate component <name>
+yarn generate component DogCard
+
+# Generate a custom hook
+yarn generate hook <name>
+yarn generate hook useAsync
+```

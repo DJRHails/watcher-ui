@@ -34,14 +34,12 @@ export const standard: StoryMeta = () => {
 export const fontSizes: StoryMeta = () => (
   <>
     <Text fontSize={0}><b>Font Size 0</b></Text>
-    <Text fontSize={1}><b>Font Size 1</b></Text>
-    <Text fontSize={2}><b>Font Size 2</b> (Body)</Text>
+    <Text fontSize={1}><b>Font Size 1</b> (Body)</Text>
+    <Text fontSize={2}><b>Font Size 2</b></Text>
     <Text fontSize={3}><b>Font Size 3</b></Text>
     <Text fontSize={4}><b>Font Size 4</b></Text>
     <Text fontSize={5}><b>Font Size 5</b></Text>
-    <Text fontSize={6}><b>Font Size 6</b></Text>
-    <Text fontSize={7}><b>Font Size 7</b> (H1)</Text>
-    <Text fontSize={8}><b>Font Size 8</b></Text>
+    <Text fontSize={6}><b>Font Size 6</b> (H1)</Text>
   </>
 );
 

@@ -26,7 +26,8 @@ export const colors = {
   accent: "#f7b825",
   success: "#22543d",
   danger: "#dc3545",
-  muted: "#cccccc", //#82817d
+  gray: "#82817d",
+  muted: "#cccccc",
   badge: {
     brand: "#d7efff",
     danger: "#f5c6cb",
@@ -153,7 +154,7 @@ export const transitions = {
 
 export const baseFonts = {
   sans:
-    "\"Muli\",system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+    "\"Ubuntu\",system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
   serif: "Georgia,Cambria,\"Times New Roman\",Times,serif",
   mono: "Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace"
 };
@@ -166,14 +167,12 @@ export const fonts = {
 
 export const fontSizes = [
   "0.75rem",
-  "1rem",
-  "1.25rem",
-  "1.5rem",
-  "2.25rem",
-  "3.5rem",
-  "4.5rem",
-  "5.5rem",
-  "6rem"
+  "1rem",    // p
+  "1.25rem", // h5
+  "1.50rem", // h4
+  "2.25rem", // h3
+  "3.50rem", // h2
+  "5.00rem"  // h1
 ];
 
 export const fontWeights = {
@@ -211,7 +210,6 @@ export const typography = {
     lineHeight: "none",
     m: 0,
     mb: 1,
-    mt: 4
   },
   body: {
     fontFamily: "body",

@@ -9,8 +9,6 @@ import * as StyledSystem from "styled-system";
 
 export {};
 
-type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
-
 export interface BaseProps extends React.RefAttributes<any> {
   as?: React.ElementType;
   css?:
@@ -44,9 +42,7 @@ export interface BoxKnownProps
     StyledSystem.LayoutProps,
     StyledSystem.FontSizeProps,
     StyledSystem.ColorProps,
-    StyledSystem.FlexProps,
-    StyledSystem.OrderProps,
-    StyledSystem.AlignSelfProps,
+    StyledSystem.FlexboxProps,
     SxProps {
   variant?: StyledSystem.ResponsiveValue<string>;
   tx?: string;

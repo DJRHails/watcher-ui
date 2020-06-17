@@ -13,6 +13,7 @@ const Layout=({story, context}) => {
 
 const Container= ({story, context }) => (
   <ThemeProvider theme={theme}>
+    <CssReset/>
     <Layout story={story} context={context}/>
   </ThemeProvider>
 )

@@ -41,3 +41,6 @@ export type { LinkProps } from "./Link";
 
 export { AspectRatio } from "./AspectRatio";
 export type { AspectRatioProps } from "./AspectRatio";
+
+export { CssReset } from "./CssReset";
+

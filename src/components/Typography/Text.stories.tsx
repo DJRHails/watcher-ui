@@ -3,6 +3,7 @@ import { Text } from "./Text";
 import { StoryMeta, KindMeta } from "../../types/storybook";
 import { withKnobs, select, text } from "@storybook/addon-knobs";
 import theme from "../../themes/theme";
+import { Theme } from "styled-system";
 
 export default {
   title: "Components/Typography/Text",
@@ -10,13 +11,15 @@ export default {
   decorators: [withKnobs]
 } as KindMeta<typeof Text>;
 
+const themeKeys = (key: keyof Theme) => Object.keys(theme[key] || {});
+
 export const standard: StoryMeta = () => {
   const txt=text("Text", "A QUICK BROWN FOX JUMPS OVER THE LAZY DOG while the five boxing wizards jump quickly.");
-  const font=select("Font Family", Object.keys(theme.fonts), "body");
-  const fontSize=select("Font Size", Object.keys(theme.fontSizes), undefined);
-  const fontWeight=select("Font Weight", Object.keys(theme.fontWeights), "medium");
-  const lineHeight=select("Line Height", Object.keys(theme.lineHeights), "normal");
-  const letterSpacing=select("Letter Spacings", Object.keys(theme.letterSpacings), "normal");
+  const font=select("Font Family", themeKeys("fonts"), "body");
+  const fontSize=select("Font Size", themeKeys("fontSizes"), undefined);
+  const fontWeight=select("Font Weight", themeKeys("fontWeights"), "medium");
+  const lineHeight=select("Line Height", themeKeys("lineHeights"), "normal");
+  const letterSpacing=select("Letter Spacings", themeKeys("letterSpacings"), "normal");
 
   return (
     <Text

@@ -1,6 +1,6 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { linkTo } from "@storybook/react";
-import { List, Link, Heading } from "../../components";
+import { List, ListItem, Link, Heading } from "../../components";
 import { Color } from "./Color";
 import { ThemeProvider } from 'styled-components';
 import theme from '../../themes/theme';
@@ -19,19 +19,19 @@ import theme from '../../themes/theme';
 </p>
 <section className="dodonot">
 <div>
-  <Heading.h5>Use brand-01 for:</Heading.h5>
-  <List kind="bullet">
-    <ListItem kind="checkmark">brand elements</ListItem>
-    <ListItem kind="checkmark">dark background</ListItem>
+  <Heading.h5>Use brand for:</Heading.h5>
+  <List>
+    <ListItem variant="check">brand elements</ListItem>
+    <ListItem variant="check">dark background</ListItem>
   </List>
 </div>
 <div>
   <Heading.h5>Do not use for:</Heading.h5>
-  <List kind="bullet">
-    <ListItem kind="cross">
+  <List>
+    <ListItem variant="cross">
       interactive elements like buttons or links
     </ListItem>
-    <ListItem kind="cross">Primary and secondary colours</ListItem>
+    <ListItem variant="cross">Primary and secondary colours</ListItem>
   </List>
 </div>
 </section>

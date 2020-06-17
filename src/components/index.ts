@@ -9,8 +9,8 @@
 //                            |_|
 
 
-export { List } from "./List";
-export type { ListProps } from "./List";
+export { List, ListItem, ListIcon } from "./List";
+export type { ListProps, ListItemProps } from "./List";
 
 export { Table } from "./Table";
 export type { TableProps } from "./Table";

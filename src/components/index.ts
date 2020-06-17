@@ -44,3 +44,8 @@ export type { AspectRatioProps } from "./AspectRatio";
 
 export { CssReset } from "./CssReset";
 
+export { Asset } from "./Asset";
+export type { AssetProps } from "./Asset";
+
+export { Icon } from "./Icon";
+export type { IconProps } from "./Icon";

@@ -2,6 +2,8 @@
 // Reference: https://github.com/styled-system/styled-system/blob/master/docs/src/gatsby-plugin-theme-ui/index.js
 // Reference Tailwind: https://github.com/system-ui/theme-ui/blob/76207a732fba4da145abf9535f33704b8811546c/packages/preset-tailwind/src/index.ts
 
+import { Theme } from "styled-system";
+
 export const shadows = {
   xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
   sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
@@ -119,39 +121,6 @@ export const sizes = {
   screenWidth: "100vw",
 };
 
-// TODO: Check support doesn't
-export const transitions = {
-  shadow: "box-shadow 500ms",
-  property: {
-    none: "none",
-    all: "all",
-    default: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-    colors: "background-color, border-color, color, fill, stroke",
-    opacity: "opacity",
-    shadow: "box-shadow",
-    transform: "transform",
-  },
-  timingFunction: {
-    linear: "linear",
-    in: "cubic-bezier(0.4, 0, 1, 1)",
-    out: "cubic-bezier(0, 0, 0.2, 1)",
-    "in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
-  },
-  duration: {
-    "75": "75ms",
-    "100": "100ms",
-    "150": "150ms",
-    "200": "200ms",
-    "300": "300ms",
-    "500": "500ms",
-    "700": "700ms",
-    "1000": "1000ms",
-  },
-};
-
-
-// === Fonts
-
 export const baseFonts = {
   sans:
     "\"Ubuntu\",system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
@@ -176,11 +145,11 @@ export const fontSizes = [
 ];
 
 export const fontWeights = {
-  light: "300",
-  medium: "500",
-  semibold: "600",
-  bold: "700",
-  black: "900",
+  light: 300,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  black: 900,
 };
 
 export const lineHeights = {
@@ -213,7 +182,7 @@ export const typography = {
   },
   body: {
     fontFamily: "body",
-    fontSize: 2
+    fontSize: 1,
   },
   button: {
     position: "relative",
@@ -264,7 +233,12 @@ const variants = {
 export type VariantTypes = "variants" | "cards" | "typography" | "buttons";
 
 // https://theme-ui.com/theme-spec/
-const theme = {
+export interface CoreTheme extends Theme {
+  typography: typeof typography;
+  cards: typeof cards;
+  variants: typeof variants;
+}
+const theme: CoreTheme = {
   shadows,
   fontSizes,
   fontWeights,
@@ -275,9 +249,8 @@ const theme = {
   radii,
   space,
   sizes,
-  transitions,
 
-  // Variants
+  // TODO: Change Variants to recommended system
   typography,
   cards,
   variants

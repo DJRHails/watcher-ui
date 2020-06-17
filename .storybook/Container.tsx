@@ -1,12 +1,13 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../src/themes/theme';
+import { Box, CssReset } from '../src/components';
 
 const Layout=({story, context}) => {
   return (
-    <div role="main">
+    <Box role="main" sx={{fontFamily: "body"}}>
       {story()}
-    </div>
+    </Box>
   )
 }
 

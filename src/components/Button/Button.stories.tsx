@@ -1,10 +1,10 @@
 // tslint:disable-next-line:no-implicit-dependencies
 import { action } from "@storybook/addon-actions";
 import React from "react";
-import { Button } from "../Button";
+import { Button } from "./Button";
 import { StoryMeta } from "../../types/storybook";
 import { Flex } from "reflexbox/styled-components";
-import { Badge } from "../Badge";
+import { Badge } from "..";
 
 export default {
   title: "Components/Button",

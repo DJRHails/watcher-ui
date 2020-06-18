@@ -1,15 +1,16 @@
 import React from "react";
-import { Icon } from "@rimble/icons";
 
 import { StoryMeta } from "../../types/storybook";
 import { Card } from "./Card";
-import { Box } from "../Box";
-import { Image } from "../Image";
-import { Text, Heading } from "../Typography";
+import { Box } from "..";
+import { Image } from "..";
+import { Text } from "..";
+import { Heading } from "..";
 import { Flex } from "reflexbox/styled-components";
-import { Badge } from "../Badge";
-import { Button } from "../Button";
+import { Badge } from "..";
+import { Button } from "..";
 import { CircleWithEmphasis } from "./CircleWithEmphasis";
+import { Icon } from "..";
 
 export default {
   title: "Components/Card",
@@ -133,7 +134,7 @@ export const airbnbCard: StoryMeta = () => (
     </Text>
     <Text mt={2} fontSize={1}>$119/night</Text>
     <Flex mt={2} alignItems="center">
-      <Icon name="Star" color="#ED8936"/>
+      <Icon name="Star" color="#ED8936" size="1.2em"/>
       <Text ml={1} fontSize={2}><b>4.84</b> (190)</Text>
     </Flex>
   </Card>
@@ -177,7 +178,7 @@ export const cryptoKittiesCard: StoryMeta = () => (
         </Text>
       </Flex>
       <Flex alignItems="center" color="muted">
-        <Icon name="FavoriteBorder" size="16px"/>
+        <Icon name="FavoriteBorder" color="inherit" size="16px"/>
         <Text ml={1} fontSize={1} fontWeight="bold">
           2
         </Text>
@@ -185,11 +186,11 @@ export const cryptoKittiesCard: StoryMeta = () => (
     </Flex>
     <hr/>
     <Flex alignItems="center" color="muted">
-      <Icon name="AllInclusive" size="16px"/>
+      <Icon name="AllInclusive" color="inherit" size="16px"/>
       <Text ml={1} fontSize={1}>
         Gen 1
       </Text>
-      <Icon ml={3} name="AccessTime" size="16px"/>
+      <Icon ml={3} name="AccessTime" color="inherit" size="16px"/>
       <Text ml={1} fontSize={1}>
         Fast (1m)
       </Text>

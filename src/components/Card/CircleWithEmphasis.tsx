@@ -1,8 +1,8 @@
 import React from "react";
-import { Icon } from "@rimble/icons";
-import { Box } from "../Box";
-import { Pill } from "../Pill";
-import { AspectRatio } from "../AspectRatio";
+import { Icon } from "..";
+import { Box } from "..";
+import { Pill } from "..";
+import { AspectRatio } from "..";
 
 //TODO: Move to separate component, maybe make special type of Pill?
 export const CircleWithEmphasis: React.FC = () => {

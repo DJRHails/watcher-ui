@@ -1,7 +1,7 @@
 import React from "react";
 import { KindMeta, StoryMeta } from "../../types/storybook";
 
-import { Link } from "../Link";
+import { Link } from "..";
 
 const story: KindMeta<typeof Link> = {
   title: "Components/Link",

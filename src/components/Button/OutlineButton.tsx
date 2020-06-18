@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonProps } from "./BaseButton";
 import styled from "styled-components";
-import css from "@styled-system/css";
+import { css } from "@styled-system/css";
 import { StyledSolidButton } from "./SolidButton";
 
 const StyledOutlineButton = styled(StyledSolidButton)(
@@ -29,7 +29,7 @@ const StyledOutlineButton = styled(StyledSolidButton)(
     "&::before": {
       opacity: 0,
     },
-  })
+  }),
 );
 
 export const OutlineButton: React.FC<ButtonProps> = ({

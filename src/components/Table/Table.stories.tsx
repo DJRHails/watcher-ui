@@ -1,9 +1,9 @@
 import React from "react";
 import { StoryMeta } from "../../types/storybook";
 import { Table } from "./Table";
-import { Heading } from "../Typography";
-import { Box } from "../Box";
-import { Asset } from "../Asset";
+import { Heading } from "..";
+import { Box } from "..";
+import { Asset } from "..";
 
 export default {
   title: "Components/Table",
@@ -46,29 +46,54 @@ export const table: StoryMeta = () => (
 export const assetTable: StoryMeta = () => {
   const assetRows = [
     {
-      asset: "Eth",
+      name: "ETH",
+      icon: "Eth",
+      platform: "Eth",
       balance: 0.3434,
       price: 184.82
     },
     {
-      asset: "Chai",
+      name: "Chai",
+      icon: "chai",
+      platform: "Eth",
       balance: 0.9926,
       price: 0.81
     },
     {
-      asset: "rDAI",
+      name: "Tether",
+      icon: "Tether",
+      platform: "Eth",
       balance: 4.0604,
       price: 0.80
     },
     {
-      asset: "sDEFI",
+      name: "sDEFI",
+      backgroundColor: "brand",
+      iconProps: {
+        color: "white",
+      },
+      platform: "Eth",
       balance: 0.0013,
       price: 1918.67
     },
     {
-      asset: "sUSD",
-      balance: 0.0031,
-      price: 1
+      name: "Maker",
+      icon: "Mkr",
+      platform: "Eth",
+      balance: 0.02,
+      price: 543.2750
+    },
+    {
+      name: "ETH",
+      icon: "Eth",
+      platform: "Algo",
+      platformProps: {
+        name: "Algo",
+        backgroundColor: "white",
+        color: "black",
+      },
+      balance: 0.3434,
+      price: 184.82
     },
   ];
   return (
@@ -79,6 +104,7 @@ export const assetTable: StoryMeta = () => {
         mt={3}
         border={0}
         height={1}
+        fontSize={5}
       >
         <thead>
           <tr>
@@ -92,7 +118,7 @@ export const assetTable: StoryMeta = () => {
           { assetRows.map((assetRow, idx) => (
             <tr key={idx}>
               <td>
-                <Asset name={assetRow.asset} />
+                <Asset {...assetRow} />
               </td>
               <td>{assetRow.balance.toFixed(4)}</td>
               <td>£{assetRow.price.toFixed(2)}</td>

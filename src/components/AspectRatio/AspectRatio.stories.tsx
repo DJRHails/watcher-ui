@@ -1,7 +1,7 @@
 import React from "react";
 import { KindMeta, StoryMeta } from "../../types/storybook";
 
-import { AspectRatio } from "../AspectRatio";
+import { AspectRatio } from "./AspectRatio";
 import { Image } from "../Image";
 import { Box } from "reflexbox";
 

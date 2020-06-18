@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex } from "reflexbox/styled-components";
-import { Text } from "../Typography/Text";
+import { Text } from "../Text";
 import { Box } from "./Box";
 import { StoryMeta } from "../../types/storybook";
 
@@ -24,14 +24,10 @@ export const withResponsive: StoryMeta = () => (
 export const asFlexGrid: StoryMeta = () => (
   <Flex mx={-2}>
     <Box width={1 / 2} px={2}>
-      <Text p={1} color="surface" bg="brand">
-        Half
-      </Text>
+      Half
     </Box>
     <Box width={1 / 2} px={2}>
-      <Text p={1} color="surface" bg="brand">
-        Half
-      </Text>
+      Half
     </Box>
   </Flex>
 );
@@ -45,12 +41,13 @@ export const backgroundImageCard: StoryMeta = () => (
       backgroundSize: "cover",
       borderRadius: "lg",
       color: "white",
-      bg: "gray"
+      bg: "gray",
+      textAlign: "center",
+      fontSize: 6,
     }}
   >
-    <Text textAlign="center" fontSize={6}>
+
       Background Image
-    </Text>
   </Box>
 );
 

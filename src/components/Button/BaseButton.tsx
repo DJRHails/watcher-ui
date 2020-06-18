@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "../Box";
-import css from "@styled-system/css";
+import { css } from "@styled-system/css";
 import { style, layout, space } from "styled-system";
 import styled from "styled-components";
 import { BoxKnownProps } from "../../types/rebass";

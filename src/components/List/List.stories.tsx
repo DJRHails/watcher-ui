@@ -1,6 +1,6 @@
 import React from "react";
 import { KindMeta, StoryMeta } from "../../types/storybook";
-import { List, ListItem, ListIcon } from "../List";
+import { List, ListItem, ListIcon } from "..";
 
 const story: KindMeta<typeof List> = {
   title: "Components/List",

@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import * as CSS from "csstype";
 import { Icon } from "@rimble/icons";
-import { typography, SpaceProps, LayoutProps, TypographyProps, space, layout, ThemeValue } from "styled-system";
+import { typography, SpaceProps, LayoutProps, TypographyProps, space, layout } from "styled-system";
 import { BaseProps } from "../../types/rebass";
-import theme from "../../themes/theme";
 import { getValidChildren } from "../../utils/react";
+import { IconProps } from "..";
 
 interface KnownListProps extends BaseProps, SpaceProps, LayoutProps, TypographyProps {}
 
@@ -13,7 +13,8 @@ export interface ListProps
   extends KnownListProps,
     Omit<React.HTMLProps<HTMLUListElement>, keyof KnownListProps> {
   styleType?: CSS.ListStyleTypeProperty;
-  spacing?: ThemeValue<"space", typeof theme>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  spacing?: any; // TODO: Fix this type
 }
 
 const StyledList = styled.ul<{listStyleType: CSS.ListStyleTypeProperty;}>(
@@ -77,11 +78,15 @@ export const ListItem: React.FC<ListItemProps> = ({
 ListItem.displayName =  "ListItem";
 
 
-const StyledListIcon = styled(Icon)(
+interface ListIconProps extends IconProps {
+  role?: string;
+}
+
+const StyledListIcon = styled(Icon)<ListIconProps>(
   layout,
 );
 
-export const ListIcon: React.FC<typeof Icon> = (props) => (
+export const ListIcon: React.FC<ListIconProps> = (props) => (
   <StyledListIcon
     role="presentation"
     mr={2}

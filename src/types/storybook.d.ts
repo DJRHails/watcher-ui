@@ -14,6 +14,7 @@ export interface KindMeta<
   title: StoryKind;
   component?: Component;
   subcomponents?: Record<string, Component>;
+  decorators?: StoryFnType[]
 }
 
 export interface StoryMeta {

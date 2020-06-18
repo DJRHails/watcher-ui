@@ -50,6 +50,8 @@ export type { AssetProps } from "./Asset";
 export { Icon } from "./Icon";
 export type { IconProps } from "./Icon";
 
+export { Circle } from "./Circle";
+export type { CircleProps } from "./Circle";
 
 export { Text } from "./Text";
 export type { TextProps } from "./Text";

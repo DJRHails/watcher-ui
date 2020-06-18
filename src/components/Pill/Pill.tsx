@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Text, TextProps } from "../Typography";
+import { Text, TextProps } from "../Text";
 import styled from "styled-components";
 import { css } from "@styled-system/css";
 import { borders, BordersProps } from "styled-system";
@@ -10,11 +10,9 @@ Omit<React.HTMLProps<HTMLDivElement>, keyof TextProps> {}
 const StyledPill = styled(Text)(
   borders,
   css({
-    "&": {
-      position: "relative",
-      overflow: "hidden",
-      zIndex: 1,
-    },
+    position: "relative",
+    overflow: "hidden",
+    zIndex: 1,
     "&::after": {
       content: "''",
       display: "block",

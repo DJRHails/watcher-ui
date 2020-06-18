@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import theme from "../../themes/theme";
 
-import { Heading } from "./Headings";
+import { Heading } from "./Heading";
 
 describe("Heading.h1 component sanity", () => {
   it("has name", () => {

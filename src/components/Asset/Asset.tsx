@@ -1,25 +1,64 @@
 import React from "react";
-import { Icon } from "@rimble/icons";
-import { BoxProps } from "../Box";
-import { Text } from "../Typography";
+import { Text } from "../Text";
+import { FlexboxProps, ColorProps } from "styled-system";
+import { Icon } from "../Icon";
+import { Box } from "../Box";
 import { Flex } from "reflexbox/styled-components";
-import { FlexboxProps } from "styled-system";
 
-export interface AssetProps extends FlexboxProps {
-  name: string
+export interface AssetProps extends FlexboxProps, ColorProps {
+  name: string;
+  icon?: string;
+  platform?: string;
+  iconProps?: {color: string};
+  platformProps?: AssetProps;
 } 
 
 export const Asset: React.FC<AssetProps> = ({
   name,
+  icon = name,
+  platform,
+  color,
+  backgroundColor,
+  platformProps,
+  iconProps,
   ...rest
 }: AssetProps) => {
   return (
-    <Flex alignItems="center" {...rest}>
-      <Icon name={name} pr={1}/>
+    <Flex alignItems="center" p={1} {...rest}>
+      { platform
+        ? (
+          <Box sx={{position: "relative"}}>
+            <Icon
+              name={icon}
+              color={iconProps?.color}
+              backgroundColor={backgroundColor}
+            />
+            <Icon
+              backgroundColor={platformProps?.backgroundColor}
+              name={platform}
+              size="1.25em"
+              color={platformProps?.color}
+              sx={{
+                borderRadius: "99999px",
+                borderStyle: "solid",
+                borderColor: "surface",
+                borderWidth: ".15em",
+                position: "absolute",
+                right: "-0.5em",
+                top: "-0.25em",
+                zIndex: 2
+              }}
+              {...platformProps}
+            />
+          </Box>
+        )
+        : <Icon name={icon}/>}
+      
       <Text
-        ml={2}
-        fontWeight="light"
-        textTransform="uppercase"
+        ml={platform ? 3 : 2}
+        color={color}
+        fontWeight="medium"
+        uppercase
       >
         {name}
       </Text>

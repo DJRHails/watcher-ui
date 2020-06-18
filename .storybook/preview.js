@@ -2,19 +2,23 @@ import React from "react";
 import { addParameters, addDecorator } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs } from "@storybook/addon-knobs";
-import Container from "./Container";
+import { App } from "../src/components";
 
 // Add Addon Decorators
 addDecorator(withA11y);
 addDecorator(withKnobs);
 
-addDecorator((story, context) => <Container story={story} context={context} />);
+addDecorator((story) => <App>{story()}</App>);
 
 addParameters({
   options: {
     showRoots: true,
     storySort: (a, b) => {
-      let order = ["Intro", "Components"];
+      let order = [
+        "Intro",
+        ["Welcome", "Colours"],
+        "Components"
+      ];
 
       // Examine each part of the story kind in turn.
       const storyKindA = a[1].kind.split("/");

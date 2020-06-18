@@ -49,3 +49,7 @@ export type { AssetProps } from "./Asset";
 
 export { Icon } from "./Icon";
 export type { IconProps } from "./Icon";
+
+
+export { App } from "./App";
+export type { AppProps } from "./App";

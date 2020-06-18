@@ -170,30 +170,6 @@ export const letterSpacings = {
   widest: "0.1em"
 };
 
-export type TypographyVariants = "heading" | "body" | "button";
-export const typography = {
-  heading: {
-    fontFamily: "body",
-    color: "text",
-    fontWeight: "bold",
-    lineHeight: "none",
-    m: 0,
-    mb: 1,
-  },
-  body: {
-    fontFamily: "body",
-    fontSize: 1,
-  },
-  button: {
-    position: "relative",
-    fontSize: 1,
-    fontWeight: "bold",
-    zIndex: 1,
-    userSelect: "none",
-    pointerEvents: "none",
-  }
-};
-
 const baseCard = {
   p: 3,
   borderRadius: "md",
@@ -234,7 +210,6 @@ export type VariantTypes = "variants" | "cards" | "typography" | "buttons";
 
 // https://theme-ui.com/theme-spec/
 export interface CoreTheme extends Theme {
-  typography: typeof typography;
   cards: typeof cards;
   variants: typeof variants;
 }
@@ -251,7 +226,6 @@ const theme: CoreTheme = {
   sizes,
 
   // TODO: Change Variants to recommended system
-  typography,
   cards,
   variants
 };

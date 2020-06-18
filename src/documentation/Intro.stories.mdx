@@ -1,11 +1,9 @@
-import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Meta } from "@storybook/addon-docs/blocks";
+import { Heading, App } from "../components";
 
 <Meta title="Intro/Welcome" />
 
-# Watcher UI
-
-Here's some _markdown_!
-
-<Preview>
-  <Story id="components-button--emoji"/>
-</Preview>
+<App>
+  <Heading.h5 uppercase color="brand">Intro</Heading.h5>
+  <Heading.h1>Watcher UI</Heading.h1>
+</App>

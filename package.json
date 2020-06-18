@@ -1,6 +1,6 @@
 {
   "name": "watcher-ui",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@rimble/icons": "^1.1.0",

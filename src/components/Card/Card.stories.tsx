@@ -120,8 +120,8 @@ export const airbnbCard: StoryMeta = () => (
     <Flex alignItems="baseline" mt={2}>
       <Badge color="brand">Plus</Badge>
       <Text
+        uppercase
         ml={2}
-        textTransform="uppercase"
         fontSize={1}
         fontWeight="bold"
         color="brand"

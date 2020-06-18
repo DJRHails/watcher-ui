@@ -1,15 +1,12 @@
-import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import { linkTo } from "@storybook/react";
-import { List, ListItem, Link, Heading } from "../../components";
+import { Meta } from "@storybook/addon-docs/blocks";
+import { List, ListItem, Link, Heading, App } from "../../components";
 import { Color } from "./Color";
-import { ThemeProvider } from 'styled-components';
-import theme from '../../themes/theme';
 
 <Meta title="Intro/Colours" />
 
-<ThemeProvider theme={theme}>
+<App>
 
-<Heading.h5 textTransform="uppercase" color="brand">Core</Heading.h5>
+<Heading.h5 uppercase color="brand">Themes</Heading.h5>
 <Heading.h1>Colours</Heading.h1>
 
 <Color color="brand" />
@@ -36,4 +33,4 @@ import theme from '../../themes/theme';
 </div>
 </section>
 
-</ThemeProvider>
+</App>

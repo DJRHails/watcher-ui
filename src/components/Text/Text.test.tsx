@@ -11,14 +11,14 @@ describe("Text component sanity", () => {
   });
 
   it("matches default snapshot", () => {
-    const component = render(<Text>Test</Text>);
+    const component = render(<Text />);
     expect(component).toMatchSnapshot();
   });
 
   it("matches themed snapshot", () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <Text>Some Text</Text>
+        <Text />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

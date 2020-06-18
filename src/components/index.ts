@@ -33,8 +33,8 @@ export type { BoxProps } from "./Box";
 export { Badge } from "./Badge";
 export type { BadgeProps } from "./Badge";
 
-export { Heading, Text } from "./Typography";
-export type { TextProps, HeadingProps } from "./Typography";
+export { Heading } from "./Heading";
+export type { HeadingProps } from "./Heading";
 
 export { Link } from "./Link";
 export type { LinkProps } from "./Link";
@@ -50,6 +50,9 @@ export type { AssetProps } from "./Asset";
 export { Icon } from "./Icon";
 export type { IconProps } from "./Icon";
 
+
+export { Text } from "./Text";
+export type { TextProps } from "./Text";
 
 export { App } from "./App";
 export type { AppProps } from "./App";

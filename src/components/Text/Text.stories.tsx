@@ -1,19 +1,20 @@
 import React from "react";
-import { Text } from "./Text";
-import { StoryMeta, KindMeta } from "../../types/storybook";
+import { KindMeta, StoryMeta } from "../../types/storybook";
 import { withKnobs, select, text } from "@storybook/addon-knobs";
-import theme from "../../themes/theme";
-import { Theme } from "styled-system";
 
-export default {
-  title: "Components/Typography/Text",
+import { Text } from "./Text";
+import { Theme } from "styled-system";
+import theme from "../../themes/theme";
+
+const story: KindMeta<typeof Text> = {
+  title: "Components/Text",
   component: Text,
   decorators: [withKnobs]
-} as KindMeta<typeof Text>;
+};
 
 const themeKeys = (key: keyof Theme) => Object.keys(theme[key] || {});
 
-export const standard: StoryMeta = () => {
+export const editable: StoryMeta = () => {
   const txt=text("Text", "A QUICK BROWN FOX JUMPS OVER THE LAZY DOG while the five boxing wizards jump quickly.");
   const font=select("Font Family", themeKeys("fonts"), "body");
   const fontSize=select("Font Size", themeKeys("fontSizes"), undefined);
@@ -77,3 +78,4 @@ export const letterSpacing: StoryMeta = () => (
     <Text letterSpacing='widest'>widest</Text>
   </>
 );
+export default story;

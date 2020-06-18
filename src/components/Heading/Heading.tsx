@@ -1,11 +1,9 @@
 import React from "react";
-import { Text, TextProps } from "./Text";
-import { TypographyVariants } from "../../themes/theme";
+import { Text, TextProps } from "../Text";
 
 export interface HeadingProps
   extends TextProps,
     Omit<React.HTMLProps<HTMLHeadingElement>, keyof TextProps> {
-  variant?: TypographyVariants;
 }
 
 const TextHeading: React.FC<HeadingProps> = (props) => <Text variant="heading" {...props} />;
@@ -33,9 +31,10 @@ h2.displayName = "Heading.h2";
 
 const h3: React.FC<HeadingProps> = (props) => (
   <TextHeading
-    fontSize={4}
-    mt={2}
     as="h3"
+    fontSize={4}
+    mt={3}
+    mb={2}
     {...props}
   />
 );

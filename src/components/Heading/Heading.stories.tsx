@@ -1,9 +1,9 @@
 import React from "react";
-import { Heading } from "./Headings";
+import { Heading } from "./Heading";
 import { StoryMeta } from "../../types/storybook";
 
 export default {
-  title: "Components/Typography/Heading",
+  title: "Components/Heading",
   component: Heading
 };
 

@@ -36,13 +36,19 @@ export const StyledSolidButton = styled(BaseButton)(
       backgroundColor: "var(--button-color)",
       pointerEvents: "none",
     },
-  })
+  }),
 );
 
 export const SolidButton: React.FC<ButtonProps> = ({
   buttonColor = "brand",
   textColor = "white",
+  size = "md",
   ...props
 }: ButtonProps) => (
-  <StyledSolidButton buttonColor={buttonColor} textColor={textColor} {...props} />
+  <StyledSolidButton
+    buttonColor={buttonColor}
+    textColor={textColor}
+    buttonSize={size}
+    {...props}
+  />
 );

@@ -16,11 +16,15 @@ export const Text: StoryMeta = () => (
 );
 
 export const fullSize: StoryMeta = () => (
-  <Button size="full">Hello Button</Button>
+  <Button width="full">Hello Button</Button>
 );
 
-export const bigger: StoryMeta = () => (
-  <Button fontSize={5}>Hello Button</Button>
+export const sizes: StoryMeta = () => (
+  <>
+    <Button size="sm">Hello Button</Button>
+    <Button size="md">Hello Button</Button>
+    <Button size="lg">Hello Button</Button>
+  </>
 );
 
 export const Emoji: StoryMeta = () => (

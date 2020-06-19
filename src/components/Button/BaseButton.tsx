@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "../Box";
-import { style, layout, space } from "styled-system";
+import { style, layout, space, variant } from "styled-system";
 import styled from "styled-components";
 import { css } from "@styled-system/css";
 import { BoxKnownProps } from "../../types/rebass";
@@ -35,8 +35,6 @@ const baseButtonStyle = css({
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    py: 3,
-    px: 4,
     border: "none",
     borderRadius: "md",
   },
@@ -54,9 +52,26 @@ const baseButtonStyle = css({
 
 
 export const BaseButton = styled(Box)(
+  baseButtonStyle,
   buttonColorStyle,
   textColorStyle,
-  layout,
   space,
-  baseButtonStyle,
+  layout,
+  variant({
+    prop: "buttonSize",
+    variants: {
+      sm: {
+        py: 2,
+        px: 3,
+      },
+      md: {
+        py: 3,
+        px: 4,
+      },
+      lg: {
+        py: 4,
+        px: 5,
+      }
+    }
+  }),
 );

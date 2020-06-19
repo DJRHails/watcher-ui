@@ -35,7 +35,13 @@ const StyledOutlineButton = styled(StyledSolidButton)(
 export const OutlineButton: React.FC<ButtonProps> = ({
   buttonColor = "brand",
   textColor,
+  size = "md",
   ...props
 }: ButtonProps) => (
-  <StyledOutlineButton buttonColor={buttonColor} textColor={textColor ? textColor : buttonColor} {...props} />
+  <StyledOutlineButton
+    buttonColor={buttonColor}
+    textColor={textColor ? textColor : buttonColor}
+    buttonSize={size}
+    {...props}
+  />
 );

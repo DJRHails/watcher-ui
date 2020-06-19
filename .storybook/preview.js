@@ -17,7 +17,8 @@ addParameters({
       let order = [
         "Intro",
         ["Welcome", "Colours"],
-        "Components"
+        "Components",
+        "Recipies"
       ];
 
       // Examine each part of the story kind in turn.

@@ -1,8 +1,8 @@
 import React from "react";
 import { Box } from "../Box";
-import { css } from "@styled-system/css";
 import { style, layout, space } from "styled-system";
 import styled from "styled-components";
+import { css } from "@styled-system/css";
 import { BoxKnownProps } from "../../types/rebass";
 
 export interface ButtonProps extends BoxKnownProps, Omit<React.HTMLProps<HTMLImageElement>, keyof BoxKnownProps> {

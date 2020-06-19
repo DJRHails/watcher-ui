@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonProps, BaseButton } from "./BaseButton";
 import styled from "styled-components";
-import css from "@styled-system/css";
+import { css } from "@styled-system/css";
 
 export const StyledSolidButton = styled(BaseButton)(
   css({

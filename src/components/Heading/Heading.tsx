@@ -33,8 +33,8 @@ const h3: React.FC<HeadingProps> = (props) => (
   <TextHeading
     as="h3"
     fontSize={4}
-    mt={3}
-    mb={2}
+    mt={4}
+    mb={3}
     {...props}
   />
 );

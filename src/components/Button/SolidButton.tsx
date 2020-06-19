@@ -9,10 +9,12 @@ export const StyledSolidButton = styled(BaseButton)(
       color: "var(--text-color)",
       backgroundColor: "white",
       zIndex: 0,
-      transition: "all 150ms ease",
+      transition: "all 300ms ease",
+      margin: 2,
     },
     "&:hover": {
       boxShadow: "md",
+      transform: "translateY(-.15rem)",
     },
     "&:hover::before": {
       opacity: 0.9,

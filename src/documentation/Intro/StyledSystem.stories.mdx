@@ -280,12 +280,24 @@ const Component = styled.div(
 ```ts
 import { variant } from "styled-system"
 
-interface ComponentProps extends ShadowProps {}
-
 const Component = styled.div(
   variant({
-    button: {
-      fontSize: 4,
+    variants: {
+      primary: {
+        color: 'white',
+        bg: 'primary',
+      },
+    }
+  }),
+)
+
+const Component2 = styled.div(
+  variant({
+    prop: 'size',
+    variants: {
+      lg: {
+        fontSize: 3,
+      },
     }
   }),
 )

@@ -20,16 +20,13 @@ export const shadows = {
 
 export const colors = {
   text: "#3f3d4b",
-  surface: "#ffffff",
-  brand: "#0A6EB4",
-  interactive: "#0b77c2",
-  interactiveHover: "#085387",
-  interactiveText: "#ffffff",
+  background: "#ffffff",
+  brand: "#0A6EB4", // primary
   accent: "#f7b825",
+  muted: "#cccccc",
+  gray: "#82817d",
   success: "#22543d",
   danger: "#dc3545",
-  gray: "#82817d",
-  muted: "#cccccc",
   badge: {
     brand: "#d7efff",
     danger: "#f5c6cb",
@@ -173,7 +170,7 @@ export const letterSpacings = {
 const baseCard = {
   p: 3,
   borderRadius: "md",
-  bg: "surface",
+  bg: "background",
 };
 
 export type CardVariants = "outline" | "default";

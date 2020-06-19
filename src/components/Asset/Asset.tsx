@@ -41,7 +41,7 @@ export const Asset: React.FC<AssetProps> = ({
               sx={{
                 borderRadius: "99999px",
                 borderStyle: "solid",
-                borderColor: "surface",
+                borderColor: "background",
                 borderWidth: ".15em",
                 position: "absolute",
                 right: "-0.5em",

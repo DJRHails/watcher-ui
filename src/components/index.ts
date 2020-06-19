@@ -21,8 +21,8 @@ export type { PillProps } from "./Pill";
 export { Image } from "./Image";
 export type { ImageProps } from "./Image";
 
-export { Card } from "./Card";
-export type { CardProps } from "./Card";
+export { Card, OpinionCard, TokenCard } from "./Card";
+export type { CardProps, OpinionCardProps, TokenCardProps } from "./Card";
 
 export { Button } from "./Button";
 export type { ButtonProps } from "./Button";

@@ -1,12 +1,11 @@
 import React from "react";
-import { StoryMeta } from "../../types/storybook";
+import { StoryMeta } from "../../../types/storybook";
 import { Flex } from "reflexbox/styled-components";
 import { TokenCard } from "./TokenCard";
 import { text, number, withKnobs } from "@storybook/addon-knobs";
-import { IconNames } from "@rimble/icons";
 
 export default {
-  title: "Components/TokenCard",
+  title: "Components/Card/TokenCard",
   component: TokenCard,
   decorators: [withKnobs],
 };
@@ -15,7 +14,7 @@ export default {
 export const tokenCard: StoryMeta = () => (
   <TokenCard
     p={4}
-    name={text("Token Code", "Eth") as IconNames}
+    name={text("Token Code", "Eth")}
     quantity={number("Quantity", 1.5)}
     value={number("Value", 1.5)} />
 );

@@ -9,7 +9,6 @@ import { Heading } from "..";
 import { Flex } from "reflexbox/styled-components";
 import { Badge } from "..";
 import { Button } from "..";
-import { CircleWithEmphasis } from "./CircleWithEmphasis";
 import { Icon } from "..";
 
 export default {
@@ -48,35 +47,6 @@ export const namedCard: StoryMeta = () => (
       <Button variant="outline" width={[1, "auto", "auto"]} mt={[2, 0, 0]}>
         Cancel
       </Button>
-    </Card>
-  </Flex>
-);
-
-export const doCard: StoryMeta = () => (
-  <Flex
-    width="full"
-    minHeight="calc(100vh - 16px)"
-    bg="rgba(0, 0, 0, 0.02)"
-    alignItems="center"
-  >
-    <Card
-      width="auto"
-      maxWidth="md"
-      mx="auto"
-      borderTop="4px solid"
-      borderTopColor="green"
-    >
-      <Flex alignItems="center" mb={4}>
-        <CircleWithEmphasis/>   
-        <Heading.h5 ml={3}>Do</Heading.h5> 
-      </Flex>
-
-      <Text fontSize={1} as="p" mb={2}>
-        Use specific language throughout. If the transaction is actually transfering a crypto asset, refer to that. Or if your users are casting a vote on the blockchain, reference the vote. This will spare users having to make connections in their head. 
-      </Text>
-      <Text fontSize={1} as="p">
-      Echo the language you&apos;d use in the button to initiate the transaction e.g. Send Cryptokitty or Cast vote.
-      </Text>
     </Card>
   </Flex>
 );

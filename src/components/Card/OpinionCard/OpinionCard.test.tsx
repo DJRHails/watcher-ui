@@ -1,24 +1,24 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
-import theme from "../../themes/theme";
+import theme from "../../../themes/theme";
 
-import { TokenCard } from "./TokenCard";
+import { OpinionCard } from "./OpinionCard";
 
-describe("TokenCard component sanity", () => {
+describe("Opinon Card component sanity", () => {
   it("has name", () => {
-    expect(TokenCard.displayName).toBe("TokenCard");
+    expect(OpinionCard.displayName).toBe("OpinionCard");
   });
 
   it("matches default snapshot", () => {
-    const component = render(<TokenCard name="Eth" value={20} quantity={2}/>);
+    const component = render(<OpinionCard />);
     expect(component).toMatchSnapshot();
   });
 
   it("matches themed snapshot", () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <TokenCard name="Mkr" value={20} quantity={2}/>
+        <OpinionCard />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon, IconNames } from "@rimble/icons";
-import { Card, CardProps } from "./Card";
-import { Text } from "..";
+import { Card, CardProps } from "../Card";
+import { Text } from "../..";
 import { Flex } from "reflexbox/styled-components";
 
 export interface TokenCardProps 

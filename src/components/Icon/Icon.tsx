@@ -26,9 +26,12 @@ const IconInner: React.FC<IconInnerProps> = ({
 }: IconInnerProps) => {
   const [valid, setValid] = React.useState<boolean>(true);
 
-  if (cryptoIcons.includes(name)) {
-    return <RimbleIcon name={name as RimbleIconProps["name"]} size={size} color={color} />;
+  const rimble = <RimbleIcon name={name as RimbleIconProps["name"]} size={size} color={textColor} />;
+
+  if (rimble) {
+    return rimble;
   }
+
   if (valid) {
     return (
       <Image

@@ -58,3 +58,6 @@ export type { TextProps } from "./Text";
 
 export { App } from "./App";
 export type { AppProps } from "./App";
+
+export { Grid } from "./Grid";
+export type { GridProps } from "./Grid";

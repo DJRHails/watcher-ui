@@ -8,18 +8,13 @@ import { Main } from "../src/components";
 addDecorator(withA11y);
 addDecorator(withKnobs);
 
-addDecorator((story) => <Main>{story()}</Main>);
+addDecorator(story => <Main>{story()}</Main>);
 
 addParameters({
   options: {
     showRoots: true,
     storySort: (a, b) => {
-      let order = [
-        "Intro",
-        ["Welcome", "Colours"],
-        "Components",
-        "Recipies"
-      ];
+      let order = ["Intro", ["Welcome", "Colours"], "Components", "Recipies"];
 
       // Examine each part of the story kind in turn.
       const storyKindA = a[1].kind.split("/");

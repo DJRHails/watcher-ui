@@ -2,7 +2,7 @@ import React from "react";
 import { KindMeta, StoryMeta } from "../../types/storybook";
 
 import { Circle } from "./Circle";
-import { Text } from "..";
+import { Text, Box } from "..";
 
 const story: KindMeta<typeof Circle> = {
   title: "Components/Circle",
@@ -31,17 +31,18 @@ export const double: StoryMeta = () => (
     width={16}
     backgroundColor="badge.success"
   >
-    <Circle
-      width={12}
-      borderRadius="full"
-      borderColor="success"
-      borderWidth={2}
-      borderStyle="solid"
-      backgroundColor="white"
-      color="success"
-    >
-      <Text fontWeight="bold">A</Text>
-    </Circle>
+    <Box>
+      <Circle
+        width={12}
+        borderColor="success"
+        borderWidth={2}
+        borderStyle="solid"
+        backgroundColor="white"
+        color="success"
+      >
+        <Text fontWeight="bold">A</Text>
+      </Circle>
+    </Box>
   </Circle>
 );
 

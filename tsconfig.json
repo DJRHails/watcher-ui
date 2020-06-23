@@ -22,14 +22,14 @@
       "/components/*": ["src/components/*"],
       "/types": ["src/types"],
       "/types/*": ["src/types/*"],
+      "/utils": ["src/utils"],
+      "/utils/*": ["src/utils/*"],
       "/themes": ["src/themes"],
       "/themes/*": ["src/themes/*"]
     }
   },
   "include": ["./src/*", "./src/**/*"],
   "exclude": [
-    "./src/**/**.test.tsx",
-    "./src/**/**.stories.tsx",
     "node_modules",
     "dist"
   ]

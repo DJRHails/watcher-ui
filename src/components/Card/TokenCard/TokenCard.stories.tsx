@@ -1,5 +1,5 @@
 import React from "react";
-import { StoryMeta } from "..//types/storybook";
+import { StoryMeta } from "/types/storybook";
 import { TokenCard } from "./TokenCard";
 import { text, number, withKnobs } from "@storybook/addon-knobs";
 import { Flex } from "../..";

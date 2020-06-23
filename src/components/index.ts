@@ -69,3 +69,18 @@ export type { FlexProps } from "./Flex";
 
 export { Identicon, Jazzicon } from "./Identicon";
 export type { IdenticonProps, JazziconProps } from "./Identicon";
+
+export { Container } from "./Container";
+export type { ContainerProps } from "./Container";
+
+export { Spacer } from "./Spacer";
+export type { SpacerProps } from "./Spacer";
+
+export { StickyFooter } from "./StickyFooter";
+export type { StickyFooterProps } from "./StickyFooter";
+
+export { Stack, StackDivider } from "./Stack";
+export type { StackProps, StackDividerProps } from "./Stack";
+
+export { Skeleton, SkeletonText } from "./Skeleton";
+export type { SkeletonProps, SkeletonTextProps } from "./Skeleton";

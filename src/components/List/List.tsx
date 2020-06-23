@@ -20,8 +20,6 @@ const StyledList = styled.ul<{listStyleType: CSS.ListStyleTypeProperty;}>(
   (props) => `list-style-type: ${props.listStyleType};`,
   {
     listStylePosition: "inside",
-    padding: 0, // TODO: Move to CSSReset
-    margin: 0,
   },
   space,
   layout,

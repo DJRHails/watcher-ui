@@ -1,6 +1,6 @@
 import React from "react";
-import { Heading, Box, Text, Flex } from "../../../components";
-import theme from "../../../themes/theme";
+import { Heading, Box, Text, Flex } from "/components";
+import theme from "/themes/theme";
 
 export interface ColorProps {
   color: keyof typeof theme["colors"];

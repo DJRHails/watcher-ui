@@ -8,7 +8,10 @@ export interface MainProps extends BoxProps {
 } 
 
 export const Main: React.FC<MainProps> = ({
-  sx = {fontFamily: "body"},
+  sx = {
+    fontFamily: "body",
+    height: "full"
+  },
   ...rest
 }: MainProps) => {
   return (

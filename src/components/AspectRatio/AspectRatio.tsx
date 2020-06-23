@@ -22,7 +22,7 @@ export const AspectRatio: React.FC<AspectRatioProps> = ({
   return (
     <Box
       maxWidth={maxWidth}
-      css={{
+      sx={{
         "&": {
           position: "relative",
         },

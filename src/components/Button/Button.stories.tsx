@@ -10,10 +10,6 @@ export default {
   component: Button,
 };
 
-export const Text: StoryMeta = () => (
-  <Button onClick={action("clicked")}>Hello Button</Button>
-);
-
 export const fullSize: StoryMeta = () => (
   <Button width="full">Hello Button</Button>
 );

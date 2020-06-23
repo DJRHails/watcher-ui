@@ -20,7 +20,7 @@ const StyledCircle = styled(Box)<CircleProps>(
     },
     "& > *": {
       overflow: "hidden",
-      position: "absolute !important",
+      position: "absolute !important" as "absolute",
       top: "0",
       left: "0",
       display: "flex",

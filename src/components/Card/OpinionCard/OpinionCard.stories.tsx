@@ -1,8 +1,8 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "..//types/storybook";
+import { KindMeta, StoryMeta } from "/types/storybook";
 
 import { OpinionCard } from "./OpinionCard";
-import { Text, Flex } from "../..";
+import { Text, Flex } from "/components";
 
 const story: KindMeta<typeof OpinionCard> = {
   title: "Components/Card/OpinionCard",
@@ -13,7 +13,7 @@ export const doCard: StoryMeta = () => (
   <Flex
     width="full"
     minHeight="calc(100vh - 16px)"
-    bg="rgba(0, 0, 0, 0.02)"
+    bg="surface"
     alignItems="center"
   >
     <OpinionCard>
@@ -31,7 +31,7 @@ export const dontCard: StoryMeta = () => (
   <Flex
     width="full"
     minHeight="calc(100vh - 16px)"
-    bg="rgba(0, 0, 0, 0.02)"
+    bg="surface"
     alignItems="center"
   >
     <OpinionCard variant="dont">

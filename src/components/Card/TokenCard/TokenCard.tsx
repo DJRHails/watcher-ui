@@ -14,9 +14,9 @@ export const TokenCard: React.FC<TokenCardProps> = ({ name, quantity, value, ...
   const upper = Math.floor(quantity);
   const lower = (quantity % 1).toFixed(4).substring(2);
   return (
-    <Card maxWidth="10rem" {...props}>
+    <Card minWidth="10rem" {...props}>
       <Flex alignItems="center">
-        <Icon name={name} size="25%"/>
+        <Icon name={name} size="2rem"/>
         <Text
           ml={2}
           color="gray"

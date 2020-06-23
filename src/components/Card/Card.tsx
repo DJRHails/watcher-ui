@@ -1,22 +1,15 @@
 import React, { FC } from "react";
 import { Box, BoxProps } from "../Box";
-import { CardVariants } from "../../themes/theme";
 import styled from "styled-components";
-import { boxShadow, border, BoxShadowProps, BordersProps, variant, padding } from "styled-system";
-import { css } from "@styled-system/css";
+import { boxShadow, border, background, compose, BoxShadowProps, BordersProps, variant, padding } from "styled-system";
 
 export interface CardProps
   extends BoxProps, BoxShadowProps, BordersProps,
     Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
-    variant?: CardVariants
+    variant?: "outline" | "default"
   }
 
-const CardBox = styled(Box)(
-  css({
-    p: 3,
-    borderRadius: "md",
-    bg: "background",
-  }),
+const CardBox = styled(Box)<CardProps>(
   variant({
     variants: {
       outline: {
@@ -25,12 +18,16 @@ const CardBox = styled(Box)(
       },
       default: {
         boxShadow: "md",
+        overflow: "hidden",
       }
     }
   }),
-  padding,
-  boxShadow,
-  border
+  compose(
+    background,
+    padding,
+    boxShadow,
+    border,
+  ),
 );
 
 export const Card: FC<CardProps> = ({
@@ -39,6 +36,9 @@ export const Card: FC<CardProps> = ({
   ...props
 }: CardProps) => (
   <CardBox
+    p={3}
+    borderRadius="md"
+    bg="background"
     variant={variant}
     {...props}
   >

@@ -8,7 +8,8 @@
       "alias": {
         "/components": "./src/components",
         "/themes": "./src/themes",
-        "/types": "./src/types"
+        "/types": "./src/types",
+        "/utils": "./src/utils"
       }
     }]
   ]

@@ -15,6 +15,9 @@ export const CssReset = createGlobalStyle`
   body {
     margin: 0;
   }
+  html, body, #root {
+    height: 100%;
+  }
   main {
     display: block;
   }

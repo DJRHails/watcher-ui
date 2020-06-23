@@ -1,0 +1,33 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { Heading, Main, Flex, Box } from "/components";
+
+<Meta title="Recipies/Dashboard" />
+
+<Main>
+
+<Flex>
+  <Box sx={{
+    minWidth: "64",
+    backgroundColor: "brand",
+    color: "background",
+    boxShadow: "xl",
+    height: "screenHeight"
+  }}>
+    <Flex justify="space-between" p={3}>
+      <Heading.h1 fontWeight="medium" fontSize={3} p={0}>
+        Watcher
+      </Heading.h1>
+      <Icon name="menu" size="2rem"/>
+    </Flex>
+  </Box>
+  <Box role="main" backgroundColor="#f4f7fa" sx={{
+    width: "full",
+    minHeight: "screenHeight"
+  }}>
+    <Box px={5} py={3}>
+      <Heading.h1>Page</Heading.h1>
+    </Box>
+  </Box>
+</Flex>
+
+</Main>

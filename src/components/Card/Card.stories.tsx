@@ -1,84 +1,82 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-import { StoryMeta } from "/types/storybook";
+import { StoryMeta, StoryFnType } from "/types/storybook";
 import { Card } from "./Card";
 import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from "/components";
 
+const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
+  width="full"
+  height="screenHeight"
+  bg="surface"
+  alignItems="center"
+>
+  {context?.()}
+</Flex>;
+
 export default {
   title: "Components/Card",
-  component: Card
+  component: Card,
+  decorators: [
+    withCenterComponent
+  ]
 };
 
 export const namedCard: StoryMeta = () => (
-  <Flex
-    width="full"
-    height="calc(100vh - 16px)"
-    bg="rgba(0, 0, 0, 0.02)"
-    alignItems="center"
+  <Card
+    width="auto"
+    maxWidth="md"
+    mx="auto"
+    px={[4, 4, 5]}
   >
-    <Card
-      width="auto"
-      maxWidth="md"
-      mx="auto"
-      px={[4, 4, 5]}
-    >
-      <Heading.h3>Heading</Heading.h3>
+    <Heading.h3>Heading</Heading.h3>
 
-      <Box>
-        <Text mb={4}>
+    <Box>
+      <Text mb={4}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem
           ratione doloribus quidem neque provident eius error dignissimos delectus
           architecto nemo quos alias sunt voluptate impedit, facilis sequi tempore.
           Amet!
-        </Text>
-      </Box>
+      </Text>
+    </Box>
 
-      <Button width={[1, "auto", "auto"]} mr={3}>
+    <Button width={[1, "auto", "auto"]} mr={3}>
         Accept
-      </Button>
+    </Button>
 
-      <Button variant="outline" width={[1, "auto", "auto"]} mt={[2, 0, 0]}>
+    <Button variant="outline" width={[1, "auto", "auto"]} mt={[2, 0, 0]}>
         Cancel
-      </Button>
-    </Card>
-  </Flex>
+    </Button>
+  </Card>
 );
 
 export const imageCardWithSub: StoryMeta = () => (
-  <Flex
-    width="full"
-    height="calc(100vh - 16px)"
-    bg="rgba(0, 0, 0, 0.02)"
-    alignItems="center"
-  >
-    <Card width="auto" maxWidth="md" mx="auto" my={5} p={0}>
-      <Image
-        width="full"
-        src="https://source.unsplash.com/random/1280x720"
-        alt="random image from unsplash.com"
-      />
+  <Card width="auto" maxWidth="md" mx="auto" my={5} p={0}>
+    <Image
+      width="full"
+      src="https://source.unsplash.com/random/1280x720"
+      alt="random image from unsplash.com"
+    />
 
-      <Box px={[3, 3, 4]} py={3}>
-        <Heading.h4>Card title</Heading.h4>
-        <Heading.h5 color="#666">Card sub-title</Heading.h5>
-      </Box>
-      <hr/>
-      <Flex px={[3, 3, 4]} py={3}>
-        <Button variant="text" p="0" mr={[2, 3, 4]} height="auto">
+    <Box px={[3, 3, 4]} py={3}>
+      <Heading.h4>Card title</Heading.h4>
+      <Heading.h5 color="#666">Card sub-title</Heading.h5>
+    </Box>
+    <hr/>
+    <Flex px={[3, 3, 4]} py={3}>
+      <Button variant="text" p="0" mr={[2, 3, 4]} height="auto">
       Text Button
-        </Button>
+      </Button>
 
-        <Button variant="text" p="0" height="auto">
+      <Button variant="text" p="0" height="auto">
       Text Button
-        </Button>
-      </Flex>
-    </Card>
-  </Flex>
+      </Button>
+    </Flex>
+  </Card>
 );
 
 
 export const airbnbCard: StoryMeta = () => (
-  <Card variant="outline" maxWidth='20rem' m={3}>
+  <Card variant="outline" mx="auto" maxWidth="20rem">
     <Image src="https://bit.ly/2k1H1t6" sx={{borderRadius: 1}}/>
     <Flex alignItems="baseline" mt={2}>
       <Badge color="brand">Plus</Badge>
@@ -105,9 +103,10 @@ export const airbnbCard: StoryMeta = () => (
 
 export const cryptoKittiesCard: StoryMeta = () => (
   <Card
-    maxWidth='20em'
-    boxShadow='none'
-    m={3}
+    maxWidth="20em"
+    boxShadow="none"
+    bg="transparent"
+    mx="auto"
   >
     <Box bg="#e5f3e2" sx={{
       borderRadius: "lg",

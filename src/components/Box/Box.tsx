@@ -1,4 +1,4 @@
-import { flexbox, compose, space, layout, typography, color, SpaceProps, LayoutProps, FontSizeProps, ColorProps, FlexboxProps, styleFn } from "styled-system";
+import { flexbox, compose, space, layout, typography, color, border, BorderProps, SpaceProps, LayoutProps, FontSizeProps, ColorProps, FlexboxProps, styleFn } from "styled-system";
 import styled, { CSSObject, DefaultTheme } from "styled-components";
 import css, { get, SystemStyleObject, ResponsiveStyleValue } from "@styled-system/css";
 
@@ -7,7 +7,7 @@ export interface BaseProps extends React.RefAttributes<any> {
   as?: React.ElementType;
   css?:
     | CSSObject
-    | styleFn //TODO: Too permissive
+    | styleFn
     | string;
 }
 
@@ -24,28 +24,34 @@ export type SxStyleProp =
         >
     >;
 
+export interface ThemeProps {
+  theme?: DefaultTheme;
+}
+
 export interface SxProps {
-  /**
-   * The sx prop lets you style elements inline, using values from your theme.
-   */
   sx?: SxStyleProp;
+}
+
+export interface VariantProps {
+  variant?: string;
 }
 
 export interface BoxProps
   extends BaseProps,
+    ThemeProps,
     SpaceProps,
     LayoutProps,
     FontSizeProps,
     ColorProps,
     FlexboxProps,
-    SxProps {
-  variant?: string;
-  theme?: DefaultTheme;
-}
+    BorderProps,
+    SxProps,
+    VariantProps {}
 
-const sx = ({sx, theme}: BoxProps) => css(sx)(theme);
+// eslint-disable-next-line
+export const sx = ({sx, theme}: ThemeProps & SxProps)  => css(sx)(theme);
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const variant = ({theme, variant}: BoxProps) => css(get(theme!, variant!, {}))(theme);
+const variant = ({theme, variant}: ThemeProps & VariantProps) => css(get(theme!, variant!, {}))(theme);
 export const Box = styled.div<BoxProps>(
   {
     boxSizing: "border-box",
@@ -61,6 +67,7 @@ export const Box = styled.div<BoxProps>(
     typography,
     color,
     flexbox,
+    border,
   )
 );
 Box.displayName = "Box";

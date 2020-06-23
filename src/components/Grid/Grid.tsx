@@ -32,9 +32,13 @@ export const Grid: React.FC<GridProps> = ({
   minChildWidth,
   ...rest
 }: GridProps) => {
+  if (!columns && !minChildWidth) {
+    throw Error("Invalid use of Grid, must have column or minChildWidth defined");
+  }
   const templateColumns = minChildWidth
     ? widthToColumns(minChildWidth)
-    : countToColumns(columns);
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    : countToColumns(columns!);
 
   return (
     <StyledGrid

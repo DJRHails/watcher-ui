@@ -11,14 +11,14 @@ describe("Asset component sanity", () => {
   });
 
   it("matches default snapshot", () => {
-    const component = render(<Asset name="Eth" />);
+    const component = render(<Asset name="Ethereum" ticker="ETH" />);
     expect(component).toMatchSnapshot();
   });
 
   it("matches themed snapshot", () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <Asset name="Eth" />
+        <Asset name="Ethereum" ticker="ETH" />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

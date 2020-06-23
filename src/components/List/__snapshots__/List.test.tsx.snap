@@ -5,15 +5,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        List
-      </div>
+      <ul
+        class="sc-fznZeY frrhZx"
+      />
     </div>
   </body>,
   "container": <div>
-    <div>
-      List
-    </div>
+    <ul
+      class="sc-fznZeY frrhZx"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -74,15 +74,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        List
-      </div>
+      <ul
+        class="sc-fznZeY frrhZx"
+      />
     </div>
   </body>,
   "container": <div>
-    <div>
-      List
-    </div>
+    <ul
+      class="sc-fznZeY frrhZx"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

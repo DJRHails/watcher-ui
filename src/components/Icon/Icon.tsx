@@ -3,17 +3,18 @@ import { isWatcherIcon, WatcherIcon, WatcherIconProps } from "watcher-icons";
 import { Image, Circle, Text } from "..";
 import { Box, BoxProps } from "../Box";
 import styled from "styled-components";
-import { color, ColorProps } from "styled-system";
+import { color, ColorProps, LayoutProps, layout } from "styled-system";
 import _ from "lodash";
 import { PropsOf } from "../../types/utils";
 
-export interface IconInnerProps extends Omit<WatcherIconProps, "name"> {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+interface IconInnerKnownProps {
+  name: string;
   color?: ColorProps["color"]; 
   backgroundColor?: ColorProps["backgroundColor"];
-  size?: string;
-  name: string;
+  size?: LayoutProps["size"];
 }
+
+interface IconInnerProps extends IconInnerKnownProps, Omit<WatcherIconProps, keyof IconInnerKnownProps> {}
 
 export interface IconProps extends BoxProps {
   name: string;
@@ -21,6 +22,7 @@ export interface IconProps extends BoxProps {
 
 const StyledWatcherIcon = styled(WatcherIcon)(
   color,
+  layout,
 );
 
 export const ETHERSCAN_NAMESPACE = "ethscn.";
@@ -96,7 +98,7 @@ export const Icon: React.FC<IconProps> = ({
     >
       <IconInner
         name={name}
-        size={size}
+        size={size === null ? undefined : size}
         backgroundColor={backgroundColor}
         color={color}
       />

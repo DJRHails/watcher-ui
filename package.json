@@ -10,11 +10,14 @@
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5"
   },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prepare": "tsc",
     "generate": "plop --plopfile src/generators/plobfile.ts",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -s public",
@@ -44,24 +47,23 @@
     ]
   },
   "devDependencies": {
-    "typescript": "3.8",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
     "@storybook/storybook-deployer": "^2.8.6",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
     "@types/lodash": "^4.14.155",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
     "@types/reflexbox": "^4.0.1",
     "@types/styled-components": "^5.1.0",
     "@types/styled-system": "^5.1.9",
@@ -73,6 +75,8 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
     "plop": "^2.7.1",
-    "ts-node": "^8.10.2"
+    "ts-jest": "^26.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "3.8"
   }
 }

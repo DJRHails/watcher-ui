@@ -1,6 +1,6 @@
 // Ref: https://chakra-ui.com/aspectratiobox
 
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { Box, BoxProps } from "../Box";
 
 export interface AspectRatioProps extends BoxProps {
@@ -16,7 +16,7 @@ export const AspectRatio: React.FC<AspectRatioProps> = ({
   maxWidth="sm",
   children,
   ...rest
-}: AspectRatioProps) => {
+}: PropsWithChildren<AspectRatioProps>) => {
   const child = React.Children.only(children);
 
   return (

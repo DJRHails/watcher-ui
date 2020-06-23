@@ -8,7 +8,7 @@ import { Box } from "..";
 
 describe("Aspect Ratio component sanity", () => {
   it("has name", () => {
-    expect(AspectRatio.displayName).toBe("Aspect Ratio");
+    expect(AspectRatio.displayName).toBe("AspectRatio");
   });
 
   it("matches default snapshot", () => {

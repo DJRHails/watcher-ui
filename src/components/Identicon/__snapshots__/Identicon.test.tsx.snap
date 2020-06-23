@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Aspect Ratio component sanity matches a square snapshot 1`] = `
+exports[`Identicon component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm gbhXvu"
+        class="sc-AxiKw eUlrEP"
       >
-        <div
-          class="sc-AxjAm hnaoUs"
+        <i
+          role="jazzicon"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm gbhXvu"
+      class="sc-AxiKw eUlrEP"
     >
-      <div
-        class="sc-AxjAm hnaoUs"
+      <i
+        role="jazzicon"
       />
     </div>
   </div>,
@@ -77,103 +77,26 @@ Object {
 }
 `;
 
-exports[`Aspect Ratio component sanity matches default snapshot 1`] = `
+exports[`Identicon component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm lkRfGj"
+        class="sc-AxiKw eUlrEP"
       >
-        <div
-          class="sc-AxjAm jBcORs"
+        <i
+          role="jazzicon"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm lkRfGj"
+      class="sc-AxiKw eUlrEP"
     >
-      <div
-        class="sc-AxjAm jBcORs"
-      />
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`Aspect Ratio component sanity matches themed snapshot 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="sc-AxjAm cnHcMJ"
-      >
-        <div
-          class="sc-AxjAm hnaoUs"
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-AxjAm cnHcMJ"
-    >
-      <div
-        class="sc-AxjAm hnaoUs"
+      <i
+        role="jazzicon"
       />
     </div>
   </div>,

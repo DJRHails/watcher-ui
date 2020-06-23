@@ -11,14 +11,14 @@ describe("Grid component sanity", () => {
   });
 
   it("matches default snapshot", () => {
-    const component = render(<Grid />);
+    const component = render(<Grid columns={2}/>);
     expect(component).toMatchSnapshot();
   });
 
   it("matches themed snapshot", () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <Grid />
+        <Grid columns={2}/>
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

@@ -1,12 +1,11 @@
 import React from "react";
-import { Icon, IconNames } from "@rimble/icons";
 import { Card, CardProps } from "../Card";
-import { Text, Flex } from "../..";
+import { Text, Flex, Icon, IconProps } from "../..";
 
 export interface TokenCardProps 
   extends CardProps,
   Omit<React.HTMLProps<HTMLDivElement>, keyof CardProps> {
-  name: IconNames;
+  name: IconProps["name"];
   quantity: number;
   value: number;
 }
@@ -43,4 +42,4 @@ export const TokenCard: React.FC<TokenCardProps> = ({ name, quantity, value, ...
     </Card>
   );
 };
-TokenCard.displayName="Token Card";
+TokenCard.displayName="TokenCard";

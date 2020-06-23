@@ -20,7 +20,7 @@ export const isEmpty = (value: any) => {
   return false;
 };
 
-export const isObject = (value: any): value is Dict<any> => {
+export const isObject = (value: any): value is Record<string, any> => {
   const type = typeof value;
   return (
     value != null &&

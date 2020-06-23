@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Opinon Card component sanity matches default snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-AxjAm sc-AxirZ gXCTpz"
+        width="auto"
+      >
+        <div
+          class="sc-AxjAm sc-fzokOt kJQoPj"
+        >
+          <div
+            class="sc-AxjAm hieOLQ"
+            width="12"
+          >
+            <div
+              class="sc-AxjAm ddqKMY"
+            >
+              <div
+                class="sc-AxjAm sc-AxgMl dFxmIG sc-AxheI hxkhvK"
+                color="green"
+                display="inline-flex"
+                font-size="1"
+                font-weight="medium"
+                height="full"
+                width="full"
+              >
+                <div
+                  class="sc-AxjAm sc-AxgMl foHnIq sc-AxheI bkurbm"
+                  color="white"
+                  display="inline-flex"
+                  font-size="1"
+                  font-weight="medium"
+                  height="full"
+                  width="full"
+                >
+                  <div
+                    class="sc-AxjAm loNsnU"
+                  >
+                    <svg
+                      class="sc-fznyAO bgVttU"
+                      color="success"
+                      fill="currentColor"
+                      height="1.25rem"
+                      viewBox="0 0 24 24"
+                      width="1.25rem"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5
+            class="sc-AxjAm sc-AxgMl eEHWox"
+            font-size="2"
+          >
+            Do
+          </h5>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxjAm sc-AxirZ gXCTpz"
+      width="auto"
+    >
+      <div
+        class="sc-AxjAm sc-fzokOt kJQoPj"
+      >
+        <div
+          class="sc-AxjAm hieOLQ"
+          width="12"
+        >
+          <div
+            class="sc-AxjAm ddqKMY"
+          >
+            <div
+              class="sc-AxjAm sc-AxgMl dFxmIG sc-AxheI hxkhvK"
+              color="green"
+              display="inline-flex"
+              font-size="1"
+              font-weight="medium"
+              height="full"
+              width="full"
+            >
+              <div
+                class="sc-AxjAm sc-AxgMl foHnIq sc-AxheI bkurbm"
+                color="white"
+                display="inline-flex"
+                font-size="1"
+                font-weight="medium"
+                height="full"
+                width="full"
+              >
+                <div
+                  class="sc-AxjAm loNsnU"
+                >
+                  <svg
+                    class="sc-fznyAO bgVttU"
+                    color="success"
+                    fill="currentColor"
+                    height="1.25rem"
+                    viewBox="0 0 24 24"
+                    width="1.25rem"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5
+          class="sc-AxjAm sc-AxgMl eEHWox"
+          font-size="2"
+        >
+          Do
+        </h5>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Opinon Card component sanity matches themed snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-AxjAm sc-AxirZ ehelVt"
+        width="auto"
+      >
+        <div
+          class="sc-AxjAm sc-fzokOt ljHOaC"
+        >
+          <div
+            class="sc-AxjAm kXMkWS"
+            width="12"
+          >
+            <div
+              class="sc-AxjAm gbhXvu"
+            >
+              <div
+                class="sc-AxjAm sc-AxgMl bhNpxm sc-AxheI dbFoaJ"
+                color="green"
+                display="inline-flex"
+                font-size="1"
+                font-weight="medium"
+                height="full"
+                width="full"
+              >
+                <div
+                  class="sc-AxjAm sc-AxgMl bcBFQW sc-AxheI eWhjjz"
+                  color="white"
+                  display="inline-flex"
+                  font-size="1"
+                  font-weight="medium"
+                  height="full"
+                  width="full"
+                >
+                  <div
+                    class="sc-AxjAm loNsnU"
+                  >
+                    <svg
+                      class="sc-fznyAO jaTTwe"
+                      color="success"
+                      fill="currentColor"
+                      height="1.25rem"
+                      viewBox="0 0 24 24"
+                      width="1.25rem"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5
+            class="sc-AxjAm sc-AxgMl ojKkJ"
+            font-size="2"
+          >
+            Do
+          </h5>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxjAm sc-AxirZ ehelVt"
+      width="auto"
+    >
+      <div
+        class="sc-AxjAm sc-fzokOt ljHOaC"
+      >
+        <div
+          class="sc-AxjAm kXMkWS"
+          width="12"
+        >
+          <div
+            class="sc-AxjAm gbhXvu"
+          >
+            <div
+              class="sc-AxjAm sc-AxgMl bhNpxm sc-AxheI dbFoaJ"
+              color="green"
+              display="inline-flex"
+              font-size="1"
+              font-weight="medium"
+              height="full"
+              width="full"
+            >
+              <div
+                class="sc-AxjAm sc-AxgMl bcBFQW sc-AxheI eWhjjz"
+                color="white"
+                display="inline-flex"
+                font-size="1"
+                font-weight="medium"
+                height="full"
+                width="full"
+              >
+                <div
+                  class="sc-AxjAm loNsnU"
+                >
+                  <svg
+                    class="sc-fznyAO jaTTwe"
+                    color="success"
+                    fill="currentColor"
+                    height="1.25rem"
+                    viewBox="0 0 24 24"
+                    width="1.25rem"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5
+          class="sc-AxjAm sc-AxgMl ojKkJ"
+          font-size="2"
+        >
+          Do
+        </h5>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

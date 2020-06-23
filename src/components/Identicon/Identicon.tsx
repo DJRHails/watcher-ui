@@ -44,3 +44,4 @@ export const Identicon: React.FC<IdenticonProps> = ({
     </Box>
   );
 };
+Identicon.displayName="Identicon";

@@ -6,20 +6,20 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-AxiKw sc-AxhCb inuCSU"
+        class="sc-AxiKw sc-fznyAO sc-fznKkj ZWlvo"
       >
         <div
-          class="sc-AxjAm bgAmkT"
+          class="sc-AxiKw sc-AxhUy etrpdM"
         />
       </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="sc-AxiKw sc-AxhCb inuCSU"
+      class="sc-AxiKw sc-fznyAO sc-fznKkj ZWlvo"
     >
       <div
-        class="sc-AxjAm bgAmkT"
+        class="sc-AxiKw sc-AxhUy etrpdM"
       />
     </button>
   </div>,
@@ -83,20 +83,20 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-AxiKw sc-AxhCb jsnlka"
+        class="sc-AxiKw sc-fznyAO sc-fznKkj bmilKL"
       >
         <div
-          class="sc-AxjAm iYKrfq"
+          class="sc-AxiKw sc-AxhUy gUnwwU"
         />
       </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="sc-AxiKw sc-AxhCb jsnlka"
+      class="sc-AxiKw sc-fznyAO sc-fznKkj bmilKL"
     >
       <div
-        class="sc-AxjAm iYKrfq"
+        class="sc-AxiKw sc-AxhUy gUnwwU"
       />
     </button>
   </div>,
@@ -160,20 +160,20 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-AxiKw sc-AxhCb sc-AxhUy lfkOB"
+        class="sc-AxiKw sc-fznyAO sc-fznKkj sc-fznZeY gaiYGv"
       >
         <div
-          class="sc-AxjAm bgAmkT"
+          class="sc-AxiKw sc-AxhUy etrpdM"
         />
       </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="sc-AxiKw sc-AxhCb sc-AxhUy lfkOB"
+      class="sc-AxiKw sc-fznyAO sc-fznKkj sc-fznZeY gaiYGv"
     >
       <div
-        class="sc-AxjAm bgAmkT"
+        class="sc-AxiKw sc-AxhUy etrpdM"
       />
     </button>
   </div>,
@@ -237,20 +237,20 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-AxiKw sc-AxhCb sc-AxhUy jXtNch"
+        class="sc-AxiKw sc-fznyAO sc-fznKkj sc-fznZeY jFYhhu"
       >
         <div
-          class="sc-AxjAm iYKrfq"
+          class="sc-AxiKw sc-AxhUy gUnwwU"
         />
       </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="sc-AxiKw sc-AxhCb sc-AxhUy jXtNch"
+      class="sc-AxiKw sc-fznyAO sc-fznKkj sc-fznZeY jFYhhu"
     >
       <div
-        class="sc-AxjAm iYKrfq"
+        class="sc-AxiKw sc-AxhUy gUnwwU"
       />
     </button>
   </div>,
@@ -314,20 +314,20 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-AxiKw sc-AxgMl ctjhrR"
+        class="sc-AxiKw sc-fznyAO sc-fzokOt hyPXww"
       >
         <div
-          class="sc-AxjAm bgAmkT"
+          class="sc-AxiKw sc-AxhUy etrpdM"
         />
       </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="sc-AxiKw sc-AxgMl ctjhrR"
+      class="sc-AxiKw sc-fznyAO sc-fzokOt hyPXww"
     >
       <div
-        class="sc-AxjAm bgAmkT"
+        class="sc-AxiKw sc-AxhUy etrpdM"
       />
     </button>
   </div>,
@@ -391,20 +391,20 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-AxiKw sc-AxgMl kvjYzl"
+        class="sc-AxiKw sc-fznyAO sc-fzokOt bduUYM"
       >
         <div
-          class="sc-AxjAm iYKrfq"
+          class="sc-AxiKw sc-AxhUy gUnwwU"
         />
       </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="sc-AxiKw sc-AxgMl kvjYzl"
+      class="sc-AxiKw sc-fznyAO sc-fzokOt bduUYM"
     >
       <div
-        class="sc-AxjAm iYKrfq"
+        class="sc-AxiKw sc-AxhUy gUnwwU"
       />
     </button>
   </div>,
@@ -468,13 +468,13 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-AxiKw sc-AxhCb sc-AxhUy lfkOB"
+        class="sc-AxiKw sc-fznyAO sc-fznKkj sc-fznZeY gaiYGv"
         href="#!"
         target="_blank"
         title="Learn more"
       >
         <div
-          class="sc-AxjAm bgAmkT"
+          class="sc-AxiKw sc-AxhUy etrpdM"
         >
           Learn More
         </div>
@@ -483,13 +483,13 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-AxiKw sc-AxhCb sc-AxhUy lfkOB"
+      class="sc-AxiKw sc-fznyAO sc-fznKkj sc-fznZeY gaiYGv"
       href="#!"
       target="_blank"
       title="Learn more"
     >
       <div
-        class="sc-AxjAm bgAmkT"
+        class="sc-AxiKw sc-AxhUy etrpdM"
       >
         Learn More
       </div>

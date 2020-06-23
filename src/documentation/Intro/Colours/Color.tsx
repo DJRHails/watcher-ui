@@ -25,7 +25,7 @@ export const Color: React.FC<ColorProps> = ({ color, withValue }: ColorProps) =>
           />
           <Flex direction="column" alignSelf="center">
             <Text>{color}</Text>
-            <Text fontSize=".8em" fontWeight="light">{theme.colors[color]}</Text>
+            <Text fontSize=".8em" fontWeight="light">{theme.colors?.[color] || "undefined"}</Text>
           </Flex>
         </Flex>
       </Heading.h4>

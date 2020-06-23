@@ -2,7 +2,7 @@
 
 import { isArray, isObject } from "./assertions";
 
-export const objectKeys = <T extends Dict<any>>(obj: T) =>
+export const objectKeys = <T extends Record<string, unknown>>(obj: T) =>
   (Object.keys(obj) as unknown) as (keyof T)[];
 
 export function mapResponsive(prop: any, mapper: (val: any) => any) {
@@ -11,7 +11,7 @@ export function mapResponsive(prop: any, mapper: (val: any) => any) {
   }
 
   if (isObject(prop)) {
-    return objectKeys(prop).reduce((result: Dict, key) => {
+    return objectKeys(prop).reduce((result: Record<string, unknown>, key) => {
       result[key] = mapper(prop[key]);
       return result;
     }, {});

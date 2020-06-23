@@ -4,6 +4,7 @@ import { Table } from "./Table";
 import { Heading } from "..";
 import { Box } from "..";
 import { Asset } from "..";
+import { ETHERSCAN_NAMESPACE } from "../Icon/Icon";
 
 export default {
   title: "Components/Table",
@@ -46,7 +47,8 @@ export const table: StoryMeta = () => (
 export const assetTable: StoryMeta = () => {
   const assetRows = [
     {
-      name: "Eth",
+      name: "Ethereum",
+      ticker: "Eth",
       platform: {
         name: "Eth",
       },
@@ -55,8 +57,9 @@ export const assetTable: StoryMeta = () => {
     },
     {
       name: "Chai",
+      ticker: "CHAI",
       icon: {
-        name: "chai",
+        name: ETHERSCAN_NAMESPACE + "chai",
       },
       platform: {
         name: "Eth",
@@ -66,9 +69,7 @@ export const assetTable: StoryMeta = () => {
     },
     {
       name: "Tether",
-      icon: {
-        name: "USDT",
-      },
+      ticker: "USDT",
       platform: {
         name: "Eth",
       },
@@ -77,7 +78,9 @@ export const assetTable: StoryMeta = () => {
     },
     {
       name: "sDEFI",
+      ticker: "sD",
       icon: {
+        name: "sD",
         color: "background",
         backgroundColor: "brand",
       },
@@ -89,9 +92,7 @@ export const assetTable: StoryMeta = () => {
     },
     {
       name: "Maker",
-      icon: {
-        name: "Mkr"
-      },
+      ticker: "MKR",
       platform: {
         name: "Eth"
       },
@@ -99,7 +100,8 @@ export const assetTable: StoryMeta = () => {
       price: 543.2750
     },
     {
-      name: "Eth",
+      name: "Ethereum",
+      ticker: "ETH",
       platform: {
         name: "Algo",
         backgroundColor: "black",
@@ -107,7 +109,7 @@ export const assetTable: StoryMeta = () => {
       balance: 0.3434,
       price: 184.82
     },
-  ];
+  ] as const;
   return (
     <Box p={3}>
       <Heading.h4>Wallet £69.95</Heading.h4>

@@ -1,21 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Heading.h1 component sanity matches default snapshot 1`] = `
+exports[`Jazzicon component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h1
-        class="sc-AxjAm geKAkD"
-        font-size="7"
-      />
+      <div
+        class="sc-AxiKw eUlrEP"
+      >
+        <svg />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <h1
-      class="sc-AxjAm geKAkD"
-      font-size="7"
-    />
+    <div
+      class="sc-AxiKw eUlrEP"
+    >
+      <svg />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -71,22 +73,24 @@ Object {
 }
 `;
 
-exports[`Heading.h1 component sanity matches themed snapshot 1`] = `
+exports[`Jazzicon component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h1
-        class="sc-AxjAm iOtZxZ"
-        font-size="7"
-      />
+      <div
+        class="sc-AxiKw eUlrEP"
+      >
+        <svg />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <h1
-      class="sc-AxjAm iOtZxZ"
-      font-size="7"
-    />
+    <div
+      class="sc-AxiKw eUlrEP"
+    >
+      <svg />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

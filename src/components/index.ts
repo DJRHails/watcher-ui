@@ -65,3 +65,5 @@ export type { GridProps } from "./Grid";
 export { Flex } from "./Flex";
 export type { FlexProps } from "./Flex";
 
+export { Identicon, Jazzicon } from "./Identicon";
+export type { IdenticonProps, JazziconProps } from "./Identicon";

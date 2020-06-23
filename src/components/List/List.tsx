@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import * as CSS from "csstype";
-import { Icon } from "@rimble/icons";
 import { typography, SpaceProps, LayoutProps, TypographyProps, space, layout } from "styled-system";
 import { BaseProps } from "../../types/rebass";
 import { getValidChildren } from "../../utils/react";
-import { IconProps } from "..";
+import { IconProps, Icon } from "..";
 
 interface KnownListProps extends BaseProps, SpaceProps, LayoutProps, TypographyProps {}
 
@@ -14,7 +13,7 @@ export interface ListProps
     Omit<React.HTMLProps<HTMLUListElement>, keyof KnownListProps> {
   styleType?: CSS.ListStyleTypeProperty;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  spacing?: any; // TODO: Fix this type
+  spacing?: SpaceProps["marginBottom"];
 }
 
 const StyledList = styled.ul<{listStyleType: CSS.ListStyleTypeProperty;}>(
@@ -82,15 +81,11 @@ interface ListIconProps extends IconProps {
   role?: string;
 }
 
-const StyledListIcon = styled(Icon)<ListIconProps>(
-  layout,
-);
-
 export const ListIcon: React.FC<ListIconProps> = (props) => (
-  <StyledListIcon
+  <Icon
+    display="inline-block"
     role="presentation"
     mr={2}
-    display="inline"
     size="1em"
     verticalAlign="text-bottom"
     {...props}

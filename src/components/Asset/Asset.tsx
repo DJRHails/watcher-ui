@@ -1,67 +1,58 @@
 import React from "react";
 import { Text } from "../Text";
 import { FlexboxProps, ColorProps } from "styled-system";
-import { Icon } from "../Icon";
-import { Box } from "../Box";
-import { Flex } from "reflexbox/styled-components";
+import { Icon, Flex, Box } from "..";
+import _ from "lodash";
+import { WithPlatform } from "./WithPlatform";
+import { IconProps } from "../Icon";
 
 export interface AssetProps extends FlexboxProps, ColorProps {
   name: string;
-  icon?: string;
-  platform?: string;
-  iconProps?: {color: string};
-  platformProps?: AssetProps;
-} 
+  ticker: string;
+  full?: true;
+  icon?: IconProps;
+  platform?: IconProps;
+}
 
 export const Asset: React.FC<AssetProps> = ({
   name,
-  icon = name,
-  platform,
+  ticker,
   color,
-  backgroundColor,
-  platformProps,
-  iconProps,
+  platform,
+  icon,
+  full,
   ...rest
 }: AssetProps) => {
+  const iconSize = full ? "2.5em" : "2em";
+  const assetIcon = <Icon {..._.merge({ name: ticker }, icon)}/>;
   return (
-    <Flex alignItems="center" p={1} {...rest}>
-      { platform
-        ? (
-          <Box sx={{position: "relative"}}>
-            <Icon
-              name={icon}
-              color={iconProps?.color}
-              backgroundColor={backgroundColor}
-            />
-            <Icon
-              backgroundColor={platformProps?.backgroundColor}
-              name={platform}
-              size="1.25em"
-              color={platformProps?.color}
-              sx={{
-                borderRadius: "99999px",
-                borderStyle: "solid",
-                borderColor: "background",
-                borderWidth: ".15em",
-                position: "absolute",
-                right: "-0.5em",
-                top: "-0.25em",
-                zIndex: 2
-              }}
-              {...platformProps}
-            />
-          </Box>
-        )
-        : <Icon name={icon}/>}
-      
-      <Text
-        ml={platform ? 3 : 2}
-        color={color}
-        fontWeight="medium"
-        uppercase
+    <Flex p={1} {...rest}>
+      <Box fontSize={iconSize}>
+        {platform ? 
+          <WithPlatform {...platform}>
+            {assetIcon}
+          </WithPlatform>
+          : assetIcon
+        }
+      </Box>
+      <Flex
+        direction="column"
+        ml={2}
       >
-        {name}
-      </Text>
+        <Text
+          color={color}
+          fontWeight="medium"
+        >
+          {name}
+        </Text>
+        {full && <Text
+          color={color}
+          fontWeight="light"
+          uppercase
+        >
+          {ticker}
+        </Text>}
+      </Flex>
     </Flex>
   );
 };

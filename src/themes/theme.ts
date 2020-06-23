@@ -48,7 +48,6 @@ export const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem"];
 const tailwindSpacing = {
   px: "1px",
   "0": "0",
-  "1": "0.25rem",
   "2": "0.5rem",
   "3": "0.75rem",
   "4": "1rem",
@@ -81,6 +80,7 @@ const tailwindMaxWidth = {
 };
 
 const tailwindWidth = {
+  "1": "100%",
   "1/2": "50%",
   "1/3": "33.333333%",
   "2/3": "66.666667%",

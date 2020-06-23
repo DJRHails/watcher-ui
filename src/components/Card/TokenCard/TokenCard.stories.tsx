@@ -1,8 +1,9 @@
 import React from "react";
 import { StoryMeta } from "../../../types/storybook";
-import { Flex } from "reflexbox/styled-components";
 import { TokenCard } from "./TokenCard";
 import { text, number, withKnobs } from "@storybook/addon-knobs";
+import { Flex } from "../..";
+import { TokenIconName } from "watcher-icons";
 
 export default {
   title: "Components/Card/TokenCard",
@@ -14,7 +15,7 @@ export default {
 export const tokenCard: StoryMeta = () => (
   <TokenCard
     p={4}
-    name={text("Token Code", "Eth")}
+    name={text("Token Code", "Eth") as TokenIconName}
     quantity={number("Quantity", 1.5)}
     value={number("Value", 1.5)} />
 );

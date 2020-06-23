@@ -1,7 +1,6 @@
 import React from "react";
-import { Heading, Box, Text } from "../../../components";
+import { Heading, Box, Text, Flex } from "../../../components";
 import theme from "../../../themes/theme";
-import { Flex } from "reflexbox/styled-components";
 
 export interface ColorProps {
   color: keyof typeof theme["colors"];
@@ -24,7 +23,7 @@ export const Color: React.FC<ColorProps> = ({ color, withValue }: ColorProps) =>
               boxShadow: "md",
             }}
           />
-          <Flex flexDirection="column" alignSelf="center">
+          <Flex direction="column" alignSelf="center">
             <Text>{color}</Text>
             <Text fontSize=".8em" fontWeight="light">{theme.colors[color]}</Text>
           </Flex>

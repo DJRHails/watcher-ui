@@ -2,14 +2,7 @@ import React from "react";
 
 import { StoryMeta } from "../../types/storybook";
 import { Card } from "./Card";
-import { Box } from "..";
-import { Image } from "..";
-import { Text } from "..";
-import { Heading } from "..";
-import { Flex } from "reflexbox/styled-components";
-import { Badge } from "..";
-import { Button } from "..";
-import { Icon } from "..";
+import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from "..";
 
 export default {
   title: "Components/Card",
@@ -70,7 +63,7 @@ export const imageCardWithSub: StoryMeta = () => (
         <Heading.h5 color="#666">Card sub-title</Heading.h5>
       </Box>
       <hr/>
-      <Flex px={[3, 3, 4]} pb={3}>
+      <Flex px={[3, 3, 4]} py={3}>
         <Button variant="text" p="0" mr={[2, 3, 4]} height="auto">
       Text Button
         </Button>
@@ -85,7 +78,7 @@ export const imageCardWithSub: StoryMeta = () => (
 
 
 export const airbnbCard: StoryMeta = () => (
-  <Card variant="outline" maxWidth='20em' p={3}>
+  <Card variant="outline" maxWidth='20rem' m={3}>
     <Image src="https://bit.ly/2k1H1t6" sx={{borderRadius: 1}}/>
     <Flex alignItems="baseline" mt={2}>
       <Badge color="brand">Plus</Badge>
@@ -114,6 +107,7 @@ export const cryptoKittiesCard: StoryMeta = () => (
   <Card
     maxWidth='20em'
     boxShadow='none'
+    m={3}
   >
     <Box bg="#e5f3e2" sx={{
       borderRadius: "lg",

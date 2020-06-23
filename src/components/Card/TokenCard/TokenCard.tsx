@@ -1,8 +1,7 @@
 import React from "react";
 import { Icon, IconNames } from "@rimble/icons";
 import { Card, CardProps } from "../Card";
-import { Text } from "../..";
-import { Flex } from "reflexbox/styled-components";
+import { Text, Flex } from "../..";
 
 export interface TokenCardProps 
   extends CardProps,
@@ -16,7 +15,7 @@ export const TokenCard: React.FC<TokenCardProps> = ({ name, quantity, value, ...
   const upper = Math.floor(quantity);
   const lower = (quantity % 1).toFixed(4).substring(2);
   return (
-    <Card maxWidth='10em' {...props}>
+    <Card maxWidth="10rem" {...props}>
       <Flex alignItems="center">
         <Icon name={name} size="25%"/>
         <Text

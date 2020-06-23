@@ -3,8 +3,7 @@ import { action } from "@storybook/addon-actions";
 import React from "react";
 import { Button } from "./Button";
 import { StoryMeta } from "../../types/storybook";
-import { Flex } from "reflexbox/styled-components";
-import { Badge } from "..";
+import { Badge, Flex } from "..";
 
 export default {
   title: "Components/Button",
@@ -56,6 +55,12 @@ export const pinkOutline: StoryMeta = () => (
 export const notifications: StoryMeta = () => (
   <Button>
     Notifications <Badge ml={1}>4</Badge>
+  </Button>
+);
+
+export const text: StoryMeta = () => (
+  <Button variant="text">
+    Text Button
   </Button>
 );
 

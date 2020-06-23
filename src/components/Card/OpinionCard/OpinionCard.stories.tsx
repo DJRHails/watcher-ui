@@ -2,8 +2,7 @@ import React from "react";
 import { KindMeta, StoryMeta } from "../../../types/storybook";
 
 import { OpinionCard } from "./OpinionCard";
-import { Text } from "../..";
-import { Flex } from "reflexbox/styled-components";
+import { Text, Flex } from "../..";
 
 const story: KindMeta<typeof OpinionCard> = {
   title: "Components/Card/OpinionCard",

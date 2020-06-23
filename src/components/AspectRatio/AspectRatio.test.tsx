@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "../../themes/theme";
 
 import { AspectRatio } from "./AspectRatio";
-import { Box } from "reflexbox";
+import { Box } from "..";
 
 describe("Aspect Ratio component sanity", () => {
   it("has name", () => {

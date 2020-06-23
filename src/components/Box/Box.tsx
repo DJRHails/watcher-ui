@@ -1,21 +1,39 @@
-import React from "react";
-import * as Reflex from "reflexbox/styled-components";
-import { BoxKnownProps } from "../../types/rebass";
+import { flexbox, compose, space, layout, typography, color, SpaceProps, LayoutProps, FontSizeProps, ColorProps, FlexboxProps } from "styled-system";
+import styled from "styled-components";
+import css, { get } from "@styled-system/css";
+import { BaseProps, SxProps } from "../../types/rebass";
 
 
 export interface BoxProps
-  extends BoxKnownProps,
-  Omit<React.HTMLProps<HTMLDivElement>, keyof BoxKnownProps> {
+  extends BaseProps,
+    SpaceProps,
+    LayoutProps,
+    FontSizeProps,
+    ColorProps,
+    FlexboxProps,
+    SxProps {
   variant?: string;
-  tx?: string;
+  theme?: any;
 }
 
-export const Box: React.FC<BoxProps> = React.forwardRef((props, ref) => (
-  <Reflex.Box
-    // eslint-disable-next-line react/prop-types,@typescript-eslint/no-explicit-any
-    color={props.color as any} // https://github.com/rebassjs/rebass/issues/921
-    ref={ref}
-    {...props}
-  />
-));
+const sx = ({sx, theme}: BoxProps) => css(sx)(theme);
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const variant = ({theme, variant}: BoxProps) => css(get(theme, variant!, {}))(theme);
+export const Box = styled.div<BoxProps>(
+  {
+    boxSizing: "border-box",
+    margin: 0,
+    minWidth: 0,
+  },
+  variant,
+  sx,
+  props => props.css,
+  compose(
+    space,
+    layout,
+    typography,
+    color,
+    flexbox,
+  )
+);
 Box.displayName = "Box";

@@ -1,7 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import { Card, CardProps } from "../Card";
-import { Flex, Box } from "reflexbox/styled-components";
-import { Heading, Pill, AspectRatio, Icon } from "../..";
+import { Heading, Pill, AspectRatio, Icon, Flex, Box } from "../..";
 
 export type OpinionVariants = "do" | "dont";
 

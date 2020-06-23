@@ -3,7 +3,7 @@ import { KindMeta, StoryMeta } from "../../types/storybook";
 
 import { AspectRatio } from "./AspectRatio";
 import { Image } from "../Image";
-import { Box } from "reflexbox";
+import { Box } from "..";
 
 const story: KindMeta<typeof AspectRatio> = {
   title: "Components/AspectRatio",

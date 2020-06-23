@@ -3,22 +3,12 @@
   "version": "0.3.0",
   "private": true,
   "dependencies": {
-    "@rimble/icons": "^1.1.0",
-    "@storybook/addon-knobs": "^5.3.19",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
     "jazzicon": "^1.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.1",
-    "styled-system": "^5.1.5",
-    "typescript": "3.8"
+    "styled-system": "^5.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -54,6 +44,15 @@
     ]
   },
   "devDependencies": {
+    "typescript": "3.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",

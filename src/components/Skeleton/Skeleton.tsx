@@ -87,3 +87,4 @@ export const SkeletonCircle = React.forwardRef(({
 }: SkeletonProps, ref) => (
   <Skeleton ref={ref} borderRadius="full" size={size} {...rest}/>
 ));
+SkeletonCircle.displayName="SkeletonCircle";

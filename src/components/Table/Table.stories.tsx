@@ -46,51 +46,63 @@ export const table: StoryMeta = () => (
 export const assetTable: StoryMeta = () => {
   const assetRows = [
     {
-      name: "ETH",
-      icon: "Eth",
-      platform: "Eth",
+      name: "Eth",
+      platform: {
+        name: "Eth",
+      },
       balance: 0.3434,
       price: 184.82
     },
     {
       name: "Chai",
-      icon: "chai",
-      platform: "Eth",
+      icon: {
+        name: "chai",
+      },
+      platform: {
+        name: "Eth",
+      },
       balance: 0.9926,
       price: 0.81
     },
     {
       name: "Tether",
-      icon: "Tether",
-      platform: "Eth",
+      icon: {
+        name: "USDT",
+      },
+      platform: {
+        name: "Eth",
+      },
       balance: 4.0604,
       price: 0.80
     },
     {
       name: "sDEFI",
-      backgroundColor: "brand",
-      iconProps: {
-        color: "white",
+      icon: {
+        color: "background",
+        backgroundColor: "brand",
       },
-      platform: "Eth",
+      platform: {
+        name: "Eth",
+      },
       balance: 0.0013,
       price: 1918.67
     },
     {
       name: "Maker",
-      icon: "Mkr",
-      platform: "Eth",
+      icon: {
+        name: "Mkr"
+      },
+      platform: {
+        name: "Eth"
+      },
       balance: 0.02,
       price: 543.2750
     },
     {
-      name: "ETH",
-      icon: "Eth",
-      platform: "Algo",
-      platformProps: {
+      name: "Eth",
+      platform: {
         name: "Algo",
-        backgroundColor: "white",
-        color: "black",
+        backgroundColor: "black",
       },
       balance: 0.3434,
       price: 184.82

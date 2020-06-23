@@ -1,24 +1,20 @@
-import React, { PropsWithChildren } from "react";
-import { SxStyleProp } from "../../types/rebass";
+import React, { ReactNode } from "react";
 import theme from "../../themes/theme";
 import { ThemeProvider } from "styled-components";
-import { CssReset, Box } from "..";
+import { CssReset, Box, BoxProps } from "..";
 
-export interface MainProps {
-  sx?: SxStyleProp;
+export interface MainProps extends BoxProps {
+  children?: ReactNode
 } 
 
 export const Main: React.FC<MainProps> = ({
   sx = {fontFamily: "body"},
-  children
-}: PropsWithChildren<MainProps>) => {
+  ...rest
+}: MainProps) => {
   return (
     <ThemeProvider theme={theme}>
       <CssReset/>
-      <Box role="main" sx={sx}>
-        {children}
-      </Box>
+      <Box role="main" sx={sx} {...rest}/>
     </ThemeProvider>
   );
 };
-Main.displayName="Main";

@@ -1,12 +1,11 @@
 import React from "react";
-import { Box } from "../Box"; // TODO: This cannot be ".." for some unknown reason
+import { BoxProps, Box } from "../Box"; // TODO: This cannot be ".." for some unknown reason
 import styled from "styled-components";
-import { TypographyProps, typography, ColorProps, color, variant, SpaceProps, space } from "styled-system";
-import { BaseProps } from "../../types/rebass";
+import { TypographyProps, typography, ColorProps, color, variant, SpaceProps, space } from "styled-system";;
 
 export type TextVariants = "heading" | "body" | "button";
 
-export interface TextProps extends BaseProps, TypographyProps, ColorProps, SpaceProps {
+export interface TextProps extends BoxProps, TypographyProps, ColorProps, SpaceProps {
   uppercase?: true;
   variant?: TextVariants;
 } 

@@ -1,15 +1,15 @@
 import React from "react";
-import { Box } from "../Box";
+import { Box, BoxProps } from "..";
 import { style, layout, space, variant } from "styled-system";
 import styled from "styled-components";
 import { css } from "@styled-system/css";
-import { BoxKnownProps } from "../../types/rebass";
 
-export interface ButtonProps extends BoxKnownProps, Omit<React.HTMLProps<HTMLImageElement>, keyof BoxKnownProps> {
+export interface ButtonProps extends BoxProps, Omit<React.HTMLProps<HTMLImageElement>, keyof BoxProps> {
   onClick?: VoidFunction;
   variant?: "solid" | "outline" | "text";
   buttonColor?: string;
   textColor?: string;
+  buttonSize?: "md" | "sm" | "lg";
 }
 
 const buttonColorStyle = style({
@@ -51,7 +51,7 @@ const baseButtonStyle = css({
 });
 
 
-export const BaseButton = styled(Box)(
+export const BaseButton = styled(Box)<ButtonProps>(
   baseButtonStyle,
   buttonColorStyle,
   textColorStyle,

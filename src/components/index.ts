@@ -30,6 +30,8 @@ export type { ButtonProps } from "./Button";
 export { Box } from "./Box";
 export type { BoxProps } from "./Box";
 
+export type { BaseProps, SxProps } from "./Box";
+
 export { Badge } from "./Badge";
 export type { BadgeProps } from "./Badge";
 

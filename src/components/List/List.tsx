@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import * as CSS from "csstype";
 import { typography, SpaceProps, LayoutProps, TypographyProps, space, layout } from "styled-system";
-import { BaseProps } from "../../types/rebass";
 import { getValidChildren } from "../../utils/react";
-import { IconProps, Icon } from "..";
+import { IconProps, Icon, BaseProps } from "..";
 
+//TODO: Add SXProps support here
 interface KnownListProps extends BaseProps, SpaceProps, LayoutProps, TypographyProps {}
 
 export interface ListProps

@@ -17,7 +17,6 @@ const StyledText = styled(Box)<TextProps>(
     variants: {
       heading: {
         fontFamily: "body",
-        color: "text",
         fontWeight: "bold",
         lineHeight: "none",
         m: 0,

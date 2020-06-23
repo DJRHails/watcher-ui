@@ -1,15 +1,15 @@
 import React from "react";
 import { KindMeta, StoryMeta } from "../../types/storybook";
 
-import { App } from "./App";
+import { Main } from "./Main";
 
-const story: KindMeta<typeof App> = {
-  title: "Components/App",
-  component: App,
+const story: KindMeta<typeof Main> = {
+  title: "Components/Main",
+  component: Main,
 };
 
 export const standard: StoryMeta = () => (
-  <App>App</App>
+  <Main>Main</Main>
 );
 
 export default story;

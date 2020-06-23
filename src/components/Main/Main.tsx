@@ -4,14 +4,14 @@ import theme from "../../themes/theme";
 import { ThemeProvider } from "styled-components";
 import { CssReset, Box } from "..";
 
-export interface AppProps {
+export interface MainProps {
   sx?: SxStyleProp;
 } 
 
-export const App: React.FC<AppProps> = ({
+export const Main: React.FC<MainProps> = ({
   sx = {fontFamily: "body"},
   children
-}: PropsWithChildren<AppProps>) => {
+}: PropsWithChildren<MainProps>) => {
   return (
     <ThemeProvider theme={theme}>
       <CssReset/>
@@ -21,4 +21,4 @@ export const App: React.FC<AppProps> = ({
     </ThemeProvider>
   );
 };
-App.displayName="App";
+Main.displayName="Main";

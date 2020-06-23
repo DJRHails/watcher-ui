@@ -2,13 +2,13 @@ import React from "react";
 import { addParameters, addDecorator } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs } from "@storybook/addon-knobs";
-import { App } from "../src/components";
+import { Main } from "../src/components";
 
 // Add Addon Decorators
 addDecorator(withA11y);
 addDecorator(withKnobs);
 
-addDecorator((story) => <App>{story()}</App>);
+addDecorator((story) => <Main>{story()}</Main>);
 
 addParameters({
   options: {

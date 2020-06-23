@@ -56,8 +56,8 @@ export type { CircleProps } from "./Circle";
 export { Text } from "./Text";
 export type { TextProps } from "./Text";
 
-export { App } from "./App";
-export type { AppProps } from "./App";
+export { Main } from "./Main";
+export type { MainProps } from "./Main";
 
 export { Grid } from "./Grid";
 export type { GridProps } from "./Grid";

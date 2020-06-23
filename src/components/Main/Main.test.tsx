@@ -3,22 +3,22 @@ import { render } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import theme from "../../themes/theme";
 
-import { App } from "./App";
+import { Main } from "./Main";
 
-describe("App component sanity", () => {
+describe("Main component sanity", () => {
   it("has name", () => {
-    expect(App.displayName).toBe("App");
+    expect(Main.displayName).toBe("Main");
   });
 
   it("matches default snapshot", () => {
-    const component = render(<App />);
+    const component = render(<Main />);
     expect(component).toMatchSnapshot();
   });
 
   it("matches themed snapshot", () => {
     const component = render(
       <ThemeProvider theme={theme}>
-        <App />
+        <Main />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

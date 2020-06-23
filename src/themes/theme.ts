@@ -21,6 +21,7 @@ export const shadows = {
 export const colors = {
   text: "#3f3d4b",
   background: "#ffffff",
+  surface: "#f0f5f9",
   brand: "#0A6EB4", // primary
   accent: "#f7b825",
   muted: "#cccccc",
@@ -167,50 +168,16 @@ export const letterSpacings = {
   widest: "0.1em"
 };
 
-const baseCard = {
-  p: 3,
-  borderRadius: "md",
-  bg: "background",
-};
-
-export type CardVariants = "outline" | "default";
-const cards = {
-  outline: {
-    ...baseCard,
-    "--outline-color": "rgb(226, 232, 240)",
-    boxShadow: "outline",
-  },
-  default: {
-    ...baseCard,
-    boxShadow: "md",
-  }
-};
-
-export type Variants = "badge" | "link";
-const variants = {
-  badge: {
-    fontFamily: "body",
-    textTransform: "uppercase",
-    px: 2,
-    py: 1,
-    fontWeight: "bold",
-    borderRadius: "sm",
-    whiteSpace: "nowrap",
-    display: "inline-block"
-  },
-  link: {
-    color: "brand"
-  }
-};
-
-export type VariantTypes = "variants" | "cards" | "typography" | "buttons";
+export const breakpoints = [
+  "0", // xs
+  "38rem", // sm
+  "60rem", // md
+  "80rem", // lg
+  "120rem" // xl
+];
 
 // https://theme-ui.com/theme-spec/
-export interface CoreTheme extends Theme {
-  cards: typeof cards;
-  variants: typeof variants;
-}
-const theme: CoreTheme = {
+const theme: Theme = {
   shadows,
   fontSizes,
   fontWeights,
@@ -221,10 +188,7 @@ const theme: CoreTheme = {
   radii,
   space,
   sizes,
-
-  // TODO: Change Variants to recommended system
-  cards,
-  variants
+  breakpoints,
 };
 
 export default theme;

@@ -1,9 +1,15 @@
 {
   "presets": ["@babel/preset-react", "@babel/preset-typescript", "@babel/preset-env"],
   "ignore": [
-    "**/__snapshots__",
-    "**/*.d.ts",
-    "**/*.test.*",
-    "**/*.stories.*"
+    "**/__snapshots__"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "/components": "./src/components",
+        "/themes": "./src/themes",
+        "/types": "./src/types"
+      }
+    }]
   ]
 }

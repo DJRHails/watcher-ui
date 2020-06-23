@@ -1,7 +1,7 @@
 // Ref: https://chakra-ui.com/aspectratiobox
 
 import React, { PropsWithChildren } from "react";
-import { Box, BoxProps } from "../Box";
+import { Box, BoxProps } from "/components/Box";
 
 export interface AspectRatioProps extends BoxProps {
   ratio?: number

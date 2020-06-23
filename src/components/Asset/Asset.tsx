@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "../Text";
 import { FlexboxProps, ColorProps } from "styled-system";
-import { Icon, Flex, Box } from "..";
+import { Icon, Flex, Box } from "/components";
 import _ from "lodash";
 import { WithPlatform } from "./WithPlatform";
 import { IconProps } from "../Icon";

@@ -15,12 +15,18 @@
     "jsx": "react",
     "outDir": "./dist",
     "declaration": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "/components": ["src/components"],
+      "/components/*": ["src/components/*"],
+      "/types": ["src/types"],
+      "/types/*": ["src/types/*"],
+      "/themes": ["src/themes"],
+      "/themes/*": ["src/themes/*"]
+    }
   },
-  "include": [
-    "./src/*",
-    "./src/**/*"
-  ],
+  "include": ["./src/*", "./src/**/*"],
   "exclude": [
     "./src/**/**.test.tsx",
     "./src/**/**.stories.tsx",

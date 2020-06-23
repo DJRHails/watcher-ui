@@ -3,7 +3,7 @@ import styled from "styled-components";
 import * as CSS from "csstype";
 import { typography, SpaceProps, LayoutProps, TypographyProps, space, layout } from "styled-system";
 import { getValidChildren } from "../../utils/react";
-import { IconProps, Icon, BaseProps } from "..";
+import { IconProps, Icon, BaseProps } from "/components";
 
 //TODO: Add SXProps support here
 interface KnownListProps extends BaseProps, SpaceProps, LayoutProps, TypographyProps {}

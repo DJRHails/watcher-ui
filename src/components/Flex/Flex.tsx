@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Box, BoxProps } from "..";
+import { Box, BoxProps } from "/components";
 import { FlexboxProps } from "styled-system";
 
 export interface FlexProps extends BoxProps {

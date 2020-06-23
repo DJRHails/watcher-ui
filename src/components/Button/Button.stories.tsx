@@ -2,8 +2,8 @@
 import { action } from "@storybook/addon-actions";
 import React from "react";
 import { Button } from "./Button";
-import { StoryMeta } from "../../types/storybook";
-import { Badge, Flex } from "..";
+import { StoryMeta } from "/types/storybook";
+import { Badge, Flex } from "/components";
 
 export default {
   title: "Components/Button",

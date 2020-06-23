@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from ".";
 import { render } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
-import theme from "../../themes/theme";
+import theme from "/themes/theme";
 
 const DEFAULT_TABLE = (
   <Table>

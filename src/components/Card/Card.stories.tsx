@@ -1,8 +1,8 @@
 import React from "react";
 
-import { StoryMeta } from "../../types/storybook";
+import { StoryMeta } from "/types/storybook";
 import { Card } from "./Card";
-import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from "..";
+import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from "/components";
 
 export default {
   title: "Components/Card",

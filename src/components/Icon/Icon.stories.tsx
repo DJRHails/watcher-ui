@@ -1,8 +1,8 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../types/storybook";
+import { KindMeta, StoryMeta } from "/types/storybook";
 
 import { Icon } from "../Icon";
-import { Flex, Text } from "..";
+import { Flex, Text } from "/components";
 import { ETHERSCAN_NAMESPACE } from "./Icon";
 
 const story: KindMeta<typeof Icon> = {

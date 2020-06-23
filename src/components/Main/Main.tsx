@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import theme from "../../themes/theme";
+import theme from "/themes/theme";
 import { ThemeProvider } from "styled-components";
-import { CssReset, Box, BoxProps } from "..";
+import { CssReset, Box, BoxProps } from "/components";
 
 export interface MainProps extends BoxProps {
   children?: ReactNode

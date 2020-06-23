@@ -1,8 +1,8 @@
 import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import { Badge } from "./Badge";
-import { Text } from "../Text";
-import { StoryMeta } from "../../types/storybook";
+import { Text } from "/components";
+import { StoryMeta } from "/types/storybook";
 
 export default {
   title: "Components/Badge",

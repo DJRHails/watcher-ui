@@ -1,11 +1,11 @@
 import React from "react";
 import { isWatcherIcon, WatcherIcon, WatcherIconProps } from "watcher-icons";
-import { Image, Circle, Text } from "..";
+import { Image, Circle, Text } from "/components";
 import { Box, BoxProps } from "../Box";
 import styled from "styled-components";
 import { color, ColorProps, LayoutProps, layout } from "styled-system";
 import _ from "lodash";
-import { PropsOf } from "../../types/utils";
+import { PropsOf } from "/types/utils";
 
 interface IconInnerKnownProps {
   name: string;

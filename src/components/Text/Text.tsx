@@ -1,7 +1,7 @@
 import React from "react";
-import { BoxProps, Box } from "../Box"; // TODO: This cannot be ".." for some unknown reason
+import { BoxProps, Box } from "../Box"; // TODO: This cannot be "/components" for some unknown reason
 import styled from "styled-components";
-import { TypographyProps, typography, ColorProps, color, variant, SpaceProps, space } from "styled-system";;
+import { TypographyProps, typography, ColorProps, color, variant, SpaceProps, space } from "styled-system";
 
 export type TextVariants = "heading" | "body" | "button";
 

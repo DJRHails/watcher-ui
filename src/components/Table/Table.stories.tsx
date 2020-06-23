@@ -1,9 +1,9 @@
 import React from "react";
-import { StoryMeta } from "../../types/storybook";
+import { StoryMeta } from "/types/storybook";
 import { Table } from "./Table";
-import { Heading } from "..";
-import { Box } from "..";
-import { Asset } from "..";
+import { Heading } from "/components";
+import { Box } from "/components";
+import { Asset } from "/components";
 import { ETHERSCAN_NAMESPACE } from "../Icon/Icon";
 
 export default {

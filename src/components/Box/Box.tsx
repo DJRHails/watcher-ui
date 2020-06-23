@@ -2,6 +2,7 @@ import { flexbox, compose, space, layout, typography, color, SpaceProps, LayoutP
 import styled, { CSSObject, DefaultTheme } from "styled-components";
 import css, { get, SystemStyleObject, ResponsiveStyleValue } from "@styled-system/css";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface BaseProps extends React.RefAttributes<any> {
   as?: React.ElementType;
   css?:

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Text } from "..";
+import { Text } from "/components";
 import { VariantButton } from "./VariantButton";
 import { ButtonProps } from "./BaseButton";
 

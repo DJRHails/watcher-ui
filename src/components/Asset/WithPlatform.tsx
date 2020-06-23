@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Box, Icon, IconProps } from "..";
+import { Box, Icon, IconProps } from "/components";
 
 export interface WithPlatformProps extends IconProps {
   children: ReactNode;

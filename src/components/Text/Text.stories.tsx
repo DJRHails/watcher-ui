@@ -1,10 +1,10 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../types/storybook";
+import { KindMeta, StoryMeta } from "/types/storybook";
 import { withKnobs, select, text } from "@storybook/addon-knobs";
 
 import { Text } from "./Text";
 import { Theme } from "styled-system";
-import theme from "../../themes/theme";
+import theme from "/themes/theme";
 
 const story: KindMeta<typeof Text> = {
   title: "Components/Text",

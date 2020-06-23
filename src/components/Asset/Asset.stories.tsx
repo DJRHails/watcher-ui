@@ -1,5 +1,5 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../types/storybook";
+import { KindMeta, StoryMeta } from "/types/storybook";
 
 import { Asset } from ".";
 import { ETHERSCAN_NAMESPACE } from "../Icon/Icon";

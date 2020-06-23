@@ -1,9 +1,8 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../types/storybook";
+import { KindMeta, StoryMeta } from "/types/storybook";
 
 import { AspectRatio } from "./AspectRatio";
-import { Image } from "../Image";
-import { Box } from "..";
+import { Box, Image } from "/components";
 
 const story: KindMeta<typeof AspectRatio> = {
   title: "Components/AspectRatio",

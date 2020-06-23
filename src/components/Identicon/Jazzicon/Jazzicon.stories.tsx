@@ -1,5 +1,5 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../../types/storybook";
+import { KindMeta, StoryMeta } from "..//types/storybook";
 
 import { Jazzicon } from "./Jazzicon";
 

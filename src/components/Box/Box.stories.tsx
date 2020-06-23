@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "./Box";
-import { StoryMeta } from "../../types/storybook";
+import { StoryMeta } from "/types/storybook";
 
 export default {
   title: "Components/Box",

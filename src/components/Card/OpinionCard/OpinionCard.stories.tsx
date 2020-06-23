@@ -1,5 +1,5 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../../types/storybook";
+import { KindMeta, StoryMeta } from "..//types/storybook";
 
 import { OpinionCard } from "./OpinionCard";
 import { Text, Flex } from "../..";

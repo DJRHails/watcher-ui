@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from ".";
 import { render } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
-import theme from "../../themes/theme";
+import theme from "/themes/theme";
 
 describe("Button component sanity", () => {
   it("has name", () => {

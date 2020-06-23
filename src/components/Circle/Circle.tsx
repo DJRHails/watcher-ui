@@ -29,7 +29,7 @@ const StyledCircle = styled(Box)<CircleProps>(
       width: "100%",
       height: "100%",
     },
-  } as any, //TODO: Fix with nested
+  }, //TODO: Fix with nested
   borders,
 );
 

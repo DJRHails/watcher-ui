@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "../Image";
-import { StoryMeta } from "../../types/storybook";
+import { StoryMeta } from "/types/storybook";
 
 export default {
   title: "Components/Image",

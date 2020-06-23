@@ -1,8 +1,8 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../types/storybook";
+import { KindMeta, StoryMeta } from "/types/storybook";
 
 import { Flex } from "./Flex";
-import { Box, Text, Heading, Button, Circle } from "..";
+import { Box, Text, Heading, Button, Circle } from "/components";
 
 const story: KindMeta<typeof Flex> = {
   title: "Components/Flex",

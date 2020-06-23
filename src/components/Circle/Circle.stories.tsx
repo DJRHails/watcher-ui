@@ -1,8 +1,8 @@
 import React from "react";
-import { KindMeta, StoryMeta } from "../../types/storybook";
+import { KindMeta, StoryMeta } from "/types/storybook";
 
 import { Circle } from "./Circle";
-import { Text, Box } from "..";
+import { Text, Box } from "/components";
 
 const story: KindMeta<typeof Circle> = {
   title: "Components/Circle",

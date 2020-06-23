@@ -5,7 +5,7 @@ import theme from "../../themes/theme";
 
 import { Identicon } from "./Identicon";
 import { Jazzicon } from "./Jazzicon";
-import { mocked } from "ts-jest";
+import { mocked } from "ts-jest/utils";
 jest.mock("./Jazzicon");
 
 describe("Identicon component sanity", () => {

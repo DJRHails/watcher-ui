@@ -20,11 +20,11 @@
     "styled-system": "^5.1.5"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
+    "clean": "rimraf dist",
     "build": "concurrently yarn:build:*",
     "build:esm": "cross-env BABEL_ENV=esm babel src --extensions .ts,.tsx -d dist/esm --source-maps",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src --extensions .ts,.tsx -d dist/cjs --source-maps",
-    "build:types": "tsc --emitDeclarationOnly --declaration --declarationMap --declarationDir dist/types",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationMap --declarationDir dist/types && tscpaths -p tsconfig.json -s src -o dist/types",
     "generate": "plop --plopfile src/generators/plobfile.ts",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -s public",
@@ -101,6 +101,7 @@
     "styled-system": "^5.1.5",
     "ts-jest": "^26.1.1",
     "ts-node": "^8.10.2",
+    "tscpaths": "^0.0.9",
     "tslib": "^2.0.0",
     "typescript": "^3.9.5"
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { Box, BoxProps } from "../Box";
 import { borders, BorderProps } from "styled-system";
 import styled from "styled-components";
@@ -33,7 +33,7 @@ const StyledCircle = styled(Box)<CircleProps>(
   borders,
 );
 
-export const Circle: React.FC<CircleProps> = ({
+export const Circle: FC<CircleProps> = ({
   width = "auto",
   height = "auto",
   ...rest

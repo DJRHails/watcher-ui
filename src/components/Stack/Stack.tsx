@@ -1,8 +1,7 @@
-import React, { ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 import { FlexProps, Flex, Box } from "/components";
 import { SpaceProps, ResponsiveValue } from "styled-system";
 import { getValidChildren } from "/utils/react";
-import css from "@styled-system/css";
 import { mapResponsive } from "/utils/responsive";
 
 export type StackDirection = ResponsiveValue<"row" | "column">
@@ -15,7 +14,7 @@ export interface StackProps extends FlexProps {
   children?: ReactNode;
 } 
 
-export const Stack: React.FC<StackProps> = React.forwardRef<StackProps>((props: StackProps, ref) => {
+export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackProps, ref) => {
   const {
     direction = "column",
     align = "flex-start",

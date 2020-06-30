@@ -1,5 +1,4 @@
-import React from "react";
-import { BoxProps, Box, IconProps, WithPlatform } from "/components";
+import React, { FC } from "react";
 import { Jazzicon } from "./Jazzicon";
 import _ from "lodash";
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import * as CSS from "csstype";
 import styled, { DefaultTheme } from "styled-components";
 import StyledSystem, { ResponsiveValue, TLengthStyledSystem, grid } from "styled-system";
@@ -24,7 +24,7 @@ const StyledGrid = styled(Box)<StyledSystem.GridProps>(
   grid
 );
 
-export const Grid: React.FC<GridProps> = ({
+export const Grid: FC<GridProps> = ({
   columns,
   spacing,
   spacingX,

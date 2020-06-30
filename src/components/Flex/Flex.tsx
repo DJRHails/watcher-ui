@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
-import { Box, BoxProps, BaseProps } from "/components";
+import { Box, BoxProps } from "/components";
 import { FlexboxProps } from "styled-system";
 
-export interface FlexProps extends BoxProps, BaseProps {
+export interface FlexProps extends BoxProps {
   direction?: FlexboxProps["flexDirection"];
   wrap?: FlexboxProps["flexWrap"];
   grow?: FlexboxProps["flexGrow"];
@@ -17,7 +17,7 @@ const StyledFlex = styled(Box)(
   }
 );
 
-export const Flex: React.FC<FlexProps> = React.forwardRef(({
+export const Flex: FC<FlexProps> = React.forwardRef(({
   direction,
   flexDirection = direction,
   wrap,

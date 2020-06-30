@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { ButtonProps, BaseButton } from "./BaseButton";
 import styled from "styled-components";
 import css from "@styled-system/css";
@@ -24,7 +24,7 @@ const StyledTextButton = styled(BaseButton)(
   })
 );
 
-export const TextButton: React.FC<ButtonProps> = ({
+export const TextButton: FC<ButtonProps> = ({
   buttonColor = "brand",
   textColor: _,
   ...props

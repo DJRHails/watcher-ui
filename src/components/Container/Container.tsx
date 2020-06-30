@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { Flex, FlexProps } from "/components";
 
 export interface ContainerProps extends FlexProps {} 

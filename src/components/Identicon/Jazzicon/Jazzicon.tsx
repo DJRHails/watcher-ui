@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { FC, useEffect, useRef } from "react";
 import jazzicon from "jazzicon";
 import { Box, BoxProps } from "../..";
 
@@ -14,7 +14,7 @@ function seedFromEthAddress(address: string): number {
 }
 
 // Jazzicon library returns a HTMLDivElement, so needs wrapping
-export const Jazzicon: React.FC<JazziconProps> = ({
+export const Jazzicon: FC<JazziconProps> = ({
   address,
   diameter = 46,
   ...rest

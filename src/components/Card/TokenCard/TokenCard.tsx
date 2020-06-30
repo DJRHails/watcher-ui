@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { Card, CardProps } from "../Card";
 import { Text, Flex, Icon, IconProps } from "../..";
 
@@ -10,7 +10,7 @@ export interface TokenCardProps
   value: number;
 }
 
-export const TokenCard: React.FC<TokenCardProps> = ({ name, quantity, value, ...props }: TokenCardProps) => {
+export const TokenCard: FC<TokenCardProps> = ({ name, quantity, value, ...props }: TokenCardProps) => {
   const upper = Math.floor(quantity);
   const lower = (quantity % 1).toFixed(4).substring(2);
   return (

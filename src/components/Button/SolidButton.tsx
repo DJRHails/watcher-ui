@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { ButtonProps, BaseButton } from "./BaseButton";
 import styled from "styled-components";
 import { css } from "@styled-system/css";
@@ -39,7 +39,7 @@ export const StyledSolidButton = styled(BaseButton)(
   }),
 );
 
-export const SolidButton: React.FC<ButtonProps> = ({
+export const SolidButton: FC<ButtonProps> = ({
   buttonColor = "brand",
   textColor = "white",
   size = "md",

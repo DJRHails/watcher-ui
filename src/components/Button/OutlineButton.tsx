@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { ButtonProps } from "./BaseButton";
 import styled from "styled-components";
 import { css } from "@styled-system/css";
@@ -32,7 +32,7 @@ const StyledOutlineButton = styled(StyledSolidButton)(
   }),
 );
 
-export const OutlineButton: React.FC<ButtonProps> = ({
+export const OutlineButton: FC<ButtonProps> = ({
   buttonColor = "brand",
   textColor,
   size = "md",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { isWatcherIcon, WatcherIcon, WatcherIconProps } from "watcher-icons";
 import { Image, Circle, Text } from "/components";
 import { Box, BoxProps } from "../Box";

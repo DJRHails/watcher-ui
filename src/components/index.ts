@@ -27,7 +27,7 @@ export type { CardProps, OpinionCardProps, TokenCardProps } from "./Card";
 export { Button } from "./Button";
 export type { ButtonProps } from "./Button";
 
-export { Box } from "./Box";
+export { box, Box } from "./Box";
 export type { BoxProps } from "./Box";
 
 export type { BaseProps, SxProps } from "./Box";
@@ -46,8 +46,8 @@ export type { AspectRatioProps } from "./AspectRatio";
 
 export { CssReset } from "./CssReset";
 
-export { Asset, WithPlatform } from "./Asset";
-export type { AssetProps, WithPlatformProps } from "./Asset";
+export { Asset } from "./Asset";
+export type { AssetProps } from "./Asset";
 
 export { Icon } from "./Icon";
 export type { IconProps } from "./Icon";
@@ -84,3 +84,9 @@ export type { StackProps, StackDividerProps } from "./Stack";
 
 export { Skeleton, SkeletonText } from "./Skeleton";
 export type { SkeletonProps, SkeletonTextProps } from "./Skeleton";
+
+export { Nifty } from "./Nifty";
+export type { NiftyProps } from "./Nifty";
+
+export { WithPlatform } from "./Platform";
+export type { PlatformProps, PlatformDefiniton, CustomPlatform, KnownPlatform, WithPlatformProps } from "./Platform";

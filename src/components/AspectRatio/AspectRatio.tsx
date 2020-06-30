@@ -45,6 +45,7 @@ export const AspectRatio: React.FC<AspectRatioProps> = ({
         },
         "& > img, & > video": {
           objectFit: "cover",
+          height: "100%",
         },
       }}
       {...rest}

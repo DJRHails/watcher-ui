@@ -8,16 +8,13 @@ export interface TableKnownProps extends BoxProps, BorderProps, TypographyProps,
 
 export interface TableProps 
   extends TableKnownProps,
-  Omit<React.HTMLProps<HTMLTableElement>, keyof TableKnownProps> {}
+  Omit<React.HTMLProps<HTMLTableElement>, keyof TableKnownProps> {
+  scrollX?: true;
+}
 
 // https://github.com/styled-system/styled-system/issues/464
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const StyledTable = styled(Box)<any>(
-  layout,
-  space,
-  typography,
-  borders,
-  shadow,
   css({
     "&": {
       borderCollapse: "collapse",
@@ -43,22 +40,31 @@ const StyledTable = styled(Box)<any>(
       fontWeight: "bold",
       textTransform: "uppercase",
     },
-  })
+  }),
+  shadow,
 );
 
-export const Table: React.FC<TableProps> = (props: TableProps) => (
-  <StyledTable
-    width="full"
-    m={2}
-    border={1}
-    borderColor="muted"
-    borderStyle="solid"
-    fontSize={2}
-    fontWeight="medium"
-    fontFamily="body"
-    boxShadow="sm"  
-    {...props}
-    as="table"
-  />
-);
+export const Table: React.FC<TableProps> = ({scrollX, ...rest}: TableProps) => {
+  const styledTable = (
+    <StyledTable
+      width="full"
+      p={2}
+      border={1}
+      borderColor="muted"
+      borderStyle="solid"
+      fontSize={2}
+      fontWeight="medium"
+      fontFamily="body"
+      boxShadow="sm"
+      {...rest}
+      as="table" />
+  );
+  return scrollX ? (
+    <Box width={rest.width || "full"} sx={{
+      overflowX: "auto",
+    }}>
+      {styledTable}
+    </Box>
+  ) : styledTable;
+};
 Table.displayName = "Table";

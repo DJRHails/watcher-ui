@@ -22,14 +22,14 @@ export const colors = {
   text: "#3f3d4b",
   background: "#ffffff",
   surface: "#f0f5f9",
-  brand: "#0A6EB4", // primary
-  accent: "#f7b825",
+  brand: "#f12711",
+  accent: "#f5af19",
   muted: "#cccccc",
   gray: "#82817d",
   success: "#22543d",
   danger: "#dc3545",
   badge: {
-    brand: "#d7efff",
+    brand: "#ffd2ce",
     danger: "#f5c6cb",
     success: "#c3e6cb",
   }

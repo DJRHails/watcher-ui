@@ -7,10 +7,8 @@ import { color, ColorProps, LayoutProps, layout } from "styled-system";
 import _ from "lodash";
 import { PropsOf } from "/types/utils";
 
-interface IconInnerKnownProps {
+interface IconInnerKnownProps extends ColorProps {
   name: string;
-  color?: ColorProps["color"]; 
-  backgroundColor?: ColorProps["backgroundColor"];
   size?: LayoutProps["size"];
 }
 
@@ -20,10 +18,10 @@ export interface IconProps extends BoxProps {
   name: string;
 }
 
-const StyledWatcherIcon = styled(WatcherIcon)(
-  color,
-  layout,
-);
+const StyledWatcherIcon = styled(WatcherIcon)`
+  ${color}
+  ${layout}
+`;
 
 export const ETHERSCAN_NAMESPACE = "ethscn.";
 const isEtherscanIcon = (name: string) => name.startsWith(ETHERSCAN_NAMESPACE);
@@ -39,7 +37,7 @@ const LEN2FONT = {
   4: ".3em",
 };
 
-const IconInner: React.FC<IconInnerProps> = ({
+const IconInner: FC<IconInnerProps> = ({
   name,
   size,
   backgroundColor,
@@ -74,18 +72,18 @@ const IconInner: React.FC<IconInnerProps> = ({
     <Circle
       size="1em"
       fontSize={size}
-      backgroundColor={backgroundColor || "brand"}
+      backgroundColor={backgroundColor || "text"}
     >
       <Text
         fontSize={_.get(LEN2FONT, displayName.length) || "1em"}
         fontWeight="bold"
-        color={color || "white"}
+        color={(color || "white") as string} // TODO: Styled Components are getting interesting color overrides
       >{displayName}</Text>
     </Circle>
   );
 };
 
-export const Icon: React.FC<IconProps> = ({
+export const Icon: FC<IconProps> = ({
   name,
   size = "1em",
   color,
@@ -100,7 +98,7 @@ export const Icon: React.FC<IconProps> = ({
         name={name}
         size={size === null ? undefined : size}
         backgroundColor={backgroundColor}
-        color={color}
+        color={color ?? undefined}
       />
     </Box> 
   );

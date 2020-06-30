@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Text, TextProps } from "../Text";
+import { Text, TextProps } from "../Text"; //TODO: Cannot be /components
 import styled from "styled-components";
 import { css } from "@styled-system/css";
 import { borders, BordersProps } from "styled-system";

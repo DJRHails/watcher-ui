@@ -1,16 +1,17 @@
 import React, { FC } from "react";
+import { BoxProps, Box, WithPlatform, PlatformDefiniton } from "/components";
 import { Jazzicon } from "./Jazzicon";
 import _ from "lodash";
 
 export interface IdenticonProps extends BoxProps {
   address: string;
   diameter?: number;
-  platform?: IconProps | true;
+  platform?: PlatformDefiniton;
 } 
 
 const looksLikeEthereum = (address: string) => address.startsWith("0x");
 
-export const Identicon: React.FC<IdenticonProps> = ({
+export const Identicon: FC<IdenticonProps> = ({
   address,
   diameter = 50,
   platform,
@@ -23,8 +24,9 @@ export const Identicon: React.FC<IdenticonProps> = ({
       platform
         ? (
           <WithPlatform
+            maximise
             fontSize={`${diameter}px`}
-            {..._.merge({name: "Eth"}, platform)}
+            platform={platform}
           >
             {icon}
           </WithPlatform>
@@ -32,7 +34,7 @@ export const Identicon: React.FC<IdenticonProps> = ({
         : icon
     );
     return (
-      <Box {...rest}>
+      <Box size={`${diameter}px`} {...rest}>
         {iconWithPlatform}
       </Box>
     );

@@ -17,7 +17,7 @@ export const ethereum: StoryMeta = () => (
 export const ethereumWithAutomaticPlatform: StoryMeta = () => (
   <Identicon        
     address="0x67C3fD74fd36456FC5b339Fd09Efa330ad3126eE"
-    platform
+    platform="eth"
   />
 );
 
@@ -25,9 +25,7 @@ export const ethereumWithManualPlatform: StoryMeta = () => (
   <Identicon        
     address="0x67C3fD74fd36456FC5b339Fd09Efa330ad3126eE"
     m={3}
-    platform={{
-      name: "Algo",
-    }}
+    platform="algo"
   />
 );
 

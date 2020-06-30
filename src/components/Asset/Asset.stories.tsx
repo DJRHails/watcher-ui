@@ -1,5 +1,6 @@
 import React from "react";
 import { KindMeta, StoryMeta } from "/types/storybook";
+import { Button } from "/components";
 
 import { Asset } from ".";
 import { ETHERSCAN_NAMESPACE } from "../Icon/Icon";
@@ -19,7 +20,7 @@ export const etherscan: StoryMeta = () => (
 
 
 export const platform: StoryMeta = () => (
-  <Asset name="Ethereum" ticker="ETH" platform={{ name:"Eth" }}/>
+  <Asset name="Ethereum" ticker="ETH" platform="eth"/>
 );
 
 export const fullAsset: StoryMeta = () => (
@@ -28,13 +29,25 @@ export const fullAsset: StoryMeta = () => (
   </>
 );
 
+export const flippablePlatform: StoryMeta = () => {
+  const [flipped, setFlipped] = React.useState(false);
+  return (
+    <>
+      <Asset name="Ethereum" ticker="ETH" platform="eth" flipped={flipped || undefined}/>
+      <Button onClick={() => setFlipped(!flipped)}/>
+    </>
+  );
+};
+
+
+
 export const platformWithAutomatic: StoryMeta = () => (
   <>
-    <Asset name="fake" ticker="X" platform={{ name:"Eth" }}/>
-    <Asset name="fake" ticker="XX" platform={{ name:"Eth" }}/>
-    <Asset name="fake" ticker="XYZ" platform={{ name:"Eth" }}/>
-    <Asset name="fake" ticker="XYZZ" platform={{ name:"Eth" }}/>
-    <Asset name="fake" ticker="FOODX" platform={{ name:"Eth" }}/>
+    <Asset name="fake" ticker="X" platform="eth"/>
+    <Asset name="fake" ticker="XX" platform="eth"/>
+    <Asset name="fake" ticker="XYZ" platform="eth"/>
+    <Asset name="fake" ticker="XYZZ" platform="eth"/>
+    <Asset name="fake" ticker="FOODX" platform="eth"/>
   </>
 );
 

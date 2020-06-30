@@ -33,7 +33,7 @@ export const StyledSolidButton = styled(BaseButton)(
       zIndex: 1,
       height: "100%",
       width: "100%",
-      backgroundColor: "var(--button-color)",
+      background: "var(--button-color)",
       pointerEvents: "none",
     },
   }),

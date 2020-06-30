@@ -3,10 +3,11 @@ import { Box, BoxProps } from "../Box"; // TODO: Can't use .. here for some reas
 import { style, layout, space, variant } from "styled-system";
 import styled from "styled-components";
 import { css } from "@styled-system/css";
+import type { ButtonVariant } from "./VariantButton";
+import type { GradientProps } from "./GradientButton";
 
-export interface ButtonProps extends BoxProps, Omit<React.HTMLProps<HTMLImageElement>, keyof BoxProps> {
-  onClick?: VoidFunction;
-  variant?: "solid" | "outline" | "text";
+export interface ButtonProps extends BoxProps, GradientProps, Omit<React.HTMLProps<HTMLButtonElement>, keyof BoxProps> {
+  variant?: ButtonVariant;
   buttonColor?: string;
   textColor?: string;
   buttonSize?: "md" | "sm" | "lg";

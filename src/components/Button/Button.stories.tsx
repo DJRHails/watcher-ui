@@ -60,6 +60,13 @@ export const text: StoryMeta = () => (
   </Button>
 );
 
+export const gradient: StoryMeta = () => (
+  <Button variant="gradient">
+    Text Button
+  </Button>
+);
+
+
 export const pair: StoryMeta = () => (
   <Flex>
     <Button buttonColor="badge.success" textColor="success" onClick={action("clicked")}>

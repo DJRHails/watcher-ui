@@ -1,26 +1,25 @@
-import React from "react";
-import { Text } from "../Text";
-import { FlexboxProps, ColorProps } from "styled-system";
-import { Icon, Flex, Box } from "/components";
+import React, { FC } from "react";
+import { Text, Icon, Flex, Box, IconProps, FlexProps, WithPlatform } from "/components";
 import _ from "lodash";
-import { WithPlatform } from "./WithPlatform";
-import { IconProps } from "../Icon";
+import { PlatformDefiniton } from "../Platform/Platform";
 
-export interface AssetProps extends FlexboxProps, ColorProps {
+export interface AssetProps extends FlexProps {
   name: string;
   ticker: string;
   full?: true;
+  flipped?: true;
   icon?: IconProps;
-  platform?: IconProps;
+  platform?: PlatformDefiniton;
 }
 
-export const Asset: React.FC<AssetProps> = ({
+export const Asset: FC<AssetProps> = ({
   name,
   ticker,
   color,
   platform,
   icon,
   full,
+  flipped,
   ...rest
 }: AssetProps) => {
   const iconSize = full ? "2.5em" : "2em";
@@ -29,30 +28,35 @@ export const Asset: React.FC<AssetProps> = ({
     <Flex p={1} {...rest}>
       <Box fontSize={iconSize}>
         {platform ? 
-          <WithPlatform {...platform}>
+          <WithPlatform flipped={flipped} platform={platform}>
             {assetIcon}
           </WithPlatform>
           : assetIcon
         }
       </Box>
-      <Flex
-        direction="column"
+      <Box
+        display="inline-grid"
+        flex={1}
         ml={2}
       >
         <Text
-          color={color}
+          color={color as string} // TODO: Styled Components are getting interesting color overrides
           fontWeight="medium"
+          truncate
         >
           {name}
         </Text>
         {full && <Text
-          color={color}
+          color={color as string} // TODO: Styled Components are getting interesting color overrides
           fontWeight="light"
           uppercase
+          sx={{
+            minWidth: "10ch",
+          }}
         >
           {ticker}
         </Text>}
-      </Flex>
+      </Box>
     </Flex>
   );
 };

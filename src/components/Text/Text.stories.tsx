@@ -35,6 +35,38 @@ export const editable: StoryMeta = () => {
   );
 };
 
+export const gradient: StoryMeta = () => {
+
+  return (
+    <Text
+      maxWidth="980px"
+      mx="auto"
+      textAlign="center"
+      fontSize={6}
+      fontWeight="bold"
+    >
+      Send money to{" "}
+      <Text
+        display="inline"
+        variant="gradient"
+        backgroundImage="linear-gradient(63.75deg,#f12711,#f5af19)"
+      >
+        anyone.
+      </Text>
+      {" "}
+      Earn interest from
+      {" "}
+      <Text
+        display="inline"
+        variant="gradient"
+        backgroundImage="linear-gradient(63.75deg,#4059ad,#6b9ac4)"
+      >
+        anywhere.
+      </Text>
+    </Text>
+  );
+};
+
 export const fontSizes: StoryMeta = () => (
   <>
     <Text fontSize={0}><b>Font Size 0</b></Text>

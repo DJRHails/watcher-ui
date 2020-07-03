@@ -1,26 +1,26 @@
-import React from "react";
-import { KindMeta, StoryMeta } from "/types/storybook";
-import { withKnobs, select, text } from "@storybook/addon-knobs";
+import React from 'react'
+import { KindMeta, StoryMeta } from '/types/storybook'
+import { withKnobs, select, text } from '@storybook/addon-knobs'
 
-import { Text } from "./Text";
-import { Theme } from "styled-system";
-import theme from "/themes/theme";
+import { Text } from './Text'
+import { Theme } from 'styled-system'
+import theme from '/themes/theme'
 
 const story: KindMeta<typeof Text> = {
-  title: "Components/Text",
+  title: 'Components/Text',
   component: Text,
   decorators: [withKnobs]
-};
+}
 
-const themeKeys = (key: keyof Theme) => Object.keys(theme[key] || {});
+const themeKeys = (key: keyof Theme) => Object.keys(theme[key] || {})
 
 export const editable: StoryMeta = () => {
-  const txt=text("Text", "A QUICK BROWN FOX JUMPS OVER THE LAZY DOG while the five boxing wizards jump quickly.");
-  const font=select("Font Family", themeKeys("fonts"), "body");
-  const fontSize=select("Font Size", themeKeys("fontSizes"), undefined);
-  const fontWeight=select("Font Weight", themeKeys("fontWeights"), "medium");
-  const lineHeight=select("Line Height", themeKeys("lineHeights"), "normal");
-  const letterSpacing=select("Letter Spacings", themeKeys("letterSpacings"), "normal");
+  const txt=text('Text', 'A QUICK BROWN FOX JUMPS OVER THE LAZY DOG while the five boxing wizards jump quickly.')
+  const font=select('Font Family', themeKeys('fonts'), 'body')
+  const fontSize=select('Font Size', themeKeys('fontSizes'), undefined)
+  const fontWeight=select('Font Weight', themeKeys('fontWeights'), 'medium')
+  const lineHeight=select('Line Height', themeKeys('lineHeights'), 'normal')
+  const letterSpacing=select('Letter Spacings', themeKeys('letterSpacings'), 'normal')
 
   return (
     <Text
@@ -32,8 +32,8 @@ export const editable: StoryMeta = () => {
     >
       {txt}
     </Text>
-  );
-};
+  )
+}
 
 export const gradient: StoryMeta = () => {
 
@@ -45,7 +45,7 @@ export const gradient: StoryMeta = () => {
       fontSize={6}
       fontWeight="bold"
     >
-      Send money to{" "}
+      Send money to{' '}
       <Text
         display="inline"
         variant="gradient"
@@ -53,9 +53,9 @@ export const gradient: StoryMeta = () => {
       >
         anyone.
       </Text>
-      {" "}
+      {' '}
       Earn interest from
-      {" "}
+      {' '}
       <Text
         display="inline"
         variant="gradient"
@@ -64,8 +64,8 @@ export const gradient: StoryMeta = () => {
         anywhere.
       </Text>
     </Text>
-  );
-};
+  )
+}
 
 export const fontSizes: StoryMeta = () => (
   <>
@@ -77,7 +77,7 @@ export const fontSizes: StoryMeta = () => (
     <Text fontSize={5}><b>Font Size 5</b></Text>
     <Text fontSize={6}><b>Font Size 6</b> (H1)</Text>
   </>
-);
+)
 
 export const fontWeights: StoryMeta = () => (
   <>
@@ -87,7 +87,7 @@ export const fontWeights: StoryMeta = () => (
     <Text fontWeight='bold'>bold</Text>
     <Text fontWeight='black'>black</Text>
   </>
-);
+)
 
 export const lineHeight: StoryMeta = () => (
   <>
@@ -98,7 +98,7 @@ export const lineHeight: StoryMeta = () => (
     <Text lineHeight='relaxed' bg="#eaeaea" pl={2}>relaxed</Text>
     <Text lineHeight='loose' bg="#dadada" pl={2}>loose</Text>
   </>
-);
+)
 
 export const letterSpacing: StoryMeta = () => (
   <>
@@ -109,5 +109,5 @@ export const letterSpacing: StoryMeta = () => (
     <Text letterSpacing='wider'>wider</Text>
     <Text letterSpacing='widest'>widest</Text>
   </>
-);
-export default story;
+)
+export default story

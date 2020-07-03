@@ -1,12 +1,12 @@
-import React, { FC,  ReactNode } from "react";
-import { Box, Icon, IconProps } from "/components";
-import { PlatformDefiniton, getIconName, getIconBackgroundColor,  getSize, getReverse } from "./Platform";
-import { FontSizeProps } from "styled-system";
+import React, { FC,  ReactNode } from 'react'
+import { Box, Icon, IconProps } from '/components'
+import { PlatformDefiniton, getIconName, getIconBackgroundColor,  getSize, getReverse } from './Platform'
+import { FontSizeProps } from 'styled-system'
 
 export interface PlatformIconProps {
   borderWidth: number;
   platform: PlatformDefiniton;
-  sx?: IconProps["sx"];
+  sx?: IconProps['sx'];
 }
 
 const PlatformIcon: FC<PlatformIconProps> = ({
@@ -17,17 +17,17 @@ const PlatformIcon: FC<PlatformIconProps> = ({
   <Icon
     size="1em"
     sx={{
-      backfaceVisibility: "hidden",
-      borderRadius: "99999px",
-      borderStyle: "solid",
-      borderColor: "background",
+      backfaceVisibility: 'hidden',
+      borderRadius: '99999px',
+      borderStyle: 'solid',
+      borderColor: 'background',
       borderWidth: `${borderWidth}em`,
       ...sx ?? {},
     }}
     name={getIconName(platform)}
     backgroundColor={getIconBackgroundColor(platform)}
   />
-);
+)
 
 export interface PlatformIndicatorProps {
   borderWidth: number;
@@ -44,29 +44,29 @@ export const PlatformIndicator: FC<PlatformIndicatorProps> = ({
 }: PlatformIndicatorProps) => (
   <Box
     sx={{
-      transition: "0.6s",
-      transformStyle: "preserve-3d",
-      position: "relative",
-      transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)"
+      transition: '0.6s',
+      transformStyle: 'preserve-3d',
+      position: 'relative',
+      transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
     }}
   >
     <PlatformIcon
       borderWidth={borderWidth}
       platform={front}
       sx={back && {
-        position: "absolute",
+        position: 'absolute',
       }}
     />
     {back && <PlatformIcon
       borderWidth={borderWidth}
       platform={back}
       sx={{
-        transform: "rotateY(180deg)",
+        transform: 'rotateY(180deg)',
       }}
     />
     }
   </Box>
-);
+)
 
 export interface WithPlatformProps extends FontSizeProps {
   children: ReactNode;
@@ -85,36 +85,36 @@ export const WithPlatform: FC<WithPlatformProps> = ({
   flipped
 }: WithPlatformProps) => {
   if (React.Children.count(children) !== 1) {
-    console.error("Invalid number of children for WithPlatform");
-    return null;
+    console.error('Invalid number of children for WithPlatform')
+    return null
   }
 
-  const borderWidth = .15;
-  const scale = 0.6;
+  const borderWidth = .15
+  const scale = 0.6
   const offset = {
     top: 0.35,
     right: 0.55,
-  };
+  }
 
   const overlapProtection = allowOverlap ? {} : {
     marginTop: `${(offset.top - borderWidth) * scale}em`,
     marginRight: `${(offset.right - borderWidth) * scale}em`,
-  };
+  }
 
   return (
     <Box sx={{
-      position: "relative",
-      width: maximise ? "max-content" : "auto",
+      position: 'relative',
+      width: maximise ? 'max-content' : 'auto',
       // Ensure the Platform icon doesn't overlap
       ...overlapProtection
     }}
-    fontSize={fontSize || getSize(platform) || "1em"}
+    fontSize={fontSize || getSize(platform) || '1em'}
     >
       {children}
       <Box
         fontSize={`${scale}em`}
         sx={{
-          position: "absolute",
+          position: 'absolute',
           right: `-${offset.right}em`,
           top: `-${offset.top}em`,
           zIndex: 2
@@ -128,5 +128,5 @@ export const WithPlatform: FC<WithPlatformProps> = ({
         />
       </Box>
     </Box>
-  );
-};
+  )
+}

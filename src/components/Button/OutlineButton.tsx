@@ -1,41 +1,41 @@
-import React, { FC } from "react";
-import { ButtonProps } from "./BaseButton";
-import styled from "styled-components";
-import { css } from "@styled-system/css";
-import { StyledSolidButton } from "./SolidButton";
+import React, { FC } from 'react'
+import { ButtonProps } from './BaseButton'
+import styled from 'styled-components'
+import { css } from '@styled-system/css'
+import { StyledSolidButton } from './SolidButton'
 
 const StyledOutlineButton = styled(StyledSolidButton)(
   css({
-    "&": {
-      color: "var(--text-color)",
-      backgroundColor: "transparent",
-      borderWidth: ".1rem",
-      borderStyle: "solid",
-      borderColor: "muted",
+    '&': {
+      color: 'var(--text-color)',
+      backgroundColor: 'transparent',
+      borderWidth: '.1rem',
+      borderStyle: 'solid',
+      borderColor: 'muted',
     },
-    "&:hover": {
-      borderColor: "var(--button-color)",
-      color: "var(--button-color)",
+    '&:hover': {
+      borderColor: 'var(--button-color)',
+      color: 'var(--button-color)',
     },
-    "&:hover::before": {
+    '&:hover::before': {
       opacity: 0,
     },
-    "&:active": {
-      backgroundColor: "white",
+    '&:active': {
+      backgroundColor: 'white',
     },
-    "&:active::before": {
+    '&:active::before': {
       opacity: 0.1,
     },
-    "&::before": {
+    '&::before': {
       opacity: 0,
     },
   }),
-);
+)
 
 export const OutlineButton: FC<ButtonProps> = ({
-  buttonColor = "brand",
+  buttonColor = 'brand',
   textColor,
-  size = "md",
+  size = 'md',
   ...props
 }: ButtonProps) => (
   <StyledOutlineButton
@@ -44,4 +44,4 @@ export const OutlineButton: FC<ButtonProps> = ({
     buttonSize={size}
     {...props}
   />
-);
+)

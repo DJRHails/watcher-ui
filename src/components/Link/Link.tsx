@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { Box, BoxProps } from "../Box";
+import React, { FC } from 'react'
+import { Box, BoxProps } from '../Box'
 
 export interface LinkProps
   extends BoxProps,
@@ -7,5 +7,5 @@ export interface LinkProps
 
 export const Link: FC<LinkProps> = (props: LinkProps) => (
   <Box as="a" variant="link" {...props} />
-);
-Link.displayName="Link";
+)
+Link.displayName='Link'

@@ -1,13 +1,13 @@
-import React from "react";
-import { KindMeta, StoryMeta } from "/types/storybook";
-import { Box, Heading } from "/components";
+import React from 'react'
+import { KindMeta, StoryMeta } from '/types/storybook'
+import { Box, Heading } from '/components'
 
-import { StickyFooter } from "./StickyFooter";
+import { StickyFooter } from './StickyFooter'
 
 const story: KindMeta<typeof StickyFooter> = {
-  title: "Components/StickyFooter",
+  title: 'Components/StickyFooter',
   component: StickyFooter,
-};
+}
 
 export const standard: StoryMeta = () => (
   <StickyFooter footer={
@@ -15,6 +15,6 @@ export const standard: StoryMeta = () => (
   }>
     <Heading.h1 p={5}>Sticky Footer</Heading.h1>
   </StickyFooter>
-);
+)
 
-export default story;
+export default story

@@ -1,6 +1,6 @@
-import "styled-components";
-import { Theme } from "styled-system";
+import 'styled-components'
+import { Theme } from 'styled-system'
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme extends Theme {}
 }

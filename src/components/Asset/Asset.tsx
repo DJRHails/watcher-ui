@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import { Text, Icon, Flex, Box, IconProps, FlexProps, WithPlatform } from "/components";
-import _ from "lodash";
-import { PlatformDefiniton } from "../Platform/Platform";
+import React, { FC } from 'react'
+import { Text, Icon, Flex, Box, IconProps, FlexProps, WithPlatform } from '/components'
+import _ from 'lodash'
+import { PlatformDefiniton } from '../Platform/Platform'
 
 export interface AssetProps extends FlexProps {
   name: string;
@@ -22,8 +22,8 @@ export const Asset: FC<AssetProps> = ({
   flipped,
   ...rest
 }: AssetProps) => {
-  const iconSize = full ? "2.5em" : "2em";
-  const assetIcon = <Icon {..._.merge({ name: ticker }, icon)}/>;
+  const iconSize = full ? '2.5em' : '2em'
+  const assetIcon = <Icon {..._.merge({ name: ticker }, icon)}/>
   return (
     <Flex p={1} {...rest}>
       <Box fontSize={iconSize}>
@@ -51,13 +51,13 @@ export const Asset: FC<AssetProps> = ({
           fontWeight="light"
           uppercase
           sx={{
-            minWidth: "10ch",
+            minWidth: '10ch',
           }}
         >
           {ticker}
         </Text>}
       </Box>
     </Flex>
-  );
-};
-Asset.displayName="Asset";
+  )
+}
+Asset.displayName='Asset'

@@ -7,20 +7,20 @@ module.exports = {
       test: /\.tsx?$/,
       use: [
         {
-          loader: require.resolve('babel-loader'),
+          loader: require.resolve("babel-loader"),
           options: {
-            presets: [['react-app', { flow: false, typescript: true }]],
-          },
+            presets: [["react-app", { flow: false, typescript: true }]]
+          }
         },
         {
           loader: require.resolve("react-docgen-typescript-loader"),
           options: {
-            tsconfigPath: path.resolve(__dirname, "../tsconfig.json"),
-          },
-        },
+            tsconfigPath: path.resolve(__dirname, "../tsconfig.json")
+          }
+        }
       ]
     });
-    config.resolve.extensions.push('.ts', '.tsx');
+    config.resolve.extensions.push(".ts", ".tsx");
     return config;
   },
   addons: [

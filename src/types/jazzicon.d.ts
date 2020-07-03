@@ -1,1 +1,1 @@
-declare module "jazzicon";
+declare module 'jazzicon';

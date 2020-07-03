@@ -1,8 +1,8 @@
-import React, { PropsWithChildren } from "react";
-import { Card, CardProps } from "../Card";
-import { Heading, Pill, AspectRatio, Icon, Flex, Box } from "../..";
+import React, { PropsWithChildren } from 'react'
+import { Card, CardProps } from '../Card'
+import { Heading, Pill, AspectRatio, Icon, Flex, Box } from '../..'
 
-export type OpinionVariants = "do" | "dont";
+export type OpinionVariants = 'do' | 'dont';
 
 export interface WithOpinionVariant {
   variant?: OpinionVariants
@@ -11,9 +11,9 @@ export interface WithOpinionVariant {
 export const CircleWithEmphasis: React.FC<WithOpinionVariant> = ({
   variant
 }: WithOpinionVariant) => {
-  const bgColor = (variant === "dont" ? "red" : "green");
-  const color = (variant === "dont" ? "danger" : "success");
-  const icon = (variant === "dont" ? "Close" : "Check");
+  const bgColor = (variant === 'dont' ? 'red' : 'green')
+  const color = (variant === 'dont' ? 'danger' : 'success')
+  const icon = (variant === 'dont' ? 'Close' : 'Check')
 
   return <Box width={12}>
     <AspectRatio ratio={1}>
@@ -38,10 +38,10 @@ export const CircleWithEmphasis: React.FC<WithOpinionVariant> = ({
         </Pill>
       </Pill>
     </AspectRatio>
-  </Box>;
-};
+  </Box>
+}
 
-export interface OpinionCardProps extends WithOpinionVariant, Omit<CardProps, "variant"> {} 
+export interface OpinionCardProps extends WithOpinionVariant, Omit<CardProps, 'variant'> {} 
 
 export const OpinionCard: React.FC<OpinionCardProps> = ({
   variant,
@@ -54,16 +54,16 @@ export const OpinionCard: React.FC<OpinionCardProps> = ({
       maxWidth="md"
       mx="auto"
       borderTop="4px solid"
-      borderTopColor={variant === "dont" ? "danger" : "green"}
+      borderTopColor={variant === 'dont' ? 'danger' : 'green'}
       {...rest}
     >
       <Flex alignItems="center" mb={4}>
         <CircleWithEmphasis variant={variant}/>   
-        <Heading.h5 ml={3}>{variant === "dont" ? "Don't" : "Do"}</Heading.h5> 
+        <Heading.h5 ml={3}>{variant === 'dont' ? 'Don\'t' : 'Do'}</Heading.h5> 
       </Flex>
 
       {children}
     </Card>
-  );
-};
-OpinionCard.displayName="OpinionCard";
+  )
+}
+OpinionCard.displayName='OpinionCard'

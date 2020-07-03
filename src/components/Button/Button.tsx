@@ -1,11 +1,11 @@
-import React, { FC } from "react";
-import { Text } from "/components";
-import { VariantButton } from "./VariantButton";
-import { ButtonProps } from "./BaseButton";
+import React, { FC } from 'react'
+import { Text } from '/components'
+import { VariantButton } from './VariantButton'
+import { ButtonProps } from './BaseButton'
 
 export const Button: FC<ButtonProps> = ({
   children,
-  variant = "solid",
+  variant = 'solid',
   fontSize,
   ...props
 }: ButtonProps) => (
@@ -16,5 +16,5 @@ export const Button: FC<ButtonProps> = ({
   >
     <Text variant="button" fontSize={fontSize}>{children}</Text>
   </VariantButton>
-);
-Button.displayName="Button";
+)
+Button.displayName='Button'

@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { Text, TextProps } from "../Text";
+import React, { FC } from 'react'
+import { Text, TextProps } from '../Text'
 
 export interface HeadingProps
   extends TextProps,
@@ -13,7 +13,7 @@ const TextHeading: FC<HeadingProps> = (props) => (
     lineHeight="none"
     {...props}
   />
-);
+)
 
 const h1: FC<HeadingProps> = (props) => (
   <TextHeading
@@ -24,8 +24,8 @@ const h1: FC<HeadingProps> = (props) => (
     as="h1"
     {...props}
   />
-);
-h1.displayName = "Heading.h1";
+)
+h1.displayName = 'Heading.h1'
 
 const h2: FC<HeadingProps> = (props) => (
   <TextHeading
@@ -33,8 +33,8 @@ const h2: FC<HeadingProps> = (props) => (
     as="h2"
     {...props}
   />
-);
-h2.displayName = "Heading.h2";
+)
+h2.displayName = 'Heading.h2'
 
 const h3: FC<HeadingProps> = (props) => (
   <TextHeading
@@ -44,8 +44,8 @@ const h3: FC<HeadingProps> = (props) => (
     mb={3}
     {...props}
   />
-);
-h3.displayName = "Heading.h3";
+)
+h3.displayName = 'Heading.h3'
 
 const h4: FC<HeadingProps> = (props) => (
   <TextHeading
@@ -54,8 +54,8 @@ const h4: FC<HeadingProps> = (props) => (
     as="h4"
     {...props}
   />
-);
-h4.displayName = "Heading.h4";
+)
+h4.displayName = 'Heading.h4'
 
 const h5: FC<HeadingProps> = (props) => (
   <TextHeading
@@ -64,8 +64,8 @@ const h5: FC<HeadingProps> = (props) => (
     as="h5"
     {...props}
   />
-);
-h5.displayName = "Heading.h5";
+)
+h5.displayName = 'Heading.h5'
 
 
 export const Heading = {
@@ -74,4 +74,4 @@ export const Heading = {
   h3,
   h4,
   h5,
-};
+}

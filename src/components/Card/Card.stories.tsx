@@ -1,8 +1,8 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react'
 
-import { StoryMeta, StoryFnType } from "/types/storybook";
-import { Card } from "./Card";
-import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from "/components";
+import { StoryMeta, StoryFnType } from '/types/storybook'
+import { Card } from './Card'
+import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from '/components'
 
 const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   width="full"
@@ -11,15 +11,15 @@ const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   alignItems="center"
 >
   {context?.()}
-</Flex>;
+</Flex>
 
 export default {
-  title: "Components/Card",
+  title: 'Components/Card',
   component: Card,
   decorators: [
     withCenterComponent
   ]
-};
+}
 
 export const namedCard: StoryMeta = () => (
   <Card
@@ -39,15 +39,15 @@ export const namedCard: StoryMeta = () => (
       </Text>
     </Box>
 
-    <Button width={[1, "auto", "auto"]} mr={3}>
+    <Button width={[1, 'auto', 'auto']} mr={3}>
         Accept
     </Button>
 
-    <Button variant="outline" width={[1, "auto", "auto"]} mt={[2, 0, 0]}>
+    <Button variant="outline" width={[1, 'auto', 'auto']} mt={[2, 0, 0]}>
         Cancel
     </Button>
   </Card>
-);
+)
 
 export const imageCardWithSub: StoryMeta = () => (
   <Card width="auto" maxWidth="md" mx="auto" my={5} p={0}>
@@ -72,7 +72,7 @@ export const imageCardWithSub: StoryMeta = () => (
       </Button>
     </Flex>
   </Card>
-);
+)
 
 
 export const airbnbCard: StoryMeta = () => (
@@ -99,7 +99,7 @@ export const airbnbCard: StoryMeta = () => (
       <Text ml={1} fontSize={2}><b>4.84</b> (190)</Text>
     </Flex>
   </Card>
-);
+)
 
 export const cryptoKittiesCard: StoryMeta = () => (
   <Card
@@ -109,14 +109,14 @@ export const cryptoKittiesCard: StoryMeta = () => (
     mx="auto"
   >
     <Box bg="#e5f3e2" sx={{
-      borderRadius: "lg",
-      transition: "box-shadow 200ms cubic-bezier(0.4,0,0.2,1)",
+      borderRadius: 'lg',
+      transition: 'box-shadow 200ms cubic-bezier(0.4,0,0.2,1)',
       // transitionProperty: "shadow",
       // transitionDuration: "300",
       // transitionTimingFunction: "in-out",
-      "&:hover": {
-        "--outline-color": "#e5f3e2",
-        boxShadow: "outline",
+      '&:hover': {
+        '--outline-color': '#e5f3e2',
+        boxShadow: 'outline',
       }
     }}>
       <Image ml="-8.25%" maxWidth="116.5%" src="https://img.cryptokitties.co/0x06012c8cf97bead5deae237070f9587f8e7a266d/1675025.png"/>
@@ -159,9 +159,9 @@ export const cryptoKittiesCard: StoryMeta = () => (
       </Text>
     </Flex>
   </Card>
-);
+)
 
 cryptoKittiesCard.story = {
-  name: "CryptoKitties Card"
-};
+  name: 'CryptoKitties Card'
+}
 

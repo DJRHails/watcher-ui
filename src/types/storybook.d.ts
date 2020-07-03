@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 
-declare module "storybook" {
+declare module 'storybook' {
   export function css(input?: SystemStyleObject): styleFn;
 }
 export type StoryId = string;

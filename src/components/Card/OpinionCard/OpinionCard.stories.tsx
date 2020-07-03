@@ -1,13 +1,13 @@
-import React from "react";
-import { KindMeta, StoryMeta } from "/types/storybook";
+import React from 'react'
+import { KindMeta, StoryMeta } from '/types/storybook'
 
-import { OpinionCard } from "./OpinionCard";
-import { Text, Flex } from "/components";
+import { OpinionCard } from './OpinionCard'
+import { Text, Flex } from '/components'
 
 const story: KindMeta<typeof OpinionCard> = {
-  title: "Components/Card/OpinionCard",
+  title: 'Components/Card/OpinionCard',
   component: OpinionCard,
-};
+}
 
 export const doCard: StoryMeta = () => (
   <Flex
@@ -25,7 +25,7 @@ export const doCard: StoryMeta = () => (
       </Text>
     </OpinionCard>
   </Flex>
-);
+)
 
 export const dontCard: StoryMeta = () => (
   <Flex
@@ -43,5 +43,5 @@ export const dontCard: StoryMeta = () => (
       </Text>
     </OpinionCard>
   </Flex>
-);
-export default story;
+)
+export default story

@@ -1,8 +1,8 @@
-import React from "react";
-import { css } from "@styled-system/css";
-import { Box, BoxProps } from "../Box";
-import styled from "styled-components";
-import { layout, typography, space, borders, shadow, BorderProps, TypographyProps, LayoutProps, ShadowProps } from "styled-system";
+import React from 'react'
+import { css } from '@styled-system/css'
+import { Box, BoxProps } from '../Box'
+import styled from 'styled-components'
+import { shadow, BorderProps, TypographyProps, LayoutProps, ShadowProps } from 'styled-system'
 
 export interface TableKnownProps extends BoxProps, BorderProps, TypographyProps, LayoutProps, ShadowProps {}
 
@@ -16,33 +16,33 @@ export interface TableProps
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const StyledTable = styled(Box)<any>(
   css({
-    "&": {
-      borderCollapse: "collapse",
-      fontFamily: "body",
-      color: "text",
+    '&': {
+      borderCollapse: 'collapse',
+      fontFamily: 'body',
+      color: 'text',
       fontSize: 1,
     },
-    "th, td": {
-      border: "solid",
-      borderWidth: "1px 0",
-      borderColor: "muted",
-      textAlign: "left",
+    'th, td': {
+      border: 'solid',
+      borderWidth: '1px 0',
+      borderColor: 'muted',
+      textAlign: 'left',
       px: 3,
-      fontWeight: "light",
+      fontWeight: 'light',
     },
-    "tbody tr": {
-      height: "12"
+    'tbody tr': {
+      height: '12'
     },
-    "thead tr, tfoot tr": {
-      height: "16",
+    'thead tr, tfoot tr': {
+      height: '16',
     },
-    "thead th": {
-      fontWeight: "bold",
-      textTransform: "uppercase",
+    'thead th': {
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
     },
   }),
   shadow,
-);
+)
 
 export const Table: React.FC<TableProps> = ({scrollX, ...rest}: TableProps) => {
   const styledTable = (
@@ -58,13 +58,13 @@ export const Table: React.FC<TableProps> = ({scrollX, ...rest}: TableProps) => {
       boxShadow="sm"
       {...rest}
       as="table" />
-  );
+  )
   return scrollX ? (
-    <Box width={rest.width || "full"} sx={{
-      overflowX: "auto",
+    <Box width={rest.width || 'full'} sx={{
+      overflowX: 'auto',
     }}>
       {styledTable}
     </Box>
-  ) : styledTable;
-};
-Table.displayName = "Table";
+  ) : styledTable
+}
+Table.displayName = 'Table'

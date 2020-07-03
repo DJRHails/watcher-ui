@@ -1,2 +1,2 @@
-export type { StackDividerProps } from "./StackDivider";
-export { StackDivider } from "./StackDivider";
+export type { StackDividerProps } from './StackDivider'
+export { StackDivider } from './StackDivider'

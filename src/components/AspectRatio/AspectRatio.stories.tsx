@@ -1,13 +1,13 @@
-import React from "react";
-import { KindMeta, StoryMeta } from "/types/storybook";
+import React from 'react'
+import { KindMeta, StoryMeta } from '/types/storybook'
 
-import { AspectRatio } from "./AspectRatio";
-import { Box, Image } from "/components";
+import { AspectRatio } from './AspectRatio'
+import { Box, Image } from '/components'
 
 const story: KindMeta<typeof AspectRatio> = {
-  title: "Components/AspectRatio",
+  title: 'Components/AspectRatio',
   component: AspectRatio,
-};
+}
 
 export const fourByThree: StoryMeta = () => (
   <AspectRatio>
@@ -15,7 +15,7 @@ export const fourByThree: StoryMeta = () => (
       src="https://source.unsplash.com/random/1024x768"
     />
   </AspectRatio>
-);
+)
 
 export const square: StoryMeta = () => (
   <AspectRatio ratio={1}>
@@ -23,7 +23,7 @@ export const square: StoryMeta = () => (
       src="https://source.unsplash.com/random/1024x768"
     />
   </AspectRatio>
-);
+)
 
 export const responsiveSquare: StoryMeta = () => (
   <AspectRatio ratio={1} maxWidth="full">
@@ -31,13 +31,13 @@ export const responsiveSquare: StoryMeta = () => (
       src="https://source.unsplash.com/random/1024x768"
     />
   </AspectRatio>
-);
+)
 
 export const redSquare: StoryMeta = () => (
   <AspectRatio ratio={1}>
     <Box backgroundColor="red" />
   </AspectRatio>
-);
+)
 
 
-export default story;
+export default story

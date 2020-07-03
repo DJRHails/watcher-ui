@@ -1,22 +1,22 @@
-import React from "react";
-import { KindMeta, StoryMeta } from "/types/storybook";
+import React from 'react'
+import { KindMeta, StoryMeta } from '/types/storybook'
 
-import { Icon } from "../Icon";
-import { Flex, Text } from "/components";
-import { ETHERSCAN_NAMESPACE } from "./Icon";
+import { Icon } from '../Icon'
+import { Flex, Text } from '/components'
+import { ETHERSCAN_NAMESPACE } from './Icon'
 
 const story: KindMeta<typeof Icon> = {
-  title: "Components/Icon",
+  title: 'Components/Icon',
   component: Icon,
-};
+}
 
 export const brandEth: StoryMeta = () => (
   <Icon name="Eth" color="brand"/>
-);
+)
 
 export const check: StoryMeta = () => (
   <Icon name="Check" color="success" /> 
-);
+)
 
 export const automatic: StoryMeta = () => (
   <>
@@ -46,14 +46,14 @@ export const automatic: StoryMeta = () => (
     </Flex>
     
   </>
-);
+)
 
 export const etherscan: StoryMeta = () => (
   <Icon name={`${ETHERSCAN_NAMESPACE}chai`}/>
-);
+)
 
 export const algorand: StoryMeta = () => (
   <Icon name="Algo"/>
-);
+)
 
-export default story;
+export default story

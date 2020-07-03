@@ -1,8 +1,8 @@
-import React from "react";
-import { Table } from ".";
-import { render } from "@testing-library/react";
-import { ThemeProvider } from "styled-components";
-import theme from "/themes/theme";
+import React from 'react'
+import { Table } from '.'
+import { render } from '@testing-library/react'
+import { ThemeProvider } from 'styled-components'
+import theme from '/themes/theme'
 
 const DEFAULT_TABLE = (
   <Table>
@@ -35,24 +35,24 @@ const DEFAULT_TABLE = (
       </tr>
     </tbody>
   </Table>
-);
+)
 
-describe("Table component sanity", () => {
-  it("has name", () => {
-    expect(Table.displayName).toBe("Table");
-  });
+describe('Table component sanity', () => {
+  it('has name', () => {
+    expect(Table.displayName).toBe('Table')
+  })
 
-  it("matches default snapshot", () => {
-    const component = render(DEFAULT_TABLE);
-    expect(component).toMatchSnapshot();
-  });
+  it('matches default snapshot', () => {
+    const component = render(DEFAULT_TABLE)
+    expect(component).toMatchSnapshot()
+  })
 
-  it("matches themed snapshot", () => {
+  it('matches themed snapshot', () => {
     const component = render(
       <ThemeProvider theme={theme}>
         {DEFAULT_TABLE}
       </ThemeProvider>
-    );
-    expect(component).toMatchSnapshot();
-  });
-});
+    )
+    expect(component).toMatchSnapshot()
+  })
+})

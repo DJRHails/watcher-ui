@@ -1,15 +1,15 @@
-import React from "react";
-import { StoryMeta } from "/types/storybook";
-import { Table } from "./Table";
-import { Heading } from "/components";
-import { Box } from "/components";
-import { Asset } from "/components";
-import { ETHERSCAN_NAMESPACE } from "../Icon/Icon";
+import React from 'react'
+import { StoryMeta } from '/types/storybook'
+import { Table } from './Table'
+import { Heading } from '/components'
+import { Box } from '/components'
+import { Asset } from '/components'
+import { ETHERSCAN_NAMESPACE } from '../Icon/Icon'
 
 export default {
-  title: "Components/Table",
+  title: 'Components/Table',
   component: Table,
-};
+}
 
 export const table: StoryMeta = () => (
   <Table>
@@ -42,74 +42,74 @@ export const table: StoryMeta = () => (
       </tr>
     </tbody>
   </Table>
-);
+)
 
 export const assetTable: StoryMeta = () => {
   const assetRows = [
     {
-      name: "Ethereum",
-      ticker: "Eth",
+      name: 'Ethereum',
+      ticker: 'Eth',
       platform: {
-        name: "Eth",
+        name: 'Eth',
       },
       balance: 0.3434,
       price: 184.82
     },
     {
-      name: "Chai",
-      ticker: "CHAI",
+      name: 'Chai',
+      ticker: 'CHAI',
       icon: {
-        name: ETHERSCAN_NAMESPACE + "chai",
+        name: ETHERSCAN_NAMESPACE + 'chai',
       },
       platform: {
-        name: "Eth",
+        name: 'Eth',
       },
       balance: 0.9926,
       price: 0.81
     },
     {
-      name: "Tether",
-      ticker: "USDT",
+      name: 'Tether',
+      ticker: 'USDT',
       platform: {
-        name: "Eth",
+        name: 'Eth',
       },
       balance: 4.0604,
       price: 0.80
     },
     {
-      name: "sDEFI",
-      ticker: "sD",
+      name: 'sDEFI',
+      ticker: 'sD',
       icon: {
-        name: "sD",
-        color: "background",
-        backgroundColor: "brand",
+        name: 'sD',
+        color: 'background',
+        backgroundColor: 'brand',
       },
       platform: {
-        name: "Eth",
+        name: 'Eth',
       },
       balance: 0.0013,
       price: 1918.67
     },
     {
-      name: "Maker",
-      ticker: "MKR",
+      name: 'Maker',
+      ticker: 'MKR',
       platform: {
-        name: "Eth"
+        name: 'Eth'
       },
       balance: 0.02,
       price: 543.2750
     },
     {
-      name: "Ethereum",
-      ticker: "ETH",
+      name: 'Ethereum',
+      ticker: 'ETH',
       platform: {
-        name: "Algo",
-        backgroundColor: "black",
+        name: 'Algo',
+        backgroundColor: 'black',
       },
       balance: 0.3434,
       price: 184.82
     },
-  ] as const;
+  ] as const
   return (
     <Box p={3}>
       <Heading.h4>Wallet £69.95</Heading.h4>
@@ -142,5 +142,5 @@ export const assetTable: StoryMeta = () => {
         </tbody>
       </Table>
     </Box>
-  );
-};
+  )
+}

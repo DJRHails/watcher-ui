@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
-import theme from "/themes/theme";
-import { ThemeProvider } from "styled-components";
-import { CssReset, Box, BoxProps } from "/components";
+import React, { ReactNode } from 'react'
+import theme from '/themes/theme'
+import { ThemeProvider } from 'styled-components'
+import { CssReset, Box, BoxProps } from '/components'
 
 export interface MainProps extends BoxProps {
   children?: ReactNode
@@ -9,8 +9,8 @@ export interface MainProps extends BoxProps {
 
 export const Main: React.FC<MainProps> = ({
   sx = {
-    fontFamily: "body",
-    height: "full"
+    fontFamily: 'body',
+    height: 'full'
   },
   ...rest
 }: MainProps) => {
@@ -19,5 +19,5 @@ export const Main: React.FC<MainProps> = ({
       <CssReset/>
       <Box role="main" sx={sx} {...rest}/>
     </ThemeProvider>
-  );
-};
+  )
+}

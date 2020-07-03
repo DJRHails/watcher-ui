@@ -1,28 +1,28 @@
-import React, { FC } from "react";
-import { Box, BoxProps } from "../Box";
-import styled from "styled-components";
-import css from "@styled-system/css";
+import React, { FC } from 'react'
+import { Box, BoxProps } from '../Box'
+import styled from 'styled-components'
+import css from '@styled-system/css'
 
 export interface BadgeProps extends BoxProps,
 Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
-  variantColor?: "success" | "brand"
+  variantColor?: 'success' | 'brand'
 }
 
 const StyledBadge = styled(Box)(
   css({
-    fontFamily: "body",
-    textTransform: "uppercase",
+    fontFamily: 'body',
+    textTransform: 'uppercase',
     px: 2,
     py: 1,
-    fontWeight: "bold",
-    borderRadius: "sm",
-    whiteSpace: "nowrap",
-    display: "inline-block"
+    fontWeight: 'bold',
+    borderRadius: 'sm',
+    whiteSpace: 'nowrap',
+    display: 'inline-block'
   }),
-);
+)
 
 export const Badge: FC<BadgeProps> = ({
-  variantColor = "brand",
+  variantColor = 'brand',
   ...props
 }: BadgeProps) => (
   <StyledBadge 
@@ -31,5 +31,5 @@ export const Badge: FC<BadgeProps> = ({
     fontSize={1}
     {...props}
   />
-);
-Badge.displayName = "Badge";
+)
+Badge.displayName = 'Badge'

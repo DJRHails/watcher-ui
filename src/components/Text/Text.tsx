@@ -1,8 +1,8 @@
-import { BoxProps, Box } from "../Box"; // TODO: This cannot be "/components" for some unknown reason
-import styled from "styled-components";
-import { variant, BackgroundProps, background, typography, TypographyProps } from "styled-system";
+import { BoxProps, Box } from '../Box' // TODO: This cannot be "/components" for some unknown reason
+import styled from 'styled-components'
+import { variant, BackgroundProps, background, typography, TypographyProps } from 'styled-system'
 
-export type TextVariants = "heading" | "body" | "button" | "gradient";
+export type TextVariants = 'heading' | 'body' | 'button' | 'gradient';
 
 export interface TextProps extends BoxProps, TypographyProps, BackgroundProps {
   uppercase?: true;
@@ -13,26 +13,26 @@ export interface TextProps extends BoxProps, TypographyProps, BackgroundProps {
 const textVariants = variant({
   variants: {
     body: {
-      fontFamily: "body",
+      fontFamily: 'body',
       fontSize: 1,
     },
     button: {
-      position: "relative",
+      position: 'relative',
       fontSize: 1,
-      fontWeight: "bold",
+      fontWeight: 'bold',
       zIndex: 1,
-      userSelect: "none",
-      pointerEvents: "none",
+      userSelect: 'none',
+      pointerEvents: 'none',
     },
     gradient: {
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
+      '-webkit-background-clip': 'text',
+      '-webkit-text-fill-color': 'transparent',
     }
   },
-});
+})
 
 export const Text = styled(Box)<TextProps>`
-  ${({ uppercase }) => uppercase && "text-transform: uppercase;"}
+  ${({ uppercase }) => uppercase && 'text-transform: uppercase;'}
   ${({ truncate }) => truncate && `
     white-space: nowrap;
     overflow: hidden;
@@ -41,5 +41,5 @@ export const Text = styled(Box)<TextProps>`
   ${textVariants}
   ${background}
   ${typography}
-`;
-Text.displayName="Text";
+`
+Text.displayName='Text'

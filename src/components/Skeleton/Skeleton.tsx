@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
-import { Box, BoxProps } from "/components";
-import styled, { keyframes, css as styledcss, Keyframes } from "styled-components";
-import { get } from "styled-system";
+import React, { ReactNode } from 'react'
+import { Box, BoxProps } from '/components'
+import styled, { keyframes, css as styledcss, Keyframes } from 'styled-components'
+import { get } from 'styled-system'
 
 export interface SkeletonProps extends BoxProps {
   startColor?: string;
@@ -12,7 +12,7 @@ export interface SkeletonProps extends BoxProps {
   children?: ReactNode;
 } 
 
-const getColor = (theme: SkeletonProps["theme"], color?: string) => get(get(theme ?? {}, "colors"), color ?? "", color ?? "");
+const getColor = (theme: SkeletonProps['theme'], color?: string) => get(get(theme ?? {}, 'colors'), color ?? '', color ?? '')
 
 const frame = ({theme, startColor, endColor}: SkeletonProps): Keyframes => keyframes`
   from {
@@ -23,7 +23,7 @@ const frame = ({theme, startColor, endColor}: SkeletonProps): Keyframes => keyfr
     border-color: ${getColor(theme, endColor)};
     background: ${getColor(theme, endColor)};
   }
-`;
+`
 
 const fadeIn = keyframes`
   from {
@@ -32,24 +32,24 @@ const fadeIn = keyframes`
   to {
     opacity: 1;
   }
-`;
+`
 
 const StyledSkeleton = styled(Box)<SkeletonProps>`
   animation: ${({speed}) => speed}s linear infinite alternate ${frame};
   box-shadow: none;
-  ${(borderRadius) => !borderRadius && "border-radius: 2px;"}
+  ${(borderRadius) => !borderRadius && 'border-radius: 2px;'}
   background-clip: padding-box;
   cursor: progress;
-  ${({children}) => children && "width: fit-content;"}
+  ${({children}) => children && 'width: fit-content;'}
   &::before, &::after, * {
     visibility: hidden;
   }
-`;
+`
 
 export const Skeleton = React.forwardRef((
   {
-    startColor = "#EDF2F7",
-    endColor = "#A0AEC0",
+    startColor = '#EDF2F7',
+    endColor = '#A0AEC0',
     hasLoaded,
     fadeDuration = 0.4,
     speed = 0.8,
@@ -66,7 +66,7 @@ export const Skeleton = React.forwardRef((
         css={styledcss`animation: ${fadeIn} ${fadeDuration}s;` as any}
         {...rest}
       />
-    );
+    )
   }
 
   return (
@@ -77,14 +77,14 @@ export const Skeleton = React.forwardRef((
       speed={speed}
       {...rest}
     />
-  );
-});
-Skeleton.displayName="Skeleton";
+  )
+})
+Skeleton.displayName='Skeleton'
 
 export const SkeletonCircle = React.forwardRef(({
-  size = "2rem",
+  size = '2rem',
   ...rest
 }: SkeletonProps, ref) => (
   <Skeleton ref={ref} borderRadius="full" size={size} {...rest}/>
-));
-SkeletonCircle.displayName="SkeletonCircle";
+))
+SkeletonCircle.displayName='SkeletonCircle'

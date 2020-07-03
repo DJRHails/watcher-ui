@@ -90,3 +90,6 @@ export type { NiftyProps } from "./Nifty";
 
 export { WithPlatform } from "./Platform";
 export type { PlatformProps, PlatformDefiniton, CustomPlatform, KnownPlatform, WithPlatformProps } from "./Platform";
+
+export { Committee } from "./Committee";
+export type { CommitteeProps } from "./Committee";

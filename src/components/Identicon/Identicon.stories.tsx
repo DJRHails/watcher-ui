@@ -2,6 +2,7 @@ import React from "react";
 import { KindMeta, StoryMeta } from "/types/storybook";
 
 import { Identicon } from "./Identicon";
+import { randomEthereumAddress } from "/utils/eth";
 
 const story: KindMeta<typeof Identicon> = {
   title: "Components/Identicon",
@@ -11,6 +12,12 @@ const story: KindMeta<typeof Identicon> = {
 export const ethereum: StoryMeta = () => (
   <Identicon        
     address="0x67C3fD74fd36456FC5b339Fd09Efa330ad3126eE"
+  />
+);
+
+export const randomAddress: StoryMeta =  () => (
+  <Identicon
+    address={randomEthereumAddress()}
   />
 );
 

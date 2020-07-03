@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any,@typescript-eslint/explicit-module-boundary-types */
 
-export const isNull = (value: any): value is null => value == null;
+export const isNull = (value: any): value is null => value === null;
+
+export const isUndefined = (value: any): value is undefined => value === undefined;
 
 export function isString(value: any): value is string {
   return Object.prototype.toString.call(value) === "[object String]";

@@ -2,14 +2,14 @@ import React, { FC } from 'react'
 import * as CSS from 'csstype'
 import styled, { DefaultTheme } from 'styled-components'
 import StyledSystem, { ResponsiveValue, TLengthStyledSystem, grid } from 'styled-system'
-import { Box } from '../Box'
+import { Box, BoxProps } from '../Box'
 import { isNull, isNumber } from '../../utils/assertions'
 import { mapResponsive } from '../../utils/responsive'
 
 type MinWidth = ResponsiveValue<CSS.WidthProperty<TLengthStyledSystem>, DefaultTheme>;
 type ColumnsCount = ResponsiveValue<number, DefaultTheme>;
 
-export interface GridProps {
+export interface GridProps extends BoxProps {
   minChildWidth?: MinWidth;
   columns?: ColumnsCount;
   spacing?: StyledSystem.GridProps['gridGap'];

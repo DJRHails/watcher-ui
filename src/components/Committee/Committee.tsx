@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import { Address } from '/types/crypto'
 import styled from 'styled-components'
 import { Identicon } from '/components/Identicon'
 import { isUndefined } from '/utils/assertions'
@@ -43,7 +42,7 @@ export type MemberRating = 'approve' | 'reject' | 'pending';
 
 export interface Member {
   name: string;
-  address: Address;
+  address: string;
 }
 
 export interface CommitteeProps {

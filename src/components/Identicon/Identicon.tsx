@@ -5,6 +5,7 @@ import { Jazzicon } from './Jazzicon'
 export interface IdenticonProps extends BoxProps {
   address: string;
   diameter?: number;
+  allowOverlap?: true;
   platform?: PlatformDefiniton;
 } 
 
@@ -14,6 +15,7 @@ export const Identicon: FC<IdenticonProps> = ({
   address,
   diameter = 50,
   platform,
+  allowOverlap,
   ...rest
 }: IdenticonProps) => {
 
@@ -24,6 +26,7 @@ export const Identicon: FC<IdenticonProps> = ({
         ? (
           <WithPlatform
             maximise
+            allowOverlap={allowOverlap}
             fontSize={`${diameter}px`}
             platform={platform}
           >

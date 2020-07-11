@@ -82,7 +82,7 @@ export type { StickyFooterProps } from './StickyFooter'
 export { Stack, StackDivider } from './Stack'
 export type { StackProps, StackDividerProps } from './Stack'
 
-export { Skeleton, SkeletonText } from './Skeleton'
+export { Skeleton, SkeletonText, SkeletonCircle } from './Skeleton'
 export type { SkeletonProps, SkeletonTextProps } from './Skeleton'
 
 export { Nifty } from './Nifty'

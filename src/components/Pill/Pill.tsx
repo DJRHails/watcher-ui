@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
-import { Text, TextProps } from '../Text' //TODO: Cannot be /components
-import styled from 'styled-components'
-import { css } from '@styled-system/css'
-import { borders, BordersProps } from 'styled-system'
+import React, { FC } from 'react';
+import { Text, TextProps } from '../Text'; //TODO: Cannot be /components
+import styled from 'styled-components';
+import { css } from '@styled-system/css';
+import { borders, BordersProps } from 'styled-system';
 
 export interface PillProps extends TextProps, BordersProps,
 Omit<React.HTMLProps<HTMLDivElement>, keyof TextProps> {}
@@ -27,7 +27,7 @@ const StyledPill = styled(Text)(
       pointerEvents: 'none',
     }
   })
-)
+);
 
 export const Pill: FC<PillProps> = ({
   children,
@@ -48,5 +48,5 @@ export const Pill: FC<PillProps> = ({
   >
     {children}
   </StyledPill>
-)
-Pill.displayName = 'Pill'
+);
+Pill.displayName = 'Pill';

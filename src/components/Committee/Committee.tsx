@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
-import styled from 'styled-components'
-import { Identicon } from '/components/Identicon'
-import { isUndefined } from '/utils/assertions'
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import { Identicon } from '/components/Identicon';
+import { isUndefined } from '/utils/assertions';
 
 interface StyledMemberProps {
   i: number;
@@ -21,7 +21,7 @@ const StyledMember = styled.div<StyledMemberProps>`
     translate(calc(.5*var(--committeeDiameter))) 
     rotate(calc(-1*var(--az)));
   counter-reset: i var(--i);
-`
+`;
 
 interface StyledCommitteeProps {
   n: number;
@@ -36,7 +36,7 @@ const StyledCommittee = styled.div<StyledCommitteeProps>`
   ${({ n }) => n && `--n: ${n};`}
   ${({ memberDiameter: d }) => d && `--diameter: ${d}px;`}
   ${({ diameter: d }) => d && `--committeeDiameter: ${d}px;`}
-`
+`;
 
 export type MemberRating = 'approve' | 'reject' | 'pending';
 
@@ -58,17 +58,17 @@ export const Committee: FC<CommitteeProps> = ({
   memberDiameter,
   padding = 5,
 }: CommitteeProps) => {
-  const n = members.length
+  const n = members.length;
   if (isUndefined(memberDiameter) && isUndefined(committeeDiameter)) {
-    committeeDiameter = 200
+    committeeDiameter = 200;
   }
   if (committeeDiameter && isUndefined(memberDiameter)) {
-    memberDiameter = (committeeDiameter * Math.PI - (n - 1) * padding) / n
+    memberDiameter = (committeeDiameter * Math.PI - (n - 1) * padding) / n;
     // Jazzicon has a maximum diameter of 100.
-    memberDiameter = Math.min(100, memberDiameter)
+    memberDiameter = Math.min(100, memberDiameter);
   }
   if (memberDiameter && isUndefined(committeeDiameter)) {
-    committeeDiameter = (memberDiameter * n + (n - 1) * padding) / Math.PI
+    committeeDiameter = (memberDiameter * n + (n - 1) * padding) / Math.PI;
   }
 
   if (!isUndefined(memberDiameter) && !isUndefined(committeeDiameter)) {
@@ -84,9 +84,9 @@ export const Committee: FC<CommitteeProps> = ({
           </StyledMember>
         )}
       </StyledCommittee>
-    )
+    );
   }
   
-  return null
-}
-Committee.displayName='Committee'
+  return null;
+};
+Committee.displayName='Committee';

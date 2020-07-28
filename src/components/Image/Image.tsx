@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
-import { Box, BoxProps } from '../Box'
-import styled from 'styled-components'
-import { space, layout } from 'styled-system'
+import React, { FC } from 'react';
+import { Box, BoxProps } from '../Box';
+import styled from 'styled-components';
+import { space, layout } from 'styled-system';
 
 export interface ImageProps
   extends BoxProps,
@@ -14,12 +14,12 @@ const StyledImage = styled(Box)(
   },
   space,
   layout,
-)
+);
 
 export const Image: FC<ImageProps> = (props: ImageProps) => (
   <StyledImage
     as="img"
     {...props}
   />
-)
-Image.displayName = 'Image'
+);
+Image.displayName = 'Image';

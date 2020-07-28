@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react'
-import { KindMeta, StoryMeta, StoryFnType } from '/types/storybook'
+import React, { ReactNode } from 'react';
+import { KindMeta, StoryMeta, StoryFnType } from '/types/storybook';
 
-import { Nifty, NiftyMetadata } from './Nifty'
-import { Flex } from '/components'
+import { Nifty, NiftyMetadata } from './Nifty';
+import { Flex } from '/components';
 
 const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   width="full"
@@ -11,13 +11,13 @@ const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   alignItems="center"
 >
   {context?.()}
-</Flex>
+</Flex>;
 
 const story: KindMeta<typeof Nifty> = {
   title: 'Components/Nifty',
   component: Nifty,
   decorators: [withCenterComponent],
-}
+};
 
 const ARRtistryNiftyMetadata: NiftyMetadata = {
   src: 'internal://',
@@ -32,7 +32,7 @@ const ARRtistryNiftyMetadata: NiftyMetadata = {
   name: 'Gorilla',
   img: 'https://ipfs.io/ipfs/QmYe9Ngo3UBss48ud5Ny7byde3yXE1GeoWGuHH4oeekza6',
   bg: 'surface'
-}
+};
 
 export const standard: StoryMeta = () => (
   <Nifty
@@ -40,10 +40,10 @@ export const standard: StoryMeta = () => (
     data={ARRtistryNiftyMetadata}
     platform="eth"
   />
-)
+);
 
 export const flippable: StoryMeta = () => {
-  const [flipped, setFlipped] = React.useState(false)
+  const [flipped, setFlipped] = React.useState(false);
   return (
     <Nifty
       id={16}
@@ -52,8 +52,8 @@ export const flippable: StoryMeta = () => {
       flipped={flipped || undefined}
       onClick={() => setFlipped(!flipped)}
     />
-  )
-}
+  );
+};
 
 
-export default story
+export default story;

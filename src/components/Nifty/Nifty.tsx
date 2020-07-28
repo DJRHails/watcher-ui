@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
-import { box, Box, BoxProps, Image, WithPlatform, AspectRatio, Heading, Flex, Button } from '/components'
-import styled from 'styled-components'
-import { BoxShadowProps, boxShadow } from 'styled-system'
-import { PlatformDefiniton } from '../Platform/Platform'
+import React, { FC } from 'react';
+import { box, Box, BoxProps, Image, WithPlatform, AspectRatio, Heading, Flex, Button } from '/components';
+import styled from 'styled-components';
+import { BoxShadowProps, boxShadow } from 'styled-system';
+import { PlatformDefiniton } from '../Platform/Platform';
 
 // TODO: Migrate address to external
 export type Address = string;
@@ -37,7 +37,7 @@ export interface NiftyProps extends BoxProps, BoxShadowProps {
 const StyledNifty = styled.div<BoxProps & BoxShadowProps>`
   ${box}
   ${boxShadow}
-`
+`;
 
 export const Nifty: FC<NiftyProps> = ({
   id,
@@ -78,6 +78,6 @@ export const Nifty: FC<NiftyProps> = ({
         </Button>
       </Flex>
     </StyledNifty>
-  )
-}
-Nifty.displayName='Nifty'
+  );
+};
+Nifty.displayName='Nifty';

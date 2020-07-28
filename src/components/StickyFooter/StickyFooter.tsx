@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react'
-import { Flex, Box } from '/components'
+import React, { ReactNode } from 'react';
+import { Flex, Box } from '/components';
 
 export interface StickyFooterProps {
   footer: ReactNode;
@@ -31,5 +31,5 @@ export const StickyFooter: React.FC<StickyFooterProps> = ({
       </Box>
     </Flex>
   </>
-)
-StickyFooter.displayName='StickyFooter'
+);
+StickyFooter.displayName='StickyFooter';

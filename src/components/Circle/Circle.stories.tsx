@@ -1,13 +1,13 @@
-import React from 'react'
-import { KindMeta, StoryMeta } from '/types/storybook'
+import React from 'react';
+import { KindMeta, StoryMeta } from '/types/storybook';
 
-import { Circle } from './Circle'
-import { Text, Box } from '/components'
+import { Circle } from './Circle';
+import { Text, Box } from '/components';
 
 const story: KindMeta<typeof Circle> = {
   title: 'Components/Circle',
   component: Circle,
-}
+};
 
 export const standard: StoryMeta = () => (
   <Circle
@@ -16,7 +16,7 @@ export const standard: StoryMeta = () => (
   >
     Circle
   </Circle>
-)
+);
 
 export const size: StoryMeta = () => (
   <Circle
@@ -24,7 +24,7 @@ export const size: StoryMeta = () => (
     color="white"
     backgroundColor="brand"
   />
-)
+);
 
 export const double: StoryMeta = () => (
   <Circle
@@ -44,6 +44,6 @@ export const double: StoryMeta = () => (
       </Circle>
     </Box>
   </Circle>
-)
+);
 
-export default story
+export default story;

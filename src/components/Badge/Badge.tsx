@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
-import { Box, BoxProps } from '../Box'
-import styled from 'styled-components'
-import css from '@styled-system/css'
+import React, { FC } from 'react';
+import { Box, BoxProps } from '../Box';
+import styled from 'styled-components';
+import css from '@styled-system/css';
 
 export interface BadgeProps extends BoxProps,
 Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
@@ -19,7 +19,7 @@ const StyledBadge = styled(Box)(
     whiteSpace: 'nowrap',
     display: 'inline-block'
   }),
-)
+);
 
 export const Badge: FC<BadgeProps> = ({
   variantColor = 'brand',
@@ -31,5 +31,5 @@ export const Badge: FC<BadgeProps> = ({
     fontSize={1}
     {...props}
   />
-)
-Badge.displayName = 'Badge'
+);
+Badge.displayName = 'Badge';

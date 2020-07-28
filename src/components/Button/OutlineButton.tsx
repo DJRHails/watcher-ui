@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
-import { ButtonProps } from './BaseButton'
-import styled from 'styled-components'
-import { css } from '@styled-system/css'
-import { StyledSolidButton } from './SolidButton'
+import React, { FC, Ref } from 'react';
+import { ButtonProps } from './BaseButton';
+import styled from 'styled-components';
+import { css } from '@styled-system/css';
+import { StyledSolidButton } from './SolidButton';
 
 const StyledOutlineButton = styled(StyledSolidButton)(
   css({
@@ -30,18 +30,19 @@ const StyledOutlineButton = styled(StyledSolidButton)(
       opacity: 0,
     },
   }),
-)
+);
 
-export const OutlineButton: FC<ButtonProps> = ({
+export const OutlineButton: FC<ButtonProps> = React.forwardRef(({
   buttonColor = 'brand',
   textColor,
   size = 'md',
   ...props
-}: ButtonProps) => (
+}: ButtonProps, ref: Ref<any>) => (
   <StyledOutlineButton
     buttonColor={buttonColor}
     textColor={textColor ? textColor : buttonColor}
     buttonSize={size}
+    ref={ref}
     {...props}
   />
-)
+));

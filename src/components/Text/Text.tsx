@@ -1,6 +1,6 @@
-import { BoxProps, Box } from '../Box' // TODO: This cannot be "/components" for some unknown reason
-import styled from 'styled-components'
-import { variant, BackgroundProps, background, typography, TypographyProps } from 'styled-system'
+import { BoxProps, Box } from '../Box'; // TODO: This cannot be "/components" for some unknown reason
+import styled from 'styled-components';
+import { variant, BackgroundProps, background, typography, TypographyProps } from 'styled-system';
 
 export type TextVariants = 'heading' | 'body' | 'button' | 'gradient';
 
@@ -29,7 +29,7 @@ const textVariants = variant({
       '-webkit-text-fill-color': 'transparent',
     }
   },
-})
+});
 
 export const Text = styled(Box)<TextProps>`
   ${({ uppercase }) => uppercase && 'text-transform: uppercase;'}
@@ -41,5 +41,5 @@ export const Text = styled(Box)<TextProps>`
   ${textVariants}
   ${background}
   ${typography}
-`
-Text.displayName='Text'
+`;
+Text.displayName='Text';

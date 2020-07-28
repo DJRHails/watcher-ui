@@ -1,2 +1,2 @@
-export { TokenCard } from './TokenCard'
-export type { TokenCardProps } from './TokenCard'
+export { TokenCard } from './TokenCard';
+export type { TokenCardProps } from './TokenCard';

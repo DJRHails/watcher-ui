@@ -1,15 +1,15 @@
-import React from 'react'
-import { StoryMeta } from '/types/storybook'
-import { TokenCard } from './TokenCard'
-import { text, number, withKnobs } from '@storybook/addon-knobs'
-import { Flex } from '../..'
-import { TokenIconName } from 'watcher-icons'
+import React from 'react';
+import { StoryMeta } from '/types/storybook';
+import { TokenCard } from './TokenCard';
+import { text, number, withKnobs } from '@storybook/addon-knobs';
+import { Flex } from '../..';
+import { TokenIconName } from 'watcher-icons';
 
 export default {
   title: 'Components/Card/TokenCard',
   component: TokenCard,
   decorators: [withKnobs],
-}
+};
 
 
 export const tokenCard: StoryMeta = () => (
@@ -18,7 +18,7 @@ export const tokenCard: StoryMeta = () => (
     name={text('Token Code', 'Eth') as TokenIconName}
     quantity={number('Quantity', 1.5)}
     value={number('Value', 1.5)} />
-)
+);
 
 export const tokenCardList: StoryMeta = () => (
   <Flex ml={-2}>
@@ -48,4 +48,4 @@ export const tokenCardList: StoryMeta = () => (
       quantity={501}
       value={20.59} />
   </Flex>
-)
+);

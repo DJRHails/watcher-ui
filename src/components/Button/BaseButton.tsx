@@ -1,10 +1,10 @@
-import React from 'react'
-import { Box, BoxProps } from '../Box' // TODO: Can't use .. here for some reasson again!
-import { style, layout, space, variant } from 'styled-system'
-import styled from 'styled-components'
-import { css } from '@styled-system/css'
-import type { ButtonVariant } from './VariantButton'
-import type { GradientProps } from './GradientButton'
+import React from 'react';
+import { Box, BoxProps, sx } from '../Box'; // TODO: Can't use .. here for some reason again!
+import { style, layout, space, variant } from 'styled-system';
+import styled from 'styled-components';
+import { css } from '@styled-system/css';
+import type { ButtonVariant } from './VariantButton';
+import type { GradientProps } from './GradientButton';
 
 export interface ButtonProps extends BoxProps, GradientProps, Omit<React.HTMLProps<HTMLButtonElement>, keyof BoxProps> {
   variant?: ButtonVariant;
@@ -17,13 +17,13 @@ const buttonColorStyle = style({
   prop: 'buttonColor',
   cssProperty: '--button-color',
   key: 'colors',
-})
+});
 
 const textColorStyle = style({
   prop: 'textColor',
   cssProperty: '--text-color',
   key: 'colors',
-})
+});
 
 const baseButtonStyle = css({
   '&': {
@@ -49,15 +49,10 @@ const baseButtonStyle = css({
     opacity: 0.5,
     pointerEvents: 'none',
   },
-})
+});
 
 
 export const BaseButton = styled(Box)<ButtonProps>(
-  baseButtonStyle,
-  buttonColorStyle,
-  textColorStyle,
-  space,
-  layout,
   variant({
     prop: 'buttonSize',
     variants: {
@@ -75,4 +70,9 @@ export const BaseButton = styled(Box)<ButtonProps>(
       }
     }
   }),
-)
+  baseButtonStyle,
+  buttonColorStyle,
+  textColorStyle,
+  space,
+  layout
+);

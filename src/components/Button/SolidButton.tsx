@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
-import { ButtonProps, BaseButton } from './BaseButton'
-import styled from 'styled-components'
-import { css } from '@styled-system/css'
+import React, { FC, Ref } from 'react';
+import { ButtonProps, BaseButton } from './BaseButton';
+import styled from 'styled-components';
+import { css } from '@styled-system/css';
 
 export const StyledSolidButton = styled(BaseButton)(
   css({
@@ -37,18 +37,19 @@ export const StyledSolidButton = styled(BaseButton)(
       pointerEvents: 'none',
     },
   }),
-)
+);
 
-export const SolidButton: FC<ButtonProps> = ({
+export const SolidButton: FC<ButtonProps> = React.forwardRef(({
   buttonColor = 'brand',
   textColor = 'white',
   size = 'md',
   ...props
-}: ButtonProps) => (
+}: ButtonProps, ref: Ref<any>) => (
   <StyledSolidButton
+    ref={ref}
     buttonColor={buttonColor}
     textColor={textColor}
     buttonSize={size}
     {...props}
   />
-)
+));

@@ -1,13 +1,13 @@
-import React from 'react'
-import { KindMeta, StoryMeta } from '/types/storybook'
-import { Box, StackDivider } from '/components'
+import React from 'react';
+import { KindMeta, StoryMeta } from '/types/storybook';
+import { Box, StackDivider } from '/components';
 
-import { Stack } from './Stack'
+import { Stack } from './Stack';
 
 const story: KindMeta<typeof Stack> = {
   title: 'Components/Stack',
   component: Stack,
-}
+};
 
 export const vertical: StoryMeta = () => (
   <Stack spacing={4}>
@@ -15,7 +15,7 @@ export const vertical: StoryMeta = () => (
     <span>ahhhhh</span>
     <span>Woah!</span>
   </Stack>
-)
+);
 
 export const inline: StoryMeta = () => (
   <Stack width="full" bg="brand" direction="row" p={3}>
@@ -23,7 +23,7 @@ export const inline: StoryMeta = () => (
     <Box size="40px" bg="#fff" borderRadius="full" />
     <Box size="40px" bg="#fff" borderRadius="full" />
   </Stack>
-)
+);
 
 export const responsive: StoryMeta = () => (
   <Stack direction={['column', 'column', 'column', 'row']} spacing="40px" width="full" p={3}>
@@ -37,7 +37,7 @@ export const responsive: StoryMeta = () => (
       3
     </Box>
   </Stack>
-)
+);
 
 export const WithResponsiveDivider = () => (
   <Stack
@@ -56,7 +56,7 @@ export const WithResponsiveDivider = () => (
       3
     </Box>
   </Stack>
-)
+);
 
 export const WithDivider = () => (
   <>
@@ -84,6 +84,6 @@ export const WithDivider = () => (
       </Box>
     </Stack>
   </>
-)
+);
 
-export default story
+export default story;

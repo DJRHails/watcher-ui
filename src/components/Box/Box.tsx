@@ -1,6 +1,6 @@
-import { flexbox, compose, space, layout, typography, color, border, background, BackgroundProps, BorderProps, SpaceProps, LayoutProps, FontSizeProps, ColorProps, FlexboxProps, styleFn } from 'styled-system'
-import styled, { CSSObject, DefaultTheme } from 'styled-components'
-import css, { SystemStyleObject, ResponsiveStyleValue } from '@styled-system/css'
+import { flexbox, compose, space, layout, typography, color, border, background, BackgroundProps, BorderProps, SpaceProps, LayoutProps, FontSizeProps, ColorProps, FlexboxProps, styleFn } from 'styled-system';
+import styled, { CSSObject, DefaultTheme } from 'styled-components';
+import css, { SystemStyleObject, ResponsiveStyleValue } from '@styled-system/css';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface BaseProps extends React.RefAttributes<any> {
@@ -61,7 +61,7 @@ export const box: styleFn = compose(
   border,
   background,
   (props) => props.css,
-)
+);
 
 export const Box = styled.div<BoxProps>`
   box-sizing: border-box;
@@ -69,5 +69,5 @@ export const Box = styled.div<BoxProps>`
   min-width: 0;
   ${box}
   ${sx}
-`
-Box.displayName = 'Box'
+`;
+Box.displayName = 'Box';

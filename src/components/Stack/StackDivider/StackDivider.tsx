@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { compose, border, layout, LayoutProps, BorderProps } from 'styled-system'
+import React from 'react';
+import styled from 'styled-components';
+import { compose, border, layout, LayoutProps, BorderProps } from 'styled-system';
 
 export interface StackDividerProps extends BorderProps, LayoutProps {} 
 
@@ -15,5 +15,5 @@ export const StackDivider: React.FC<StackDividerProps> = styled('hr')<StackDivid
     border,
     layout,
   )
-)
-StackDivider.displayName='StackDivider'
+);
+StackDivider.displayName='StackDivider';

@@ -1,6 +1,6 @@
-import React, { FC } from 'react'
-import { Card, CardProps } from '../Card'
-import { Text, Flex, Icon, IconProps } from '../..'
+import React, { FC } from 'react';
+import { Card, CardProps } from '../Card';
+import { Text, Flex, Icon, IconProps } from '../..';
 
 export interface TokenCardProps 
   extends CardProps,
@@ -11,8 +11,8 @@ export interface TokenCardProps
 }
 
 export const TokenCard: FC<TokenCardProps> = ({ name, quantity, value, ...props }: TokenCardProps) => {
-  const upper = Math.floor(quantity)
-  const lower = (quantity % 1).toFixed(4).substring(2)
+  const upper = Math.floor(quantity);
+  const lower = (quantity % 1).toFixed(4).substring(2);
   return (
     <Card minWidth="10rem" {...props}>
       <Flex alignItems="center">
@@ -40,6 +40,6 @@ export const TokenCard: FC<TokenCardProps> = ({ name, quantity, value, ...props 
         {value >= 0 ? `$${value}` : '-'}
       </Text>
     </Card>
-  )
-}
-TokenCard.displayName='TokenCard'
+  );
+};
+TokenCard.displayName='TokenCard';

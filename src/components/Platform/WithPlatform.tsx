@@ -1,7 +1,7 @@
-import React, { FC,  ReactNode } from 'react'
-import { Box, Icon, IconProps } from '/components'
-import { PlatformDefiniton, getIconName, getIconBackgroundColor,  getSize, getReverse } from './Platform'
-import { FontSizeProps } from 'styled-system'
+import React, { FC,  ReactNode } from 'react';
+import { Box, Icon, IconProps } from '/components';
+import { PlatformDefiniton, getIconName, getIconBackgroundColor,  getSize, getReverse } from './Platform';
+import { FontSizeProps } from 'styled-system';
 
 export interface PlatformIconProps {
   borderWidth: number;
@@ -27,7 +27,7 @@ const PlatformIcon: FC<PlatformIconProps> = ({
     name={getIconName(platform)}
     backgroundColor={getIconBackgroundColor(platform)}
   />
-)
+);
 
 export interface PlatformIndicatorProps {
   borderWidth: number;
@@ -66,7 +66,7 @@ export const PlatformIndicator: FC<PlatformIndicatorProps> = ({
     />
     }
   </Box>
-)
+);
 
 export interface WithPlatformProps extends FontSizeProps {
   children: ReactNode;
@@ -85,21 +85,21 @@ export const WithPlatform: FC<WithPlatformProps> = ({
   flipped
 }: WithPlatformProps) => {
   if (React.Children.count(children) !== 1) {
-    console.error('Invalid number of children for WithPlatform')
-    return null
+    console.error('Invalid number of children for WithPlatform');
+    return null;
   }
 
-  const borderWidth = .15
-  const scale = 0.6
+  const borderWidth = .15;
+  const scale = 0.6;
   const offset = {
     top: 0.35,
     right: 0.55,
-  }
+  };
 
   const overlapProtection = allowOverlap ? {} : {
     marginTop: `${(offset.top - borderWidth) * scale}em`,
     marginRight: `${(offset.right - borderWidth) * scale}em`,
-  }
+  };
 
   return (
     <Box sx={{
@@ -128,5 +128,5 @@ export const WithPlatform: FC<WithPlatformProps> = ({
         />
       </Box>
     </Box>
-  )
-}
+  );
+};

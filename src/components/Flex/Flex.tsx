@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
-import styled from 'styled-components'
-import { Box, BoxProps } from '/components'
-import { FlexboxProps } from 'styled-system'
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import { Box, BoxProps } from '/components';
+import { FlexboxProps } from 'styled-system';
 
 export interface FlexProps extends BoxProps {
   direction?: FlexboxProps['flexDirection'];
@@ -15,7 +15,7 @@ const StyledFlex = styled(Box)(
   {
     display: 'flex',
   }
-)
+);
 
 export const Flex: FC<FlexProps> = React.forwardRef(({
   direction,
@@ -39,5 +39,5 @@ export const Flex: FC<FlexProps> = React.forwardRef(({
     justifyContent={justifyContent}
     {...rest}
   />
-))
-Flex.displayName='Flex'
+));
+Flex.displayName='Flex';

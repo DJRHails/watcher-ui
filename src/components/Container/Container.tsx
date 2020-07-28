@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
-import { Flex, FlexProps } from '/components'
+import React, { FC } from 'react';
+import { Flex, FlexProps } from '/components';
 
 export interface ContainerProps extends FlexProps {
   fluid?: true;
@@ -14,7 +14,7 @@ export const Container: FC<ContainerProps> = ({fluid, ...props}: ContainerProps)
         mx="auto"
         {...props}
       />
-    )
+    );
   }
   return (
     <Flex
@@ -24,6 +24,6 @@ export const Container: FC<ContainerProps> = ({fluid, ...props}: ContainerProps)
       px={3}
       {...props}
     />
-  )
-}
-Container.displayName='Container'
+  );
+};
+Container.displayName='Container';

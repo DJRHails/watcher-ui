@@ -1,7 +1,7 @@
-import React from 'react'
-import { Skeleton, SkeletonProps } from '../Skeleton'
-import _ from 'lodash'
-import { Box } from '/components'
+import React from 'react';
+import { Skeleton, SkeletonProps } from '../Skeleton';
+import _ from 'lodash';
+import { Box } from '/components';
 
 export interface SkeletonTextProps extends SkeletonProps {
   noOfLines?: number;
@@ -17,14 +17,14 @@ export const SkeletonText: React.FC<SkeletonTextProps> = ({
   endColor,
   ...rest
 }: SkeletonTextProps) => {
-  const numbers = _.range(noOfLines)
+  const numbers = _.range(noOfLines);
 
   const getWidth = (index: number) => {
     if (noOfLines > 1) {
-      return index === noOfLines - 1 ? '80%' : '100%'
+      return index === noOfLines - 1 ? '80%' : '100%';
     }
-    return '100%'
-  }
+    return '100%';
+  };
   return (
     <Box css={{ cursor: 'progress' }}{...rest}>
       {numbers.map((number) => (
@@ -38,6 +38,6 @@ export const SkeletonText: React.FC<SkeletonTextProps> = ({
         />
       ))}
     </Box>
-  )
-}
-SkeletonText.displayName='SkeletonText'
+  );
+};
+SkeletonText.displayName='SkeletonText';

@@ -1,6 +1,6 @@
-import React, { FC } from 'react'
-import { BoxProps, Box, WithPlatform, PlatformDefiniton } from '/components'
-import { Jazzicon } from './Jazzicon'
+import React, { FC } from 'react';
+import { BoxProps, Box, WithPlatform, PlatformDefiniton } from '/components';
+import { Jazzicon } from './Jazzicon';
 
 export interface IdenticonProps extends BoxProps {
   address: string;
@@ -9,7 +9,7 @@ export interface IdenticonProps extends BoxProps {
   platform?: PlatformDefiniton;
 } 
 
-const looksLikeEthereum = (address: string) => address.startsWith('0x')
+const looksLikeEthereum = (address: string) => address.startsWith('0x');
 
 export const Identicon: FC<IdenticonProps> = ({
   address,
@@ -20,7 +20,7 @@ export const Identicon: FC<IdenticonProps> = ({
 }: IdenticonProps) => {
 
   if (looksLikeEthereum(address)) {
-    const icon = <Jazzicon address={address} diameter={diameter}/>
+    const icon = <Jazzicon address={address} diameter={diameter}/>;
     const iconWithPlatform = (
       platform
         ? (
@@ -34,17 +34,17 @@ export const Identicon: FC<IdenticonProps> = ({
           </WithPlatform>
         )
         : icon
-    )
+    );
     return (
       <Box size={`${diameter}px`} {...rest}>
         {iconWithPlatform}
       </Box>
-    )
+    );
   }
   return (
     <Box {...rest}>
       Unknown Address
     </Box>
-  )
-}
-Identicon.displayName='Identicon'
+  );
+};
+Identicon.displayName='Identicon';

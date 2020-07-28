@@ -1,8 +1,8 @@
-import React from 'react'
-import { css } from '@styled-system/css'
-import { Box, BoxProps } from '../Box'
-import styled from 'styled-components'
-import { shadow, BorderProps, TypographyProps, LayoutProps, ShadowProps } from 'styled-system'
+import React from 'react';
+import { css } from '@styled-system/css';
+import { Box, BoxProps } from '../Box';
+import styled from 'styled-components';
+import { shadow, BorderProps, TypographyProps, LayoutProps, ShadowProps } from 'styled-system';
 
 export interface TableKnownProps extends BoxProps, BorderProps, TypographyProps, LayoutProps, ShadowProps {}
 
@@ -42,7 +42,7 @@ const StyledTable = styled(Box)<any>(
     },
   }),
   shadow,
-)
+);
 
 export const Table: React.FC<TableProps> = ({scrollX, ...rest}: TableProps) => {
   const styledTable = (
@@ -58,13 +58,13 @@ export const Table: React.FC<TableProps> = ({scrollX, ...rest}: TableProps) => {
       boxShadow="sm"
       {...rest}
       as="table" />
-  )
+  );
   return scrollX ? (
     <Box width={rest.width || 'full'} sx={{
       overflowX: 'auto',
     }}>
       {styledTable}
     </Box>
-  ) : styledTable
-}
-Table.displayName = 'Table'
+  ) : styledTable;
+};
+Table.displayName = 'Table';

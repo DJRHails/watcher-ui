@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
  
 export const CssReset = createGlobalStyle`
   html {
@@ -256,5 +256,5 @@ export const CssReset = createGlobalStyle`
   select::-ms-expand {
     display: none;
   }
-`
-CssReset.displayName='CssReset'
+`;
+CssReset.displayName='CssReset';

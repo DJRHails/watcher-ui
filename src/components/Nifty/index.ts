@@ -1,2 +1,2 @@
-export type { NiftyProps } from './Nifty'
-export { Nifty } from './Nifty'
+export type { NiftyProps } from './Nifty';
+export { Nifty } from './Nifty';

@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
-import { Box, BoxProps } from '../Box'
-import { borders, BorderProps } from 'styled-system'
-import styled from 'styled-components'
-import { css } from '@styled-system/css'
+import React, { FC } from 'react';
+import { Box, BoxProps } from '../Box';
+import { borders, BorderProps } from 'styled-system';
+import styled from 'styled-components';
+import { css } from '@styled-system/css';
 
 export interface CircleProps extends BoxProps, BorderProps {} 
 
@@ -31,7 +31,7 @@ const StyledCircle = styled(Box)<CircleProps>(
     },
   }, //TODO: Fix with nested
   borders,
-)
+);
 
 export const Circle: FC<CircleProps> = ({
   width = 'auto',
@@ -43,5 +43,5 @@ export const Circle: FC<CircleProps> = ({
     height={height}
     {...rest}
   />
-)
-Circle.displayName='Circle'
+);
+Circle.displayName='Circle';

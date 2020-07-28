@@ -1,15 +1,15 @@
-import React from 'react'
-import { StoryMeta } from '/types/storybook'
-import { Table } from './Table'
-import { Heading } from '/components'
-import { Box } from '/components'
-import { Asset } from '/components'
-import { ETHERSCAN_NAMESPACE } from '../Icon/Icon'
+import React from 'react';
+import { StoryMeta } from '/types/storybook';
+import { Table } from './Table';
+import { Heading } from '/components';
+import { Box } from '/components';
+import { Asset } from '/components';
+import { ETHERSCAN_NAMESPACE } from '../Icon/Icon';
 
 export default {
   title: 'Components/Table',
   component: Table,
-}
+};
 
 export const table: StoryMeta = () => (
   <Table>
@@ -42,7 +42,7 @@ export const table: StoryMeta = () => (
       </tr>
     </tbody>
   </Table>
-)
+);
 
 export const assetTable: StoryMeta = () => {
   const assetRows = [
@@ -109,7 +109,7 @@ export const assetTable: StoryMeta = () => {
       balance: 0.3434,
       price: 184.82
     },
-  ] as const
+  ] as const;
   return (
     <Box p={3}>
       <Heading.h4>Wallet £69.95</Heading.h4>
@@ -142,5 +142,5 @@ export const assetTable: StoryMeta = () => {
         </tbody>
       </Table>
     </Box>
-  )
-}
+  );
+};

@@ -1,5 +1,5 @@
 // plopfile.ts
-import { NodePlopAPI } from 'plop'
+import { NodePlopAPI } from 'plop';
 
 module.exports = (plop: NodePlopAPI): void => {
   plop.setGenerator('component', {
@@ -47,8 +47,8 @@ module.exports = (plop: NodePlopAPI): void => {
       {
         type: 'append',
         path: '../components/index.ts',
-        template: 'export { {{pascalCase name}} } from "./{{pascalCase name}}";\nexport type { {{pascalCase name}}Props } from "./{{pascalCase name}}";\n',
+        template: 'export { {{pascalCase name}} } from \'./{{pascalCase name}}\';\nexport type { {{pascalCase name}}Props } from \'./{{pascalCase name}}\';\n',
       },
     ]
-  })
-}
+  });
+};

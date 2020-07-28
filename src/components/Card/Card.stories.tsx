@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from 'react';
 
-import { StoryMeta, StoryFnType } from '/types/storybook'
-import { Card } from './Card'
-import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from '/components'
+import { StoryMeta, StoryFnType } from '/types/storybook';
+import { Card } from './Card';
+import { Box, Image, Text, Heading, Flex, Badge, Button, Icon } from '/components';
 
 const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   width="full"
@@ -11,7 +11,7 @@ const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   alignItems="center"
 >
   {context?.()}
-</Flex>
+</Flex>;
 
 export default {
   title: 'Components/Card',
@@ -19,7 +19,7 @@ export default {
   decorators: [
     withCenterComponent
   ]
-}
+};
 
 export const namedCard: StoryMeta = () => (
   <Card
@@ -47,7 +47,7 @@ export const namedCard: StoryMeta = () => (
         Cancel
     </Button>
   </Card>
-)
+);
 
 export const imageCardWithSub: StoryMeta = () => (
   <Card width="auto" maxWidth="md" mx="auto" my={5} p={0}>
@@ -72,7 +72,7 @@ export const imageCardWithSub: StoryMeta = () => (
       </Button>
     </Flex>
   </Card>
-)
+);
 
 
 export const airbnbCard: StoryMeta = () => (
@@ -99,7 +99,7 @@ export const airbnbCard: StoryMeta = () => (
       <Text ml={1} fontSize={2}><b>4.84</b> (190)</Text>
     </Flex>
   </Card>
-)
+);
 
 export const cryptoKittiesCard: StoryMeta = () => (
   <Card
@@ -159,9 +159,9 @@ export const cryptoKittiesCard: StoryMeta = () => (
       </Text>
     </Flex>
   </Card>
-)
+);
 
 cryptoKittiesCard.story = {
   name: 'CryptoKitties Card'
-}
+};
 

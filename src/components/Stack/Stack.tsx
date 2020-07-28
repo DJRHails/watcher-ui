@@ -1,8 +1,8 @@
-import React, { FC, ReactNode } from 'react'
-import { FlexProps, Flex, Box } from '/components'
-import { SpaceProps, ResponsiveValue } from 'styled-system'
-import { getValidChildren } from '/utils/react'
-import { mapResponsive } from '/utils/responsive'
+import React, { FC, ReactNode } from 'react';
+import { FlexProps, Flex, Box } from '/components';
+import { SpaceProps, ResponsiveValue } from 'styled-system';
+import { getValidChildren } from '/utils/react';
+import { mapResponsive } from '/utils/responsive';
 
 export type StackDirection = ResponsiveValue<'row' | 'column'>
 
@@ -25,9 +25,9 @@ export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackP
     divider,
     shouldWrapChildren,
     ...rest
-  } = props
+  } = props;
 
-  const selector = '& > *:not(style) ~ *:not(style)'
+  const selector = '& > *:not(style) ~ *:not(style)';
 
   const styles = {
     flexDirection: direction,
@@ -35,9 +35,9 @@ export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackP
       [value === 'column' ? 'marginTop' : 'marginLeft']: spacing,
       [value === 'column' ? 'marginLeft' : 'marginTop']: 0,
     })),
-  }
+  };
 
-  const validChildren = getValidChildren(children)
+  const validChildren = getValidChildren(children);
   
   const dividerProps = mapResponsive(direction, (value) => {
     if (value === 'row') {
@@ -47,7 +47,7 @@ export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackP
         my: 0,
         borderLeftWidth: '1px',
         borderBottomWidth: 0,
-      }
+      };
     }
     return {
       direction: 'column',
@@ -55,16 +55,16 @@ export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackP
       my: spacing,
       borderLeftWidth: 0,
       borderBottomWidth: '1px',
-    }
-  })
+    };
+  });
 
-  const hasDivider = !!divider
+  const hasDivider = !!divider;
 
   const clones = validChildren.map((child, index) => {
-    const isLast = index + 1 === validChildren.length
-    const _child = shouldWrapChildren ? <Box display="inline-block" flex="0">{child}</Box> : child
+    const isLast = index + 1 === validChildren.length;
+    const _child = shouldWrapChildren ? <Box display="inline-block" flex="0">{child}</Box> : child;
 
-    if (!hasDivider) return _child
+    if (!hasDivider) return _child;
 
     if (!isLast) {
       return (
@@ -72,13 +72,13 @@ export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackP
           {_child}
           {divider && React.cloneElement(divider, dividerProps)}
         </React.Fragment>
-      )
+      );
     }
 
-    return _child
-  })
+    return _child;
+  });
 
-  const sx = hasDivider ? undefined : { [selector]: styles[selector] }
+  const sx = hasDivider ? undefined : { [selector]: styles[selector] };
 
   return (
     <Flex
@@ -92,5 +92,5 @@ export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackP
     >
       {clones}
     </Flex>
-  )}
-)
+  );}
+);

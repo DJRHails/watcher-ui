@@ -1,13 +1,13 @@
-import React from 'react'
-import { Heading } from './Heading'
-import { StoryMeta } from '/types/storybook'
+import React from 'react';
+import { Heading } from './Heading';
+import { StoryMeta } from '/types/storybook';
 
 export default {
   title: 'Components/Heading',
   component: Heading
-}
+};
 
-export const h1: StoryMeta = () => <Heading.h1>Heading h1</Heading.h1>
+export const h1: StoryMeta = () => <Heading.h1>Heading h1</Heading.h1>;
 
 export const headingsList: StoryMeta = () => (
   <>
@@ -17,4 +17,4 @@ export const headingsList: StoryMeta = () => (
     <Heading.h4>H4 - Quick zephyrs blow, vexing daft Jim.</Heading.h4>
     <Heading.h5>H5 - Quick zephyrs blow, vexing daft Jim.</Heading.h5>
   </>
-)
+);

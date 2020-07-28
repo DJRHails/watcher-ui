@@ -1,13 +1,13 @@
-import React from 'react'
-import { KindMeta, StoryMeta } from '/types/storybook'
+import React from 'react';
+import { KindMeta, StoryMeta } from '/types/storybook';
 
-import { Flex } from './Flex'
-import { Box, Text, Heading, Button, Circle } from '/components'
+import { Flex } from './Flex';
+import { Box, Text, Heading, Button, Circle } from '/components';
 
 const story: KindMeta<typeof Flex> = {
   title: 'Components/Flex',
   component: Flex,
-}
+};
 
 
 export const flexColumn: StoryMeta = () => (
@@ -19,7 +19,7 @@ export const flexColumn: StoryMeta = () => (
       Half
     </Box>
   </Flex>
-)
+);
 
 export const flexSet: StoryMeta = () => (
   <>
@@ -66,7 +66,7 @@ export const flexSet: StoryMeta = () => (
       <Box width={1} height={32} bg="brand" m={1} />
     </Flex>
   </>
-)
+);
 
 export const asFlexWrap: StoryMeta = () => (
   <Flex wrap="wrap" mx={-2}>
@@ -116,7 +116,7 @@ export const asFlexWrap: StoryMeta = () => (
       </Text>
     </Box>
   </Flex>
-)
+);
 
 export const header: StoryMeta = () => (
   <Flex
@@ -154,7 +154,7 @@ export const header: StoryMeta = () => (
       </Button>
     </Box>
   </Flex>
-)
+);
 
 
-export default story
+export default story;

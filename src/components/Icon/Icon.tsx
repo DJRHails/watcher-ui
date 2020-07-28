@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
-import { isWatcherIcon, WatcherIcon, WatcherIconProps } from 'watcher-icons'
-import { Image, Circle, Text } from '/components'
-import { Box, BoxProps } from '../Box'
-import styled from 'styled-components'
-import { color, ColorProps, LayoutProps, layout } from 'styled-system'
-import _ from 'lodash'
-import { PropsOf } from '/types/utils'
+import React, { FC } from 'react';
+import { isWatcherIcon, WatcherIcon, WatcherIconProps } from 'watcher-icons';
+import { Image, Circle, Text } from '/components';
+import { Box, BoxProps } from '../Box';
+import styled from 'styled-components';
+import { color, ColorProps, LayoutProps, layout } from 'styled-system';
+import _ from 'lodash';
+import { PropsOf } from '/types/utils';
 
 interface IconInnerKnownProps extends ColorProps {
   name: string;
@@ -21,13 +21,13 @@ export interface IconProps extends BoxProps {
 const StyledWatcherIcon = styled(WatcherIcon)`
   ${color}
   ${layout}
-`
+`;
 
-export const ETHERSCAN_NAMESPACE = 'ethscn.'
-const isEtherscanIcon = (name: string) => name.startsWith(ETHERSCAN_NAMESPACE)
-const etherscanTransform = (name: string) => name.substring(ETHERSCAN_NAMESPACE.length).toLowerCase()
+export const ETHERSCAN_NAMESPACE = 'ethscn.';
+const isEtherscanIcon = (name: string) => name.startsWith(ETHERSCAN_NAMESPACE);
+const etherscanTransform = (name: string) => name.substring(ETHERSCAN_NAMESPACE.length).toLowerCase();
 
-const watcherTransform = (name: string) => _.upperFirst(_.camelCase(name))
+const watcherTransform = (name: string) => _.upperFirst(_.camelCase(name));
 
 const LEN2FONT = {
   0: '1.em',
@@ -35,7 +35,7 @@ const LEN2FONT = {
   2: '.5em',
   3: '.4em',
   4: '.3em',
-}
+};
 
 const IconInner: FC<IconInnerProps> = ({
   name,
@@ -51,11 +51,11 @@ const IconInner: FC<IconInnerProps> = ({
       height: size,
       ...( color && { color: color } ),
       ...( backgroundColor && { color: backgroundColor } ) // This trick ensures that color isn't passed in if not set (preventing undefined overwrite).
-    }
+    };
     return (
       <StyledWatcherIcon
         {...watcherProps}
-      />)
+      />);
   }
 
   if (isEtherscanIcon(name)) {
@@ -64,10 +64,10 @@ const IconInner: FC<IconInnerProps> = ({
         size={size}
         src={`https://etherscan.io/token/images/${etherscanTransform(name)}_32.png`}
       />
-    )
+    );
   }
   
-  const displayName = name.substring(0, 4)
+  const displayName = name.substring(0, 4);
   return (
     <Circle
       size="1em"
@@ -80,12 +80,12 @@ const IconInner: FC<IconInnerProps> = ({
         color={(color || 'white') as string} // TODO: Styled Components are getting interesting color overrides
       >{displayName}</Text>
     </Circle>
-  )
-}
+  );
+};
 
 export const Icon: FC<IconProps> = ({
   name,
-  size = '1em',
+  size = '2em',
   color,
   backgroundColor,
   ...rest
@@ -101,6 +101,6 @@ export const Icon: FC<IconProps> = ({
         color={color ?? undefined}
       />
     </Box> 
-  )
-}
-Icon.displayName='Icon'
+  );
+};
+Icon.displayName='Icon';

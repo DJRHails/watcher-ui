@@ -2,7 +2,7 @@
 // Reference: https://github.com/styled-system/styled-system/blob/master/docs/src/gatsby-plugin-theme-ui/index.js
 // Reference Tailwind: https://github.com/system-ui/theme-ui/blob/76207a732fba4da145abf9535f33704b8811546c/packages/preset-tailwind/src/index.ts
 
-import { Theme } from 'styled-system'
+import { Theme } from 'styled-system';
 
 export const shadows = {
   xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
@@ -16,7 +16,7 @@ export const shadows = {
   inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
   outline: '0 0 0 2px var(--outline-color)',
   none: 'none'
-}
+};
 
 export const colors = {
   text: '#3f3d4b',
@@ -28,12 +28,13 @@ export const colors = {
   gray: '#82817d',
   success: '#22543d',
   danger: '#dc3545',
+  hover: '#edf2f7',
   badge: {
     brand: '#ffd2ce',
     danger: '#f5c6cb',
     success: '#c3e6cb',
   }
-}
+};
 
 export const radii = {
   'none': '0',
@@ -42,13 +43,12 @@ export const radii = {
   'md': '0.375rem',
   'lg': '0.8rem',
   'full': '9999px',
-}
+};
 
-export const space = [0, '0.25rem', '0.5rem', '1rem', '2rem', '4rem', '8rem']
-
-const tailwindSpacing = {
+const spacing = {
   px: '1px',
   '0': '0',
+  '1': '0.25rem',
   '2': '0.5rem',
   '3': '0.75rem',
   '4': '1rem',
@@ -65,9 +65,9 @@ const tailwindSpacing = {
   '48': '12rem',
   '56': '14rem',
   '64': '16rem',
-}
+};
 
-const tailwindMaxWidth = {
+const maxWidth = {
   xs: '20rem',
   sm: '24rem',
   md: '28rem',
@@ -78,9 +78,9 @@ const tailwindMaxWidth = {
   '4xl': '56rem',
   '5xl': '64rem',
   '6xl': '72rem',
-}
+};
 
-const tailwindWidth = {
+const ratios = {
   '1': '100%',
   '1/2': '50%',
   '1/3': '33.333333%',
@@ -108,29 +108,34 @@ const tailwindWidth = {
   '9/12': '75%',
   '10/12': '83.333333%',
   '11/12': '91.666667%',
-}
+};
 
 export const sizes = {
-  ...tailwindSpacing,
-  ...tailwindMaxWidth,
-  ...tailwindWidth,
+  ...spacing,
+  ...maxWidth,
+  ...ratios,
   full: '100%',
   screenHeight: '100vh',
   screenWidth: '100vw',
-}
+};
+
+export const space = {
+  ...spacing,
+};
+
 
 export const baseFonts = {
   sans:
     '"Ubuntu",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
   serif: 'Georgia,Cambria,"Times New Roman",Times,serif',
   mono: 'Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace'
-}
+};
 
 export const fonts = {
   ...baseFonts,
   body: baseFonts.sans,
   heading: 'inherit'
-}
+};
 
 export const fontSizes = [
   '0.75rem',
@@ -140,7 +145,7 @@ export const fontSizes = [
   '2.25rem', // h3
   '3.50rem', // h2
   '5.00rem'  // h1
-]
+];
 
 export const fontWeights = {
   light: 300,
@@ -148,7 +153,7 @@ export const fontWeights = {
   semibold: 600,
   bold: 700,
   black: 900,
-}
+};
 
 export const lineHeights = {
   none: '1',
@@ -157,7 +162,7 @@ export const lineHeights = {
   normal: '1.5',
   relaxed: '1.625',
   loose: '2',
-}
+};
 
 export const letterSpacings = {
   tighter: '-0.05em',
@@ -166,7 +171,7 @@ export const letterSpacings = {
   wide: '0.025em',
   wider: '0.05em',
   widest: '0.1em'
-}
+};
 
 export const breakpoints = [
   '0', // xs
@@ -174,7 +179,7 @@ export const breakpoints = [
   '60rem', // md
   '80rem', // lg
   '120rem' // xl
-]
+];
 
 // https://theme-ui.com/theme-spec/
 const theme: Theme = {
@@ -189,6 +194,6 @@ const theme: Theme = {
   space,
   sizes,
   breakpoints,
-}
+};
 
-export default theme
+export default theme;

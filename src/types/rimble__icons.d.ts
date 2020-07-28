@@ -11,6 +11,6 @@ declare module '@rimble/icons' {
     color?: any;
   }
   
-  export const Icon: React.FC<IconProps>
+  export const Icon: React.FC<IconProps>;
 }
 

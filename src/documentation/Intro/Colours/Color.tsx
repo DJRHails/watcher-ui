@@ -1,6 +1,6 @@
-import React from 'react'
-import { Heading, Box, Text, Flex } from '/components'
-import theme from '/themes/theme'
+import React from 'react';
+import { Heading, Box, Text, Flex } from '/components';
+import theme from '/themes/theme';
 
 export interface ColorProps {
   color: keyof typeof theme['colors'];
@@ -29,7 +29,7 @@ export const Color: React.FC<ColorProps> = ({ color, withValue }: ColorProps) =>
           </Flex>
         </Flex>
       </Heading.h4>
-    )
+    );
   }
   return (
     <Heading.h4>
@@ -44,5 +44,5 @@ export const Color: React.FC<ColorProps> = ({ color, withValue }: ColorProps) =>
         }} />
       {color}
     </Heading.h4>
-  )
-}
+  );
+};

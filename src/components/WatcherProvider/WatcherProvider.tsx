@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useContext } from 'react';
 import theme from '/themes/theme';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, useTheme, ThemeContext } from 'styled-components';
 import { CssReset, Box, BoxProps } from '/components';
 
 export interface WatcherProviderProps extends BoxProps {
@@ -16,6 +16,9 @@ export const WatcherProvider: React.FC<WatcherProviderProps> = ({
 }: WatcherProviderProps) => {
   return (
     <ThemeProvider theme={theme}>
+      {console.log(useTheme())}
+      {console.log(rest.theme)}
+      {console.log(useContext(ThemeContext))}
       <CssReset/>
       <Box role="main" sx={sx} {...rest}/>
     </ThemeProvider>

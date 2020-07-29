@@ -115,8 +115,23 @@ export type {
 
 export { Portal } from './Portal';
 export type { PortalProps } from './Portal';
-export { Dropdown } from './Dropdown';
-export type { DropdownProps } from './Dropdown';
+
+export {
+  Dropdown,
+  DropdownItem,
+  DropdownList,
+  DropdownButton,
+  DropdownGroup,
+  DropdownDivider,
+} from './Dropdown';
+export type {
+  DropdownProps,
+  DropdownItemProps,
+  DropdownListProps,
+  DropdownButtonProps,
+  DropdownDividerProps,
+  DropdownGroupProps
+} from './Dropdown';
 
 export { usePopper } from './Popper';
 export type { UsePopperProps, UsePopperReturn } from './Popper';

@@ -22,7 +22,7 @@ export const Asset: FC<AssetProps> = ({
   flipped,
   ...rest
 }: AssetProps) => {
-  const iconSize = full ? '2.5em' : '2em';
+  const iconSize = full ? '2.5em' : '1em';
   const assetIcon = <Icon {..._.merge({ name: ticker }, icon)}/>;
   return (
     <Flex p={1} {...rest}>

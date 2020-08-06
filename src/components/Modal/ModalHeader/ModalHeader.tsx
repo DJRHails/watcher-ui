@@ -37,9 +37,7 @@ export const ModalHeader: FC<ModalHeaderProps> = React.forwardRef((props: ModalH
       ref={ref}
       id={headerId}
       {...props}
-    >
-      Modal Header
-    </StyledHeader>
+    />
   );
 });
 ModalHeader.displayName='ModalHeader';

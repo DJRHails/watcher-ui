@@ -1,16 +1,18 @@
 import React, { FC, ReactNode } from 'react';
 import css from '@styled-system/css';
 import styled from 'styled-components';
+import { FlexProps } from '/components/Flex';
 
 export interface ModalFooterProps {
+  justify?: FlexProps['justify']
   children?: ReactNode
 } 
 
-const StyledFooter = styled('footer')(
-  css({
+const StyledFooter = styled('footer')<ModalFooterProps>(
+  ({justify}) => css({
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: justify ?? 'flex-end',
     flex: 0,
     py: 4,
     px: 6
@@ -18,11 +20,8 @@ const StyledFooter = styled('footer')(
 );
 
 export const ModalFooter: FC<ModalFooterProps> = (props: ModalFooterProps) => {
-  const { children, ...rest } = props;
   return (
-    <StyledFooter {...rest}>
-      {children}
-    </StyledFooter>
+    <StyledFooter {...props}/>
   );
 };
 ModalFooter.displayName='ModalFooter';

@@ -79,7 +79,7 @@ export const Committee: FC<CommitteeProps> = ({
         memberDiameter={memberDiameter}
       >
         {members.map((mem, idx) => 
-          <StyledMember key={idx} i={idx}>
+          <StyledMember key={idx} i={idx} title={mem.name}>
             <Identicon address={mem.address} diameter={memberDiameter}/>
           </StyledMember>
         )}

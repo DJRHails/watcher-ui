@@ -14,7 +14,7 @@ describe('Jazzicon component sanity', () => {
 
   it('matches default snapshot', () => {
     jazzicon.mockReturnValue(document.createElement('svg'));
-    const component = render(<Jazzicon address="0x67C3fD74fd36456FC5b339Fd09Efa330ad3126eE"/>);
+    const component = render(<Jazzicon seed={0}/>);
     expect(component).toMatchSnapshot();
   });
 
@@ -22,7 +22,7 @@ describe('Jazzicon component sanity', () => {
     jazzicon.mockReturnValue(document.createElement('svg'));
     const component = render(
       <ThemeProvider theme={theme}>
-        <Jazzicon address="0x67C3fD74fd36456FC5b339Fd09Efa330ad3126eE" />
+        <Jazzicon seed={0} />
       </ThemeProvider>
     );
     expect(component).toMatchSnapshot();

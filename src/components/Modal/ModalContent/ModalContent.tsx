@@ -8,6 +8,19 @@ export interface ModalContentProps {
   children?: ReactNode
 } 
 
+const StyledLifter = styled('div')(
+  css({
+    position: 'fixed',
+    left: 0,
+    top: 0,
+    width: 'full',
+    height: 'full',
+    zIndex: 1400,
+    overflowY: 'auto',
+    overflowX: 'hidden'
+  })
+);
+
 const StyledSection = styled(Box)(
   css({
     my: 12,
@@ -32,11 +45,14 @@ export const ModalContent: FC<ModalContentProps> = React.forwardRef((props: Moda
   const content = getContentProps(otherProps, ref);
 
   return (
-    <StyledSection
-      {...content}
-    >
-      {children}
-    </StyledSection>
+    <StyledLifter>
+      <StyledSection
+        as='section'
+        {...content}
+      >
+        {children}
+      </StyledSection>
+    </StyledLifter>
   );
 });
 

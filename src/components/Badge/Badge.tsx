@@ -5,7 +5,7 @@ import css from '@styled-system/css';
 
 export interface BadgeProps extends BoxProps,
 Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
-  variantColor?: 'success' | 'brand'
+  variantColor?: 'success' | 'brand' | 'accent'
 }
 
 const StyledBadge = styled(Box)(

@@ -1,6 +1,9 @@
 export type { DropdownProps } from './Dropdown';
 export { Dropdown } from './Dropdown';
 
+export type { DropdownItemProps } from './DropdownItem';
+export { DropdownItem } from './DropdownItem';
+
 export type { DropdownListProps } from './DropdownList';
 export { DropdownList } from './DropdownList';
 

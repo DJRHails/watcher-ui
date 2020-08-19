@@ -1,7 +1,7 @@
 # Components
 - [ ] Swap UI Element
-- [ ] Token List
-- [ ] Header
+- [X] Token List
+- [X] Header
 - [ ] Transaction Elements
-- [ ] Modals
+- [X] Modals
 - [ ] Signing Animation

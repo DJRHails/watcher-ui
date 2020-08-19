@@ -3,19 +3,13 @@ import jazzicon from 'jazzicon';
 import { Box, BoxProps } from '../..';
 
 export interface JazziconProps extends BoxProps {
-  address: string;
+  seed: number;
   diameter?: number;
 } 
 
-function seedFromEthAddress(address: string): number {
-  const addr = address.slice(2, 10); // Removes 0x and takes first 10.
-  const seed = parseInt(addr, 16);
-  return seed;
-}
-
 // Jazzicon library returns a HTMLDivElement, so needs wrapping
 export const Jazzicon: FC<JazziconProps> = ({
-  address,
+  seed,
   diameter = 46,
   ...rest
 }: JazziconProps) => {
@@ -29,9 +23,9 @@ export const Jazzicon: FC<JazziconProps> = ({
       container.current.removeChild(children[i]);
     }
 
-    const image = jazzicon(diameter, seedFromEthAddress(address));
+    const image = jazzicon(diameter, seed);
     container.current.appendChild(image);
-  }, [address, diameter]);
+  }, [seed, diameter]);
 
   return (
     <Box

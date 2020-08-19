@@ -1,5 +1,5 @@
 {
-  "name": "@DJRHails/watcher-ui",
+  "name": "@djrhails/watcher-ui",
   "version": "0.4.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -17,15 +17,17 @@
   "dependencies": {
     "@djrhails/watcher-icons": "1.0.0",
     "@ethersproject/address": "^5.0.1",
+    "@mdx-js/react": "^1.6.16",
     "@popperjs/core": "^2.4.4",
     "@react-aria/interactions": "^3.1.0",
+    "@styled-system/css": "^5.1.5",
     "aria-hidden": "^1.1.1",
+    "core-js": "^3.6.5",
     "jazzicon": "^1.5.0",
-    "react-remove-scroll": "^2.3.0"
-  },
-  "peerDependencies": {
+    "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-remove-scroll": "^2.3.0",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5"
   },
@@ -70,15 +72,16 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
-    "@storybook/addon-a11y": "^5.3.19",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-docs": "^5.3.19",
-    "@storybook/addon-knobs": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
+    "@storybook/addon-a11y": "^6.0.13",
+    "@storybook/addon-actions": "^6.0.13",
+    "@storybook/addon-docs": "^6.0.13",
+    "@storybook/addon-knobs": "^6.0.13",
+    "@storybook/addon-links": "^6.0.13",
+    "@storybook/addons": "^6.0.13",
     "@storybook/preset-typescript": "^3.0.0",
-    "@storybook/react": "^5.3.19",
+    "@storybook/react": "^6.0.13",
     "@storybook/storybook-deployer": "^2.8.6",
+    "@testing-library/dom": "^7.22.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -107,6 +110,7 @@
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5",
@@ -114,6 +118,7 @@
     "ts-node": "^8.10.2",
     "tscpaths": "^0.0.9",
     "tslib": "^2.0.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "webpack": "^4.44.1"
   }
 }

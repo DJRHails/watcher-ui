@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as CSS from 'csstype';
 import { typography, SpaceProps, LayoutProps, TypographyProps, space, layout } from 'styled-system';
 import { getValidChildren } from '../../utils/react';
 import { IconProps, Icon, BaseProps } from '/components';
@@ -8,15 +7,17 @@ import { IconProps, Icon, BaseProps } from '/components';
 //TODO: Add SXProps support here
 interface KnownListProps extends BaseProps, SpaceProps, LayoutProps, TypographyProps {}
 
+type ListStyleType = any; //CSS.ListStyleTypeProperty;
+
 export interface ListProps
   extends KnownListProps,
     Omit<React.HTMLProps<HTMLUListElement>, keyof KnownListProps> {
-  styleType?: CSS.ListStyleTypeProperty;
+  styleType?: ListStyleType;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   spacing?: SpaceProps['marginBottom'];
 }
 
-const StyledList = styled.ul<{listStyleType: CSS.ListStyleTypeProperty;}>(
+const StyledList = styled.ul<{listStyleType: ListStyleType;}>(
   (props) => `list-style-type: ${props.listStyleType};`,
   {
     listStylePosition: 'inside',
@@ -79,7 +80,7 @@ interface ListIconProps extends IconProps {
   role?: string;
 }
 
-export const ListIcon: React.FC<ListIconProps> = (props) => (
+export const ListIcon: React.FC<ListIconProps> = (props: ListIconProps) => (
   <Icon
     display="inline-block"
     role="presentation"

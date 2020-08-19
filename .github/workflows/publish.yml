@@ -61,7 +61,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: yarn
-      - run: yarn storybook:build
-      - run: yarn storybook:deploy
+      - run: yarn storybook:deploy -- --ci --host-token-env-variable=GITHUB_TOKEN
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

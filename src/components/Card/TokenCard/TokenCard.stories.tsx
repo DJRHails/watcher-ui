@@ -3,7 +3,7 @@ import { StoryMeta } from '/types/storybook';
 import { TokenCard } from './TokenCard';
 import { text, number, withKnobs } from '@storybook/addon-knobs';
 import { Flex } from '../..';
-import { TokenIconName } from 'watcher-icons';
+import { TokenIconName } from '@djrhails/watcher-icons';
 
 export default {
   title: 'Components/Card/TokenCard',

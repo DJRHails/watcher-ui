@@ -14,6 +14,8 @@
 
 # output directories
 /out*
+/storybook-static
+/dist
 
 # misc
 .DS_Store

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { isWatcherIcon, WatcherIcon, WatcherIconProps } from 'watcher-icons';
+import { isWatcherIcon, WatcherIcon, WatcherIconProps } from '@djrhails/watcher-icons';
 import { Image, Circle, Text } from '/components';
 import { Box, BoxProps } from '../Box';
 import styled from 'styled-components';

@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: 12
       - run: yarn
+        env:
+          NPM_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
       - run: yarn build
       - run: yarn type
       - run: yarn lint

@@ -1,25 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component sanity matches default snapshot 1`] = `
+exports[`Skeleton component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxirZ kqpygv"
-        overflow="hidden"
-      >
-        #tag
-      </div>
+        class="sc-AxiKw sc-fznMAR gaNTbz"
+        speed="0.8"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxirZ kqpygv"
-      overflow="hidden"
-    >
-      #tag
-    </div>
+      class="sc-AxiKw sc-fznMAR gaNTbz"
+      speed="0.8"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -75,26 +71,22 @@ Object {
 }
 `;
 
-exports[`Card component sanity matches themed snapshot 1`] = `
+exports[`Skeleton component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxirZ fvGbyt"
-        overflow="hidden"
-      >
-        Some Text
-      </div>
+        class="sc-AxiKw sc-fznMAR gaNTbz"
+        speed="0.8"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxirZ fvGbyt"
-      overflow="hidden"
-    >
-      Some Text
-    </div>
+      class="sc-AxiKw sc-fznMAR gaNTbz"
+      speed="0.8"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

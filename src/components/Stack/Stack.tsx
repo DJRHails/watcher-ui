@@ -94,3 +94,4 @@ export const Stack: FC<StackProps> = React.forwardRef<StackProps>((props: StackP
     </Flex>
   );}
 );
+Stack.displayName = 'Stack';

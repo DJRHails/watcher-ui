@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm cqmMld sc-AxiKw cbDOqH"
+        class="sc-AxjAm sc-AxirZ sc-AxiKw leQbeV"
         color="muted"
         display="inline-flex"
         font-size="1"
@@ -19,7 +19,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm cqmMld sc-AxiKw cbDOqH"
+      class="sc-AxjAm sc-AxirZ sc-AxiKw leQbeV"
       color="muted"
       display="inline-flex"
       font-size="1"
@@ -89,7 +89,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm kXVcsZ sc-AxiKw cbDOqH"
+        class="sc-AxjAm sc-AxirZ sc-AxiKw gPDKag"
         color="muted"
         display="inline-flex"
         font-size="1"
@@ -102,7 +102,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm kXVcsZ sc-AxiKw cbDOqH"
+      class="sc-AxjAm sc-AxirZ sc-AxiKw gPDKag"
       color="muted"
       display="inline-flex"
       font-size="1"

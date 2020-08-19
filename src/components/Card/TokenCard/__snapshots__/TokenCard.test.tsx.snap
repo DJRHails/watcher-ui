@@ -6,21 +6,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm sc-AxirZ kdbnSE"
+        class="sc-AxirZ huOifs"
+        overflow="hidden"
       >
         <div
-          class="sc-AxjAm sc-fzokOt iFdYYb"
+          class="sc-AxjAm sc-fzoyAV dikUeM"
         >
           <div
-            class="sc-AxjAm fStRSI"
+            class="sc-AxjAm ksKDGX"
           >
             <svg
-              class="sc-fznyAO ihbkGf"
+              class="sc-fzokOt dOfxIe"
               color="#0C0C0D"
               fill="none"
-              height="25%"
+              height="2rem"
               viewBox="0 0 24 24"
-              width="25%"
+              width="2rem"
             >
               <path
                 d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
@@ -33,7 +34,7 @@ Object {
             </svg>
           </div>
           <div
-            class="sc-AxjAm sc-AxgMl isdywM"
+            class="sc-AxjAm sc-AxgMl fpKttk"
             color="gray"
             font-size="1"
             font-weight="light"
@@ -42,10 +43,10 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxjAm sc-fzokOt bJDIox"
+          class="sc-AxjAm sc-fzoyAV iJzBlK"
         >
           <div
-            class="sc-AxjAm sc-AxgMl eGjSbH"
+            class="sc-AxjAm sc-AxgMl hIpdtP"
             font-size="4"
             font-weight="light"
           >
@@ -53,7 +54,7 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxjAm sc-AxgMl hEDJjX"
+          class="sc-AxjAm sc-AxgMl kSUJUk"
           color="gray"
           font-size="1"
           font-weight="light"
@@ -65,21 +66,22 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm sc-AxirZ kdbnSE"
+      class="sc-AxirZ huOifs"
+      overflow="hidden"
     >
       <div
-        class="sc-AxjAm sc-fzokOt iFdYYb"
+        class="sc-AxjAm sc-fzoyAV dikUeM"
       >
         <div
-          class="sc-AxjAm fStRSI"
+          class="sc-AxjAm ksKDGX"
         >
           <svg
-            class="sc-fznyAO ihbkGf"
+            class="sc-fzokOt dOfxIe"
             color="#0C0C0D"
             fill="none"
-            height="25%"
+            height="2rem"
             viewBox="0 0 24 24"
-            width="25%"
+            width="2rem"
           >
             <path
               d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
@@ -92,7 +94,7 @@ Object {
           </svg>
         </div>
         <div
-          class="sc-AxjAm sc-AxgMl isdywM"
+          class="sc-AxjAm sc-AxgMl fpKttk"
           color="gray"
           font-size="1"
           font-weight="light"
@@ -101,10 +103,10 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-fzokOt bJDIox"
+        class="sc-AxjAm sc-fzoyAV iJzBlK"
       >
         <div
-          class="sc-AxjAm sc-AxgMl eGjSbH"
+          class="sc-AxjAm sc-AxgMl hIpdtP"
           font-size="4"
           font-weight="light"
         >
@@ -112,7 +114,7 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxgMl hEDJjX"
+        class="sc-AxjAm sc-AxgMl kSUJUk"
         color="gray"
         font-size="1"
         font-weight="light"
@@ -181,21 +183,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm sc-AxirZ cdGSKn"
+        class="sc-AxirZ jnkSQq"
+        overflow="hidden"
       >
         <div
-          class="sc-AxjAm sc-fzokOt iFdYYb"
+          class="sc-AxjAm sc-fzoyAV dikUeM"
         >
           <div
-            class="sc-AxjAm fStRSI"
+            class="sc-AxjAm ksKDGX"
           >
             <svg
-              class="sc-fznyAO ihbkGf"
+              class="sc-fzokOt dOfxIe"
               color="#1ABC9C"
               fill="none"
-              height="25%"
+              height="2rem"
               viewBox="0 0 24 24"
-              width="25%"
+              width="2rem"
             >
               <path
                 d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
@@ -208,7 +211,7 @@ Object {
             </svg>
           </div>
           <div
-            class="sc-AxjAm sc-AxgMl iTpFjA"
+            class="sc-AxjAm sc-AxgMl awlUH"
             color="gray"
             font-size="1"
             font-weight="light"
@@ -217,10 +220,10 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxjAm sc-fzokOt cThFdF"
+          class="sc-AxjAm sc-fzoyAV diAjYH"
         >
           <div
-            class="sc-AxjAm sc-AxgMl extNET"
+            class="sc-AxjAm sc-AxgMl eIrjA-D"
             font-size="4"
             font-weight="light"
           >
@@ -228,7 +231,7 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxjAm sc-AxgMl blWmHH"
+          class="sc-AxjAm sc-AxgMl jZHwLH"
           color="gray"
           font-size="1"
           font-weight="light"
@@ -240,21 +243,22 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm sc-AxirZ cdGSKn"
+      class="sc-AxirZ jnkSQq"
+      overflow="hidden"
     >
       <div
-        class="sc-AxjAm sc-fzokOt iFdYYb"
+        class="sc-AxjAm sc-fzoyAV dikUeM"
       >
         <div
-          class="sc-AxjAm fStRSI"
+          class="sc-AxjAm ksKDGX"
         >
           <svg
-            class="sc-fznyAO ihbkGf"
+            class="sc-fzokOt dOfxIe"
             color="#1ABC9C"
             fill="none"
-            height="25%"
+            height="2rem"
             viewBox="0 0 24 24"
-            width="25%"
+            width="2rem"
           >
             <path
               d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
@@ -267,7 +271,7 @@ Object {
           </svg>
         </div>
         <div
-          class="sc-AxjAm sc-AxgMl iTpFjA"
+          class="sc-AxjAm sc-AxgMl awlUH"
           color="gray"
           font-size="1"
           font-weight="light"
@@ -276,10 +280,10 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-fzokOt cThFdF"
+        class="sc-AxjAm sc-fzoyAV diAjYH"
       >
         <div
-          class="sc-AxjAm sc-AxgMl extNET"
+          class="sc-AxjAm sc-AxgMl eIrjA-D"
           font-size="4"
           font-weight="light"
         >
@@ -287,7 +291,7 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxgMl blWmHH"
+        class="sc-AxjAm sc-AxgMl jZHwLH"
         color="gray"
         font-size="1"
         font-weight="light"

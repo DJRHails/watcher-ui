@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component sanity matches default snapshot 1`] = `
+exports[`Heading.h1 component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-AxirZ kqpygv"
-        overflow="hidden"
-      >
-        #tag
-      </div>
+      <h1
+        class="sc-AxjAm sc-AxirZ fPtRYU"
+        font-family="body"
+        font-size="6"
+        font-weight="light"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-AxirZ kqpygv"
-      overflow="hidden"
-    >
-      #tag
-    </div>
+    <h1
+      class="sc-AxjAm sc-AxirZ fPtRYU"
+      font-family="body"
+      font-size="6"
+      font-weight="light"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -75,26 +75,26 @@ Object {
 }
 `;
 
-exports[`Card component sanity matches themed snapshot 1`] = `
+exports[`Heading.h1 component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-AxirZ fvGbyt"
-        overflow="hidden"
-      >
-        Some Text
-      </div>
+      <h1
+        class="sc-AxjAm sc-AxirZ jTakOe"
+        font-family="body"
+        font-size="6"
+        font-weight="light"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-AxirZ fvGbyt"
-      overflow="hidden"
-    >
-      Some Text
-    </div>
+    <h1
+      class="sc-AxjAm sc-AxirZ jTakOe"
+      font-family="body"
+      font-size="6"
+      font-weight="light"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

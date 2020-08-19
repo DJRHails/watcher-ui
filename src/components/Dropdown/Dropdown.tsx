@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC } from 'react';
 import { UseDropdownProps, DropdownProvider, useDropdown } from './useDropdown';
 import { ReactNodeOrRenderProp } from '/types/utils';
 import { runIfFn } from '/utils/function';

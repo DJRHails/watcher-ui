@@ -1,0 +1,567 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nifty component sanity matches default snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-fznMAR kbchqj"
+        width="full"
+      >
+        <div
+          class="sc-AxiKw indorZ"
+          font-size="5rem"
+        >
+          <div
+            class="sc-AxiKw fPVsD"
+            font-size="1em"
+          >
+            <div
+              class="sc-AxiKw estSfk"
+            >
+              <div
+                class="sc-AxiKw GJeuC"
+                width="full"
+              />
+            </div>
+            <div
+              class="sc-AxiKw iYSnmW"
+              font-size="0.6em"
+            >
+              <div
+                class="sc-AxiKw bkDCjy"
+              >
+                <div
+                  class="sc-AxiKw hSFVmZ"
+                >
+                  <svg
+                    class="sc-fzokOt jqHSVp"
+                    color="brand"
+                    fill="none"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M12 15.243l4.5-2.662-4.5 6.343-4.5-6.342 4.5 2.662v-.001zm0-10.74l4.5 7.087-4.5 2.662-4.5-2.662L12 4.502z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="sc-AxiKw fSecxJ"
+                >
+                  <svg
+                    class="sc-fzokOt ebVCVY"
+                    color="accent"
+                    fill="none"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M8.027 17.36l1.696-2.937 1.696-2.927 1.686-2.937.28-.466.124.466.517 1.934-.58 1.003-1.696 2.927-1.685 2.937h2.027l1.696-2.937.879-1.52.414 1.52.786 2.937h1.82l-.786-2.937-.786-2.927-.207-.755 1.262-2.182h-1.841l-.062-.218-.641-2.4-.083-.31h-1.769l-.041.063-1.655 2.865-1.696 2.937-1.686 2.927L6 17.36h2.027z"
+                      fill="#fff"
+                      stroke="null"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-AxiKw jYDmyT"
+        >
+          <h4
+            class="sc-AxiKw sc-AxhUy BqwwM"
+            font-family="body"
+            font-size="3"
+            font-weight="bold"
+          />
+          <h5
+            class="sc-AxiKw sc-AxhUy bizxRV"
+            color="#666"
+            font-family="body"
+            font-size="2"
+            font-weight="bold"
+          >
+            Artifact
+             #
+            0
+          </h5>
+        </div>
+        <hr />
+        <div
+          class="sc-AxiKw sc-fzoyAV cYIrxT"
+        >
+          <button
+            class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN jTAlcf"
+          >
+            <div
+              class="sc-AxiKw sc-AxhUy dVPhMk"
+            >
+              Transfer
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-fznMAR kbchqj"
+      width="full"
+    >
+      <div
+        class="sc-AxiKw indorZ"
+        font-size="5rem"
+      >
+        <div
+          class="sc-AxiKw fPVsD"
+          font-size="1em"
+        >
+          <div
+            class="sc-AxiKw estSfk"
+          >
+            <div
+              class="sc-AxiKw GJeuC"
+              width="full"
+            />
+          </div>
+          <div
+            class="sc-AxiKw iYSnmW"
+            font-size="0.6em"
+          >
+            <div
+              class="sc-AxiKw bkDCjy"
+            >
+              <div
+                class="sc-AxiKw hSFVmZ"
+              >
+                <svg
+                  class="sc-fzokOt jqHSVp"
+                  color="brand"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M12 15.243l4.5-2.662-4.5 6.343-4.5-6.342 4.5 2.662v-.001zm0-10.74l4.5 7.087-4.5 2.662-4.5-2.662L12 4.502z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <div
+                class="sc-AxiKw fSecxJ"
+              >
+                <svg
+                  class="sc-fzokOt ebVCVY"
+                  color="accent"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M8.027 17.36l1.696-2.937 1.696-2.927 1.686-2.937.28-.466.124.466.517 1.934-.58 1.003-1.696 2.927-1.685 2.937h2.027l1.696-2.937.879-1.52.414 1.52.786 2.937h1.82l-.786-2.937-.786-2.927-.207-.755 1.262-2.182h-1.841l-.062-.218-.641-2.4-.083-.31h-1.769l-.041.063-1.655 2.865-1.696 2.937-1.686 2.927L6 17.36h2.027z"
+                    fill="#fff"
+                    stroke="null"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-AxiKw jYDmyT"
+      >
+        <h4
+          class="sc-AxiKw sc-AxhUy BqwwM"
+          font-family="body"
+          font-size="3"
+          font-weight="bold"
+        />
+        <h5
+          class="sc-AxiKw sc-AxhUy bizxRV"
+          color="#666"
+          font-family="body"
+          font-size="2"
+          font-weight="bold"
+        >
+          Artifact
+           #
+          0
+        </h5>
+      </div>
+      <hr />
+      <div
+        class="sc-AxiKw sc-fzoyAV cYIrxT"
+      >
+        <button
+          class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN jTAlcf"
+        >
+          <div
+            class="sc-AxiKw sc-AxhUy dVPhMk"
+          >
+            Transfer
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Nifty component sanity matches themed snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-fznMAR hTkXoN"
+        width="full"
+      >
+        <div
+          class="sc-AxiKw indorZ"
+          font-size="5rem"
+        >
+          <div
+            class="sc-AxiKw fPVsD"
+            font-size="1em"
+          >
+            <div
+              class="sc-AxiKw fgLlBD"
+            >
+              <div
+                class="sc-AxiKw kbBPPd"
+                width="full"
+              />
+            </div>
+            <div
+              class="sc-AxiKw iYSnmW"
+              font-size="0.6em"
+            >
+              <div
+                class="sc-AxiKw bkDCjy"
+              >
+                <div
+                  class="sc-AxiKw epjIEg"
+                >
+                  <svg
+                    class="sc-fzokOt dSWyFL"
+                    color="brand"
+                    fill="none"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M12 15.243l4.5-2.662-4.5 6.343-4.5-6.342 4.5 2.662v-.001zm0-10.74l4.5 7.087-4.5 2.662-4.5-2.662L12 4.502z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="sc-AxiKw cMMGnE"
+                >
+                  <svg
+                    class="sc-fzokOt gTwld"
+                    color="accent"
+                    fill="none"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M8.027 17.36l1.696-2.937 1.696-2.927 1.686-2.937.28-.466.124.466.517 1.934-.58 1.003-1.696 2.927-1.685 2.937h2.027l1.696-2.937.879-1.52.414 1.52.786 2.937h1.82l-.786-2.937-.786-2.927-.207-.755 1.262-2.182h-1.841l-.062-.218-.641-2.4-.083-.31h-1.769l-.041.063-1.655 2.865-1.696 2.937-1.686 2.927L6 17.36h2.027z"
+                      fill="#fff"
+                      stroke="null"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-AxiKw heQiAf"
+        >
+          <h4
+            class="sc-AxiKw sc-AxhUy cypOSp"
+            font-family="body"
+            font-size="3"
+            font-weight="bold"
+          />
+          <h5
+            class="sc-AxiKw sc-AxhUy gNUFee"
+            color="#666"
+            font-family="body"
+            font-size="2"
+            font-weight="bold"
+          >
+            Artifact
+             #
+            0
+          </h5>
+        </div>
+        <hr />
+        <div
+          class="sc-AxiKw sc-fzoyAV bPzGcb"
+        >
+          <button
+            class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN ktmQir"
+          >
+            <div
+              class="sc-AxiKw sc-AxhUy liAoAE"
+            >
+              Transfer
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-fznMAR hTkXoN"
+      width="full"
+    >
+      <div
+        class="sc-AxiKw indorZ"
+        font-size="5rem"
+      >
+        <div
+          class="sc-AxiKw fPVsD"
+          font-size="1em"
+        >
+          <div
+            class="sc-AxiKw fgLlBD"
+          >
+            <div
+              class="sc-AxiKw kbBPPd"
+              width="full"
+            />
+          </div>
+          <div
+            class="sc-AxiKw iYSnmW"
+            font-size="0.6em"
+          >
+            <div
+              class="sc-AxiKw bkDCjy"
+            >
+              <div
+                class="sc-AxiKw epjIEg"
+              >
+                <svg
+                  class="sc-fzokOt dSWyFL"
+                  color="brand"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M12 15.243l4.5-2.662-4.5 6.343-4.5-6.342 4.5 2.662v-.001zm0-10.74l4.5 7.087-4.5 2.662-4.5-2.662L12 4.502z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <div
+                class="sc-AxiKw cMMGnE"
+              >
+                <svg
+                  class="sc-fzokOt gTwld"
+                  color="accent"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M8.027 17.36l1.696-2.937 1.696-2.927 1.686-2.937.28-.466.124.466.517 1.934-.58 1.003-1.696 2.927-1.685 2.937h2.027l1.696-2.937.879-1.52.414 1.52.786 2.937h1.82l-.786-2.937-.786-2.927-.207-.755 1.262-2.182h-1.841l-.062-.218-.641-2.4-.083-.31h-1.769l-.041.063-1.655 2.865-1.696 2.937-1.686 2.927L6 17.36h2.027z"
+                    fill="#fff"
+                    stroke="null"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-AxiKw heQiAf"
+      >
+        <h4
+          class="sc-AxiKw sc-AxhUy cypOSp"
+          font-family="body"
+          font-size="3"
+          font-weight="bold"
+        />
+        <h5
+          class="sc-AxiKw sc-AxhUy gNUFee"
+          color="#666"
+          font-family="body"
+          font-size="2"
+          font-weight="bold"
+        >
+          Artifact
+           #
+          0
+        </h5>
+      </div>
+      <hr />
+      <div
+        class="sc-AxiKw sc-fzoyAV bPzGcb"
+      >
+        <button
+          class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN ktmQir"
+        >
+          <div
+            class="sc-AxiKw sc-AxhUy liAoAE"
+          >
+            Transfer
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,24 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component sanity matches default snapshot 1`] = `
+exports[`Skeleton Text component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxirZ kqpygv"
-        overflow="hidden"
+        class="sc-AxiKw gVfUsk"
       >
-        #tag
+        <div
+          class="sc-AxiKw sc-fznMAR FMdEL"
+          height="0.5rem"
+          speed="0.8"
+          width="100%"
+        />
+        <div
+          class="sc-AxiKw sc-fznMAR FMdEL"
+          height="0.5rem"
+          speed="0.8"
+          width="100%"
+        />
+        <div
+          class="sc-AxiKw sc-fznMAR jeiEpj"
+          height="0.5rem"
+          speed="0.8"
+          width="80%"
+        />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxirZ kqpygv"
-      overflow="hidden"
+      class="sc-AxiKw gVfUsk"
     >
-      #tag
+      <div
+        class="sc-AxiKw sc-fznMAR FMdEL"
+        height="0.5rem"
+        speed="0.8"
+        width="100%"
+      />
+      <div
+        class="sc-AxiKw sc-fznMAR FMdEL"
+        height="0.5rem"
+        speed="0.8"
+        width="100%"
+      />
+      <div
+        class="sc-AxiKw sc-fznMAR jeiEpj"
+        height="0.5rem"
+        speed="0.8"
+        width="80%"
+      />
     </div>
   </div>,
   "debug": [Function],
@@ -75,25 +107,57 @@ Object {
 }
 `;
 
-exports[`Card component sanity matches themed snapshot 1`] = `
+exports[`Skeleton Text component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxirZ fvGbyt"
-        overflow="hidden"
+        class="sc-AxiKw gVfUsk"
       >
-        Some Text
+        <div
+          class="sc-AxiKw sc-fznMAR FMdEL"
+          height="0.5rem"
+          speed="0.8"
+          width="100%"
+        />
+        <div
+          class="sc-AxiKw sc-fznMAR FMdEL"
+          height="0.5rem"
+          speed="0.8"
+          width="100%"
+        />
+        <div
+          class="sc-AxiKw sc-fznMAR jeiEpj"
+          height="0.5rem"
+          speed="0.8"
+          width="80%"
+        />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxirZ fvGbyt"
-      overflow="hidden"
+      class="sc-AxiKw gVfUsk"
     >
-      Some Text
+      <div
+        class="sc-AxiKw sc-fznMAR FMdEL"
+        height="0.5rem"
+        speed="0.8"
+        width="100%"
+      />
+      <div
+        class="sc-AxiKw sc-fznMAR FMdEL"
+        height="0.5rem"
+        speed="0.8"
+        width="100%"
+      />
+      <div
+        class="sc-AxiKw sc-fznMAR jeiEpj"
+        height="0.5rem"
+        speed="0.8"
+        width="80%"
+      />
     </div>
   </div>,
   "debug": [Function],

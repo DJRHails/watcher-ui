@@ -6,13 +6,15 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-AxjAm bgAmkT"
+        class="sc-AxjAm sc-AxirZ cJSiKy"
+        color="brand"
       />
     </div>
   </body>,
   "container": <div>
     <a
-      class="sc-AxjAm bgAmkT"
+      class="sc-AxjAm sc-AxirZ cJSiKy"
+      color="brand"
     />
   </div>,
   "debug": [Function],
@@ -75,13 +77,15 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-AxjAm ccmJOo"
+        class="sc-AxjAm sc-AxirZ vixyY"
+        color="brand"
       />
     </div>
   </body>,
   "container": <div>
     <a
-      class="sc-AxjAm ccmJOo"
+      class="sc-AxjAm sc-AxirZ vixyY"
+      color="brand"
     />
   </div>,
   "debug": [Function],

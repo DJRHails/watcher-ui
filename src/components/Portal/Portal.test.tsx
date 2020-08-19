@@ -7,7 +7,7 @@ import { Portal } from './Portal';
 
 describe('Portal component sanity', () => {
   it('has name', () => {
-    expect(Portal.displayName).toBe('Portal')
+    expect(Portal.displayName).toBe('Portal');
   });
 
   it('matches default snapshot', () => {

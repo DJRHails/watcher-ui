@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm bgAmkT"
+        class="sc-AxjAm ksKDGX"
       >
         Box!
       </div>
@@ -14,7 +14,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm bgAmkT"
+      class="sc-AxjAm ksKDGX"
     >
       Box!
     </div>
@@ -79,7 +79,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm dblEgU"
+        class="sc-AxjAm gfZuOu"
         color="white"
       >
         Some Text
@@ -88,7 +88,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm dblEgU"
+      class="sc-AxjAm gfZuOu"
       color="white"
     >
       Some Text

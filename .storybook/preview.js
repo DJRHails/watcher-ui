@@ -8,12 +8,11 @@ import { WatcherProvider } from "../src/components";
 addDecorator(withA11y);
 addDecorator(withKnobs);
 
-addDecorator((Story) => (
+addDecorator(Story => (
   <WatcherProvider>
-    <Story/>
+    <Story />
   </WatcherProvider>
-  )
-);
+));
 
 addParameters({
   options: {

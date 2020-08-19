@@ -1,25 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component sanity matches default snapshot 1`] = `
+exports[`Stack Divider component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-AxirZ kqpygv"
-        overflow="hidden"
-      >
-        #tag
-      </div>
+      <hr
+        class="sc-AxjAm cGbuYy"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-AxirZ kqpygv"
-      overflow="hidden"
-    >
-      #tag
-    </div>
+    <hr
+      class="sc-AxjAm cGbuYy"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -75,26 +69,20 @@ Object {
 }
 `;
 
-exports[`Card component sanity matches themed snapshot 1`] = `
+exports[`Stack Divider component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-AxirZ fvGbyt"
-        overflow="hidden"
-      >
-        Some Text
-      </div>
+      <hr
+        class="sc-AxjAm cGbuYy"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-AxirZ fvGbyt"
-      overflow="hidden"
-    >
-      Some Text
-    </div>
+    <hr
+      class="sc-AxjAm cGbuYy"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

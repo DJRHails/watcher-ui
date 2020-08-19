@@ -2,7 +2,7 @@ import React from 'react';
 import { KindMeta } from '/types/storybook';
 
 import { Dropdown } from './Dropdown';
-import { Button, SolidButton } from '../Button';
+import { Button } from '../Button';
 import { DropdownButton } from './DropdownButton';
 import { DropdownList } from './DropdownList';
 import { DropdownGroup } from './DropdownGroup';

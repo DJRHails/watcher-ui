@@ -30,5 +30,5 @@ export function shortenAddress(address: string, chars = 4): string {
   if (isEthAddress(address)) {
     return shortenEthereumAddress(address, chars);
   }
-  return shortenString(addrkess, chars);
+  return shortenString(address, chars);
 }

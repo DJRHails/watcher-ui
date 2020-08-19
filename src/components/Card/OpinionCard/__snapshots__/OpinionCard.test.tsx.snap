@@ -6,21 +6,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm sc-AxirZ gXCTpz"
+        class="sc-AxirZ bmzTDV"
+        overflow="hidden"
         width="auto"
       >
         <div
-          class="sc-AxjAm sc-fzokOt kJQoPj"
+          class="sc-AxjAm sc-fzoyAV enJdaY"
         >
           <div
-            class="sc-AxjAm hieOLQ"
+            class="sc-AxjAm cCiQvj"
             width="12"
           >
             <div
-              class="sc-AxjAm ddqKMY"
+              class="sc-AxjAm SngNx"
             >
               <div
-                class="sc-AxjAm sc-AxgMl dFxmIG sc-AxheI hxkhvK"
+                class="sc-AxjAm sc-AxgMl sc-AxheI fKVgYM"
                 color="green"
                 display="inline-flex"
                 font-size="1"
@@ -29,7 +30,7 @@ Object {
                 width="full"
               >
                 <div
-                  class="sc-AxjAm sc-AxgMl foHnIq sc-AxheI bkurbm"
+                  class="sc-AxjAm sc-AxgMl sc-AxheI bVNKvC"
                   color="white"
                   display="inline-flex"
                   font-size="1"
@@ -38,10 +39,10 @@ Object {
                   width="full"
                 >
                   <div
-                    class="sc-AxjAm loNsnU"
+                    class="sc-AxjAm bchUWr"
                   >
                     <svg
-                      class="sc-fznyAO bgVttU"
+                      class="sc-fzokOt eSvVZx"
                       color="success"
                       fill="currentColor"
                       height="1.25rem"
@@ -62,8 +63,10 @@ Object {
             </div>
           </div>
           <h5
-            class="sc-AxjAm sc-AxgMl eEHWox"
+            class="sc-AxjAm sc-AxgMl pFddk"
+            font-family="body"
             font-size="2"
+            font-weight="bold"
           >
             Do
           </h5>
@@ -73,21 +76,22 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm sc-AxirZ gXCTpz"
+      class="sc-AxirZ bmzTDV"
+      overflow="hidden"
       width="auto"
     >
       <div
-        class="sc-AxjAm sc-fzokOt kJQoPj"
+        class="sc-AxjAm sc-fzoyAV enJdaY"
       >
         <div
-          class="sc-AxjAm hieOLQ"
+          class="sc-AxjAm cCiQvj"
           width="12"
         >
           <div
-            class="sc-AxjAm ddqKMY"
+            class="sc-AxjAm SngNx"
           >
             <div
-              class="sc-AxjAm sc-AxgMl dFxmIG sc-AxheI hxkhvK"
+              class="sc-AxjAm sc-AxgMl sc-AxheI fKVgYM"
               color="green"
               display="inline-flex"
               font-size="1"
@@ -96,7 +100,7 @@ Object {
               width="full"
             >
               <div
-                class="sc-AxjAm sc-AxgMl foHnIq sc-AxheI bkurbm"
+                class="sc-AxjAm sc-AxgMl sc-AxheI bVNKvC"
                 color="white"
                 display="inline-flex"
                 font-size="1"
@@ -105,10 +109,10 @@ Object {
                 width="full"
               >
                 <div
-                  class="sc-AxjAm loNsnU"
+                  class="sc-AxjAm bchUWr"
                 >
                   <svg
-                    class="sc-fznyAO bgVttU"
+                    class="sc-fzokOt eSvVZx"
                     color="success"
                     fill="currentColor"
                     height="1.25rem"
@@ -129,8 +133,10 @@ Object {
           </div>
         </div>
         <h5
-          class="sc-AxjAm sc-AxgMl eEHWox"
+          class="sc-AxjAm sc-AxgMl pFddk"
+          font-family="body"
           font-size="2"
+          font-weight="bold"
         >
           Do
         </h5>
@@ -197,21 +203,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm sc-AxirZ ehelVt"
+        class="sc-AxirZ ccYpFy"
+        overflow="hidden"
         width="auto"
       >
         <div
-          class="sc-AxjAm sc-fzokOt ljHOaC"
+          class="sc-AxjAm sc-fzoyAV dGnIwO"
         >
           <div
-            class="sc-AxjAm kXMkWS"
+            class="sc-AxjAm fvUGMx"
             width="12"
           >
             <div
-              class="sc-AxjAm gbhXvu"
+              class="sc-AxjAm cfvWtf"
             >
               <div
-                class="sc-AxjAm sc-AxgMl bhNpxm sc-AxheI dbFoaJ"
+                class="sc-AxjAm sc-AxgMl sc-AxheI ogYfI"
                 color="green"
                 display="inline-flex"
                 font-size="1"
@@ -220,7 +227,7 @@ Object {
                 width="full"
               >
                 <div
-                  class="sc-AxjAm sc-AxgMl bcBFQW sc-AxheI eWhjjz"
+                  class="sc-AxjAm sc-AxgMl sc-AxheI ngAVu"
                   color="white"
                   display="inline-flex"
                   font-size="1"
@@ -229,10 +236,10 @@ Object {
                   width="full"
                 >
                   <div
-                    class="sc-AxjAm loNsnU"
+                    class="sc-AxjAm bchUWr"
                   >
                     <svg
-                      class="sc-fznyAO jaTTwe"
+                      class="sc-fzokOt oTJEn"
                       color="success"
                       fill="currentColor"
                       height="1.25rem"
@@ -253,8 +260,10 @@ Object {
             </div>
           </div>
           <h5
-            class="sc-AxjAm sc-AxgMl ojKkJ"
+            class="sc-AxjAm sc-AxgMl cGMMGa"
+            font-family="body"
             font-size="2"
+            font-weight="bold"
           >
             Do
           </h5>
@@ -264,21 +273,22 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm sc-AxirZ ehelVt"
+      class="sc-AxirZ ccYpFy"
+      overflow="hidden"
       width="auto"
     >
       <div
-        class="sc-AxjAm sc-fzokOt ljHOaC"
+        class="sc-AxjAm sc-fzoyAV dGnIwO"
       >
         <div
-          class="sc-AxjAm kXMkWS"
+          class="sc-AxjAm fvUGMx"
           width="12"
         >
           <div
-            class="sc-AxjAm gbhXvu"
+            class="sc-AxjAm cfvWtf"
           >
             <div
-              class="sc-AxjAm sc-AxgMl bhNpxm sc-AxheI dbFoaJ"
+              class="sc-AxjAm sc-AxgMl sc-AxheI ogYfI"
               color="green"
               display="inline-flex"
               font-size="1"
@@ -287,7 +297,7 @@ Object {
               width="full"
             >
               <div
-                class="sc-AxjAm sc-AxgMl bcBFQW sc-AxheI eWhjjz"
+                class="sc-AxjAm sc-AxgMl sc-AxheI ngAVu"
                 color="white"
                 display="inline-flex"
                 font-size="1"
@@ -296,10 +306,10 @@ Object {
                 width="full"
               >
                 <div
-                  class="sc-AxjAm loNsnU"
+                  class="sc-AxjAm bchUWr"
                 >
                   <svg
-                    class="sc-fznyAO jaTTwe"
+                    class="sc-fzokOt oTJEn"
                     color="success"
                     fill="currentColor"
                     height="1.25rem"
@@ -320,8 +330,10 @@ Object {
           </div>
         </div>
         <h5
-          class="sc-AxjAm sc-AxgMl ojKkJ"
+          class="sc-AxjAm sc-AxgMl cGMMGa"
+          font-family="body"
           font-size="2"
+          font-weight="bold"
         >
           Do
         </h5>

@@ -1,20 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main component sanity matches default snapshot 1`] = `
+exports[`Container component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw hVYziQ"
-        role="main"
+        class="sc-AxiKw sc-fzoyAV lFQuy"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw hVYziQ"
-      role="main"
+      class="sc-AxiKw sc-fzoyAV lFQuy"
     />
   </div>,
   "debug": [Function],
@@ -71,21 +69,19 @@ Object {
 }
 `;
 
-exports[`Main component sanity matches themed snapshot 1`] = `
+exports[`Container component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw hVYziQ"
-        role="main"
+        class="sc-AxiKw sc-fzoyAV gxbqIa"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw hVYziQ"
-      role="main"
+      class="sc-AxiKw sc-fzoyAV gxbqIa"
     />
   </div>,
   "debug": [Function],

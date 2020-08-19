@@ -1,25 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component sanity matches default snapshot 1`] = `
+exports[`WatcherProvider component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxirZ kqpygv"
-        overflow="hidden"
-      >
-        #tag
-      </div>
+        class="sc-AxiKw dbDMuJ"
+        role="main"
+      />
+      <div
+        class="watcher-portal-manager"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxirZ kqpygv"
-      overflow="hidden"
-    >
-      #tag
-    </div>
+      class="sc-AxiKw dbDMuJ"
+      role="main"
+    />
+    <div
+      class="watcher-portal-manager"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -75,26 +77,28 @@ Object {
 }
 `;
 
-exports[`Card component sanity matches themed snapshot 1`] = `
+exports[`WatcherProvider component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxirZ fvGbyt"
-        overflow="hidden"
-      >
-        Some Text
-      </div>
+        class="sc-AxiKw dbDMuJ"
+        role="main"
+      />
+      <div
+        class="watcher-portal-manager"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxirZ fvGbyt"
-      overflow="hidden"
-    >
-      Some Text
-    </div>
+      class="sc-AxiKw dbDMuJ"
+      role="main"
+    />
+    <div
+      class="watcher-portal-manager"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

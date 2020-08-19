@@ -33,6 +33,7 @@ export const colors = {
     brand: '#ffd2ce',
     danger: '#f5c6cb',
     success: '#c3e6cb',
+    accent: '#fff5e0',
   }
 };
 

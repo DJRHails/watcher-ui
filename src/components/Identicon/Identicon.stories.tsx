@@ -38,9 +38,17 @@ export const ethereumWithManualPlatform: StoryMeta = () => (
 
 
 export const algorand: StoryMeta = () => (
-  <Identicon
-    address="HAILSN476AQKWQ46TSIG4XGOCBLGG2CICATHB6YCAWN4SQNGH66QDKHGPQ"
-  />
+  <>
+    <Identicon
+      address="HAILSN476AQKWQ46TSIG4XGOCBLGG2CICATHB6YCAWN4SQNGH66QDKHGPQ"
+    />
+    <Identicon
+      address="HAILSN476AQKWQ"
+    />
+    <Identicon
+      address="HAILS"
+    />
+  </>
 );
 
 export default story;

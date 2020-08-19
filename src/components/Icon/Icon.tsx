@@ -85,7 +85,7 @@ const IconInner: FC<IconInnerProps> = ({
 
 export const Icon: FC<IconProps> = ({
   name,
-  size = '2em',
+  size = '1em',
   color,
   backgroundColor,
   ...rest

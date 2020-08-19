@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, BoxProps, sx } from '../Box'; // TODO: Can't use .. here for some reason again!
+import { Box, BoxProps } from '../Box'; // TODO: Can't use .. here for some reason again!
 import { style, layout, space, variant } from 'styled-system';
 import styled from 'styled-components';
 import { css } from '@styled-system/css';

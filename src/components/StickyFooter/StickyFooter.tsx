@@ -16,14 +16,14 @@ export const StickyFooter: React.FC<StickyFooterProps> = ({
       align="unset"
       height="full"
     >
-      <Box as="main" css={{
+      <Box as="main" sx={{
         flex: '1 0 auto',
       }}>
         {children}
       </Box>
       <Box
         as="footer"
-        css={{
+        sx={{
           flexShrink: 0,
         }}
       >

@@ -10,7 +10,6 @@ export const StyledSolidButton = styled(BaseButton)(
       backgroundColor: 'white',
       zIndex: 0,
       transition: 'all 300ms ease',
-      margin: 2,
     },
     '&:hover': {
       boxShadow: 'md',

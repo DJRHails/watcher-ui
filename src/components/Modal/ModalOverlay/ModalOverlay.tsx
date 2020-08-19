@@ -16,7 +16,8 @@ const StyledOverlay = styled('div')(
     left: 0,
     top: 0,
     background: 'rgba(0, 0, 0, 0.48)',
-    overflow: 'auto'
+    overflow: 'auto',
+    zIndex: 1000,
   })
 );
 

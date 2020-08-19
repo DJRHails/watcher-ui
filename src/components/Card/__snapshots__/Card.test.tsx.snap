@@ -6,7 +6,8 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm bgAmkT sc-AxiKw cydMjH"
+        class="sc-AxirZ kqpygv"
+        overflow="hidden"
       >
         #tag
       </div>
@@ -14,7 +15,8 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm bgAmkT sc-AxiKw cydMjH"
+      class="sc-AxirZ kqpygv"
+      overflow="hidden"
     >
       #tag
     </div>
@@ -79,7 +81,8 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm iKOndt sc-AxiKw cydMjH"
+        class="sc-AxirZ fvGbyt"
+        overflow="hidden"
       >
         Some Text
       </div>
@@ -87,7 +90,8 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm iKOndt sc-AxiKw cydMjH"
+      class="sc-AxirZ fvGbyt"
+      overflow="hidden"
     >
       Some Text
     </div>

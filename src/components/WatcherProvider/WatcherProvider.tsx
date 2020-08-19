@@ -1,9 +1,12 @@
 import React, { ReactNode } from 'react';
-import theme from '/themes/theme';
+import defaultTheme from '/themes/theme';
 import { ThemeProvider } from 'styled-components';
 import { CssReset, Box, BoxProps } from '/components';
+import { PortalManager } from '../Portal';
+import { Theme } from 'styled-system';
 
 export interface WatcherProviderProps extends BoxProps {
+  theme?: Theme
   children?: ReactNode
 } 
 
@@ -12,12 +15,15 @@ export const WatcherProvider: React.FC<WatcherProviderProps> = ({
     fontFamily: 'body',
     height: 'full'
   },
+  theme,
   ...rest
 }: WatcherProviderProps) => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={{...defaultTheme, ...theme}}>
       <CssReset/>
-      <Box role="main" sx={sx} {...rest}/>
+      <PortalManager>
+        <Box role="main" sx={sx} {...rest}/>
+      </PortalManager>
     </ThemeProvider>
   );
 };

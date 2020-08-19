@@ -6,17 +6,17 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm sc-fzokOt fezMqL"
+        class="sc-AxiKw sc-fzoyAV fdJarM"
       >
         <div
-          class="sc-AxjAm bPxeac"
-          font-size="2em"
+          class="sc-AxiKw cAuAar"
+          font-size="1em"
         >
           <div
-            class="sc-AxjAm fStRSI"
+            class="sc-AxiKw gVfUsk"
           >
             <svg
-              class="sc-fznyAO kLQldz"
+              class="sc-fzokOt cBQfwu"
               color="#0C0C0D"
               fill="none"
               height="1em"
@@ -35,10 +35,11 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxjAm sc-fzokOt bkcDoa"
+          class="sc-AxiKw bkOZaB"
+          display="inline-grid"
         >
           <div
-            class="sc-AxjAm sc-AxirZ dMhlM"
+            class="sc-AxiKw sc-AxhUy huA-dKI"
             font-weight="medium"
           >
             Ethereum
@@ -49,17 +50,17 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm sc-fzokOt fezMqL"
+      class="sc-AxiKw sc-fzoyAV fdJarM"
     >
       <div
-        class="sc-AxjAm bPxeac"
-        font-size="2em"
+        class="sc-AxiKw cAuAar"
+        font-size="1em"
       >
         <div
-          class="sc-AxjAm fStRSI"
+          class="sc-AxiKw gVfUsk"
         >
           <svg
-            class="sc-fznyAO kLQldz"
+            class="sc-fzokOt cBQfwu"
             color="#0C0C0D"
             fill="none"
             height="1em"
@@ -78,10 +79,11 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-fzokOt bkcDoa"
+        class="sc-AxiKw bkOZaB"
+        display="inline-grid"
       >
         <div
-          class="sc-AxjAm sc-AxirZ dMhlM"
+          class="sc-AxiKw sc-AxhUy huA-dKI"
           font-weight="medium"
         >
           Ethereum
@@ -149,17 +151,17 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm sc-fzokOt kehabM"
+        class="sc-AxiKw sc-fzoyAV llLHXH"
       >
         <div
-          class="sc-AxjAm bPxeac"
-          font-size="2em"
+          class="sc-AxiKw cAuAar"
+          font-size="1em"
         >
           <div
-            class="sc-AxjAm fStRSI"
+            class="sc-AxiKw gVfUsk"
           >
             <svg
-              class="sc-fznyAO kLQldz"
+              class="sc-fzokOt cBQfwu"
               color="#0C0C0D"
               fill="none"
               height="1em"
@@ -178,10 +180,11 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxjAm sc-fzokOt gddEaj"
+          class="sc-AxiKw hvHmjw"
+          display="inline-grid"
         >
           <div
-            class="sc-AxjAm sc-AxirZ eoOvDE"
+            class="sc-AxiKw sc-AxhUy hIwYUQ"
             font-weight="medium"
           >
             Ethereum
@@ -192,17 +195,17 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm sc-fzokOt kehabM"
+      class="sc-AxiKw sc-fzoyAV llLHXH"
     >
       <div
-        class="sc-AxjAm bPxeac"
-        font-size="2em"
+        class="sc-AxiKw cAuAar"
+        font-size="1em"
       >
         <div
-          class="sc-AxjAm fStRSI"
+          class="sc-AxiKw gVfUsk"
         >
           <svg
-            class="sc-fznyAO kLQldz"
+            class="sc-fzokOt cBQfwu"
             color="#0C0C0D"
             fill="none"
             height="1em"
@@ -221,10 +224,11 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-fzokOt gddEaj"
+        class="sc-AxiKw hvHmjw"
+        display="inline-grid"
       >
         <div
-          class="sc-AxjAm sc-AxirZ eoOvDE"
+          class="sc-AxiKw sc-AxhUy hIwYUQ"
           font-weight="medium"
         >
           Ethereum

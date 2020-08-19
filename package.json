@@ -1,7 +1,6 @@
 {
-  "name": "watcher-ui",
-  "version": "0.3.0",
-  "private": true,
+  "name": "@DJRHails/watcher-ui",
+  "version": "0.4.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
@@ -9,6 +8,12 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/DJRHails"
+  },
+  "repository": {
+    "url": "git://github.com/DJRHails/watcher-ui.git"
+  },
   "dependencies": {
     "@ethersproject/address": "^5.0.1",
     "@popperjs/core": "^2.4.4",
@@ -36,6 +41,7 @@
     "storybook:deploy": "storybook-to-ghpages",
     "type": "tsc --noEmit",
     "type:watch": "npm run type -- --watch",
+    "test": "yarn jest",
     "lint": "concurrently yarn:lint:ts yarn:lint:js",
     "lint:fix": "concurrently yarn:lint:ts:fix yarn:lint:js:fix",
     "lint:ts": "eslint \"src/**/*.ts?(x)\"",

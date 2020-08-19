@@ -63,4 +63,4 @@ jobs:
       - run: yarn
       - run: yarn storybook:deploy -- --ci --host-token-env-variable=GITHUB_TOKEN
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

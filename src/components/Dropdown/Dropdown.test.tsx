@@ -1,23 +1,23 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
-import theme from '/themes/theme';
+// import React from 'react';
+// import { render } from '@testing-library/react';
+// import { ThemeProvider } from 'styled-components';
+// import theme from '/themes/theme';
 
 import { Dropdown } from './Dropdown';
-import { DropdownButton } from './DropdownButton';
-import { DropdownList } from './DropdownList';
-import { DropdownItem } from './DropdownItem';
+// import { DropdownButton } from './DropdownButton';
+// import { DropdownList } from './DropdownList';
+// import { DropdownItem } from './DropdownItem';
 
-const DefaultDropdown = () => (
-  <Dropdown isLazy>
-    <DropdownButton>
-        Open dropdown
-    </DropdownButton>
-    <DropdownList>
-      <DropdownItem>A word</DropdownItem>
-    </DropdownList>
-  </Dropdown>
-);
+// const DefaultDropdown = () => (
+//   <Dropdown isLazy>
+//     <DropdownButton>
+//         Open dropdown
+//     </DropdownButton>
+//     <DropdownList>
+//       <DropdownItem>A word</DropdownItem>
+//     </DropdownList>
+//   </Dropdown>
+// );
 
 describe('Dropdown component sanity', () => {
   it('has name', () => {

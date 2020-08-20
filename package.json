@@ -50,7 +50,8 @@
     "lint:ts": "eslint \"src/**/*.ts?(x)\"",
     "lint:ts:fix": "eslint \"src/**/*.ts?(x)\" --fix",
     "lint:js": "prettier --ignore-path .gitignore --check \"**/*.{js,json}\"",
-    "lint:js:fix": "prettier --ignore-path .gitignore --write \"**/*.{js,json}\""
+    "lint:js:fix": "prettier --ignore-path .gitignore --write \"**/*.{js,json}\"",
+    "ci": "CI=1 yarn && yarn build && concurrently yarn:lint yarn:type yarn:test"
   },
   "eslintConfig": {
     "extends": "react-app"

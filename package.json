@@ -1,6 +1,6 @@
 {
   "name": "@djrhails/watcher-ui",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
@@ -27,6 +27,7 @@
     "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "react-remove-scroll": "^2.3.0",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5"
@@ -111,7 +112,6 @@
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",
-    "react-is": "^16.13.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5",

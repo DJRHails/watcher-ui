@@ -107,6 +107,7 @@
     "eslint-plugin-react": "^7.20.0",
     "jest": "^26.0.1",
     "plop": "^2.7.1",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",

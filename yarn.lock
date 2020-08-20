@@ -2922,6 +2922,7 @@ __metadata:
     jest: ^26.0.1
     lodash: ^4.17.20
     plop: ^2.7.1
+    prettier: ^2.0.5
     react: ^16.13.1
     react-docgen-typescript-loader: ^3.7.2
     react-dom: ^16.13.1

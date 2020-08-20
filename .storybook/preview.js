@@ -8,7 +8,7 @@ import { WatcherProvider } from "../src/components";
 addDecorator(withA11y);
 addDecorator(withKnobs);
 
-addDecorator(Story => (
+addDecorator((Story) => (
   <WatcherProvider>
     <Story />
   </WatcherProvider>
@@ -71,6 +71,6 @@ addParameters({
       // Identical story kinds. The shortcut at the start of this function prevents
       // this from ever being used.
       return 0;
-    }
-  }
+    },
+  },
 });

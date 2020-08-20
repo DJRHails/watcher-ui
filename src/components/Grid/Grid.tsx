@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled, { DefaultTheme } from 'styled-components';
-import StyledSystem, { ResponsiveValue, TLengthStyledSystem, grid } from 'styled-system';
+import StyledSystem, { ResponsiveValue, grid } from 'styled-system';
 import { Box, BoxProps } from '../Box';
 import { isNull, isNumber } from '../../utils/assertions';
 import { mapResponsive } from '../../utils/responsive';

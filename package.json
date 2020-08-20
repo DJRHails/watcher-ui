@@ -44,7 +44,7 @@
     "storybook:deploy": "storybook-to-ghpages",
     "type": "tsc --noEmit",
     "type:watch": "npm run type -- --watch",
-    "test": "yarn jest --passWithNoTests",
+    "test": "yarn jest src/**/* --passWithNoTests",
     "lint": "concurrently yarn:lint:ts yarn:lint:js",
     "lint:fix": "concurrently yarn:lint:ts:fix yarn:lint:js:fix",
     "lint:ts": "eslint \"src/**/*.ts?(x)\"",

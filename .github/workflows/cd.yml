@@ -53,7 +53,7 @@ jobs:
       - run: yarn build
       - run: yarn npm publish
         env:
-          NPM_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
   publish-storybook:
     needs: build
@@ -67,6 +67,13 @@ jobs:
       - run: yarn
         env:
           NPM_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-      - run: yarn storybook:deploy -- --ci
-        env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+
+      - name: Storybook build
+        run: yarn storybook:build
+
+      - name: Deploy Storybook 🚀
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: storybook-static

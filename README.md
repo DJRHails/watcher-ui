@@ -18,15 +18,16 @@
 
 ## :wrench: Technology
 
-Watcher UI is built on the shoulders of giants!
+Watcher UI is a UI library designed for decentralised React webapps written in TypeScript.
 
-At it's core it is uses [Styled Components] & [Styled System]. For its layout components it utilises [Reflexbox] and to keep the components modular and documentation inline I use [Storybook]. It uses [Rimble] Icons.
+It is styled and themed with [Styled Components] and [Styled System]. [Storybook] is used heavily to keep the components modular and document use-cases.
+It also uses [Rimble] Icons with some custom additions.
 
 ### Inspiration
-- [World Food Programme UI Kit]
+- [World Food Programme UI Kit] 
 - [Rimble]
 - [Aragon UI]
-
+- [Chakra UI]
 
 [Styled Components]:https://github.com/styled-components/styled-components
 [Styled System]:https://https://styled-system.com/
@@ -35,6 +36,7 @@ At it's core it is uses [Styled Components] & [Styled System]. For its layout co
 [Rimble]:https://rimble.consensys.design/
 [World Food Programme UI Kit]:https://github.com/wfp/ui/tree/next
 [Aragon UI]:https://github.com/aragon/aragon-ui
+[Chakra UI]: https://chakra-ui.com/
 
 ## :gear: Installation
 
@@ -76,7 +78,7 @@ Plob is used to speed up generating new components.
 yarn generate component <name>
 yarn generate component DogCard
 
-# Generate a custom hook
+# Generate a custom hook (WIP)
 yarn generate hook <name>
 yarn generate hook useAsync
 ```

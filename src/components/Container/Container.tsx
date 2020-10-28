@@ -10,7 +10,7 @@ export const Container: FC<ContainerProps> = ({fluid, ...props}: ContainerProps)
     return (
       <Flex
         direction="column"
-        maxWidth="75rem"
+        maxWidth="120ch"
         mx="auto"
         {...props}
       />
@@ -19,7 +19,7 @@ export const Container: FC<ContainerProps> = ({fluid, ...props}: ContainerProps)
   return (
     <Flex
       direction="column"
-      maxWidth="75rem"
+      maxWidth="120ch"
       mx="auto"
       px={3}
       {...props}

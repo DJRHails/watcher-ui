@@ -2921,6 +2921,7 @@ __metadata:
     jazzicon: ^1.5.0
     jest: ^26.0.1
     lodash: ^4.17.20
+    moment: ^2.29.1
     plop: ^2.7.1
     prettier: ^2.0.5
     react: ^16.13.1
@@ -13656,6 +13657,13 @@ fsevents@~2.1.2:
   bin:
     mkdirp: bin/cmd.js
   checksum: 92d96ba83ca6013b7077c3fe776766c823c468de845a4965f5df483c38ad4d12829aab5a7a4e88e9defc4041f18a7cef2172e7bb19f946ae09a3821174b95256
+  languageName: node
+  linkType: hard
+
+"moment@npm:^2.29.1":
+  version: 2.29.1
+  resolution: "moment@npm:2.29.1"
+  checksum: 86729013febf7160de5b93da69273dd304d674b0224f9544b3abd09a87671ddd2cdd57598261ce57588910d63747ffd5590965e83c790d8bf327083c0e0a06e0
   languageName: node
   linkType: hard
 

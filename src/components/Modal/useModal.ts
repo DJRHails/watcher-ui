@@ -16,7 +16,7 @@ import { Dict } from '/types/utils';
 
 export interface UseModalProps {
   /**
-   * If `true`, the modal when be opened.
+   * If `true`, the modal is open.
    */
   isOpen: boolean
   /**

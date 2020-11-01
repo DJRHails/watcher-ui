@@ -3,16 +3,23 @@ import { KindMeta, StoryMeta } from '/types/storybook';
 
 import { Icon } from '../Icon';
 import { Flex, Text } from '/components';
+import { withKnobs, text } from '@storybook/addon-knobs';
 import { ETHERSCAN_NAMESPACE } from './Icon';
 
 const story: KindMeta<typeof Icon> = {
   title: 'Components/Icon',
   component: Icon,
+  decorators: [withKnobs],
 };
 
 export const brandEth: StoryMeta = () => (
   <Icon name="Eth" color="brand"/>
 );
+
+export const choose: StoryMeta = () => {
+  const iconName = text('Icon Name', 'Eth');
+  return <Icon name={iconName} color="brand"/>;
+};
 
 export const check: StoryMeta = () => (
   <Icon name="Check" color="success" /> 

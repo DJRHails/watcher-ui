@@ -7,6 +7,7 @@ export interface ModalProps extends UseModalProps {
   children?: ReactNode
   scrollBehaviour?: 'inside' | 'outside'
   getContainer?: PortalProps['getContainer']
+  size?: string; // TODO: Actually make this work
 } 
 
 export const Modal: FC<ModalProps> = (props: ModalProps) => {

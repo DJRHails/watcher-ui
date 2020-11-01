@@ -33,7 +33,7 @@ const story: KindMeta<typeof Modal> = {
 };
 
 export const minimal: StoryMeta = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure({ defaultIsOpen: true });
   return (
     <>
       <Button onClick={onOpen}>Open</Button>
@@ -49,7 +49,6 @@ export const minimal: StoryMeta = () => {
               irure nisi.
             </ModalBody>
             <ModalFooter>
-              <Button onClick={onClose}>Cancel</Button>
               <Button>Save</Button>
             </ModalFooter>
           </ModalContent>

@@ -1,9 +1,11 @@
 import { getAddress, isAddress as isEthAddress } from '@ethersproject/address';
 
-export const MAX_ETH_ADDRESS = 23384026197294446691258957323460528314494920687615;
+export function randomHex(size: number): string {
+  return [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+}
 
 export function randomEthereumAddress(): string {
-  return `0x${Math.floor(Math.random()*MAX_ETH_ADDRESS).toString(16)}`;
+  return `0x${randomHex(40)}`;
 }
 
 export function isEthereumAddress(value: any): string | false {

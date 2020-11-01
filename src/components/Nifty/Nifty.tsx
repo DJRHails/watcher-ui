@@ -31,7 +31,7 @@ export interface NiftyProps extends BoxProps, BoxShadowProps {
   data: NiftyMetadata;
   platform: PlatformDefiniton;
   flipped?: true;
-  onClick?: VoidFunction;
+  children?: React.ReactNode;
 }
 
 const StyledNifty = styled.div<BoxProps & BoxShadowProps>`
@@ -44,7 +44,7 @@ export const Nifty: FC<NiftyProps> = ({
   data,
   platform,
   flipped,
-  onClick,
+  children,
 }: NiftyProps) => {
   return (
     <StyledNifty
@@ -67,16 +67,18 @@ export const Nifty: FC<NiftyProps> = ({
           </AspectRatio>
         </WithPlatform>
       </Box>
-      <Box px={3} py={3}>
+      <Box px={3} py={5}>
         <Heading.h4>{data.name}</Heading.h4>
-        <Heading.h5 color="#666">{data.assetName} #{id}</Heading.h5>
+        <Heading.h5 color="muted">{data.assetName} #{id}</Heading.h5>
       </Box>
       <hr/>
-      <Flex px={3} py={3}>
-        <Button variant="gradient" onClick={onClick}>
-          Transfer
-        </Button>
+      <Flex>
+        <Flex>
+          
+        </Flex>
       </Flex>
+
+      {children}
     </StyledNifty>
   );
 };

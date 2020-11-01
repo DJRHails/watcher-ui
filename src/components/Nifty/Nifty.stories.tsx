@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { KindMeta, StoryMeta, StoryFnType } from '/types/storybook';
 
 import { Nifty, NiftyMetadata } from './Nifty';
-import { Flex } from '/components';
+import { Flex, Button } from '/components';
 
 const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   width="full"
@@ -19,7 +19,7 @@ const story: KindMeta<typeof Nifty> = {
   decorators: [withCenterComponent],
 };
 
-const ARRtistryNiftyMetadata: NiftyMetadata = {
+export const ARRtistryNiftyMetadata: NiftyMetadata = {
   src: 'internal://',
   assetName: 'Artifact',
   assetId: 16,
@@ -50,8 +50,15 @@ export const flippable: StoryMeta = () => {
       data={ARRtistryNiftyMetadata}
       platform="eth"
       flipped={flipped || undefined}
-      onClick={() => setFlipped(!flipped)}
-    />
+    >
+      <hr/>
+      <Flex px={3} py={3}>
+        <Button variant="gradient" onClick={() => setFlipped(!flipped)}>
+          Transfer
+        </Button>
+      </Flex>
+    </Nifty>
+
   );
 };
 

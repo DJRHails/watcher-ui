@@ -135,3 +135,6 @@ export type {
 
 export { usePopper } from './Popper';
 export type { UsePopperProps, UsePopperReturn } from './Popper';
+
+export { Spinner } from './Spinner';
+export type { SpinnerProps } from './Spinner';

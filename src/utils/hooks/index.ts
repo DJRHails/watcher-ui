@@ -6,3 +6,4 @@ export * from './useShortcut';
 export * from './useUpdateEffect';
 export * from './useClickable';
 export * from './useDescendant';
+export * from './useClipboard';

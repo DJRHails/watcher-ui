@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznMAR kbchqj"
+        class="sc-fznWOq kgWrrk"
         width="full"
       >
         <div
@@ -80,7 +80,7 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxiKw jYDmyT"
+          class="sc-AxiKw hrhjKn"
         >
           <h4
             class="sc-AxiKw sc-AxhUy BqwwM"
@@ -89,8 +89,8 @@ Object {
             font-weight="bold"
           />
           <h5
-            class="sc-AxiKw sc-AxhUy bizxRV"
-            color="#666"
+            class="sc-AxiKw sc-AxhUy ybPKJ"
+            color="muted"
             font-family="body"
             font-size="2"
             font-weight="bold"
@@ -102,24 +102,18 @@ Object {
         </div>
         <hr />
         <div
-          class="sc-AxiKw sc-fzoyAV cYIrxT"
+          class="sc-AxiKw sc-fzoyAV dikUeM"
         >
-          <button
-            class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN jTAlcf"
-          >
-            <div
-              class="sc-AxiKw sc-AxhUy dVPhMk"
-            >
-              Transfer
-            </div>
-          </button>
+          <div
+            class="sc-AxiKw sc-fzoyAV dikUeM"
+          />
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-fznMAR kbchqj"
+      class="sc-fznWOq kgWrrk"
       width="full"
     >
       <div
@@ -193,7 +187,7 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxiKw jYDmyT"
+        class="sc-AxiKw hrhjKn"
       >
         <h4
           class="sc-AxiKw sc-AxhUy BqwwM"
@@ -202,8 +196,8 @@ Object {
           font-weight="bold"
         />
         <h5
-          class="sc-AxiKw sc-AxhUy bizxRV"
-          color="#666"
+          class="sc-AxiKw sc-AxhUy ybPKJ"
+          color="muted"
           font-family="body"
           font-size="2"
           font-weight="bold"
@@ -215,17 +209,11 @@ Object {
       </div>
       <hr />
       <div
-        class="sc-AxiKw sc-fzoyAV cYIrxT"
+        class="sc-AxiKw sc-fzoyAV dikUeM"
       >
-        <button
-          class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN jTAlcf"
-        >
-          <div
-            class="sc-AxiKw sc-AxhUy dVPhMk"
-          >
-            Transfer
-          </div>
-        </button>
+        <div
+          class="sc-AxiKw sc-fzoyAV dikUeM"
+        />
       </div>
     </div>
   </div>,
@@ -289,7 +277,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznMAR hTkXoN"
+        class="sc-fznWOq hPaBWi"
         width="full"
       >
         <div
@@ -363,7 +351,7 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxiKw heQiAf"
+          class="sc-AxiKw eLjLHj"
         >
           <h4
             class="sc-AxiKw sc-AxhUy cypOSp"
@@ -372,8 +360,8 @@ Object {
             font-weight="bold"
           />
           <h5
-            class="sc-AxiKw sc-AxhUy gNUFee"
-            color="#666"
+            class="sc-AxiKw sc-AxhUy jNFJzU"
+            color="muted"
             font-family="body"
             font-size="2"
             font-weight="bold"
@@ -385,24 +373,18 @@ Object {
         </div>
         <hr />
         <div
-          class="sc-AxiKw sc-fzoyAV bPzGcb"
+          class="sc-AxiKw sc-fzoyAV dikUeM"
         >
-          <button
-            class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN ktmQir"
-          >
-            <div
-              class="sc-AxiKw sc-AxhUy liAoAE"
-            >
-              Transfer
-            </div>
-          </button>
+          <div
+            class="sc-AxiKw sc-fzoyAV dikUeM"
+          />
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-fznMAR hTkXoN"
+      class="sc-fznWOq hPaBWi"
       width="full"
     >
       <div
@@ -476,7 +458,7 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxiKw heQiAf"
+        class="sc-AxiKw eLjLHj"
       >
         <h4
           class="sc-AxiKw sc-AxhUy cypOSp"
@@ -485,8 +467,8 @@ Object {
           font-weight="bold"
         />
         <h5
-          class="sc-AxiKw sc-AxhUy gNUFee"
-          color="#666"
+          class="sc-AxiKw sc-AxhUy jNFJzU"
+          color="muted"
           font-family="body"
           font-size="2"
           font-weight="bold"
@@ -498,17 +480,11 @@ Object {
       </div>
       <hr />
       <div
-        class="sc-AxiKw sc-fzoyAV bPzGcb"
+        class="sc-AxiKw sc-fzoyAV dikUeM"
       >
-        <button
-          class="sc-AxiKw sc-AxmLO sc-fzozJi sc-fzplWN ktmQir"
-        >
-          <div
-            class="sc-AxiKw sc-AxhUy liAoAE"
-          >
-            Transfer
-          </div>
-        </button>
+        <div
+          class="sc-AxiKw sc-fzoyAV dikUeM"
+        />
       </div>
     </div>
   </div>,

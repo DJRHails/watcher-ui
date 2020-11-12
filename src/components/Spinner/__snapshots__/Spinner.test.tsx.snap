@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Committee component sanity matches default snapshot 1`] = `
+exports[`Spinner component sanity matches default snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznWOq llvZvj"
+        class="sc-AxjAm eMDNnJ"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-fznWOq llvZvj"
+      class="sc-AxjAm eMDNnJ"
     />
   </div>,
   "debug": [Function],
@@ -69,19 +69,19 @@ Object {
 }
 `;
 
-exports[`Committee component sanity matches themed snapshot 1`] = `
+exports[`Spinner component sanity matches themed snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznWOq llvZvj"
+        class="sc-AxjAm eMDNnJ"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-fznWOq llvZvj"
+      class="sc-AxjAm eMDNnJ"
     />
   </div>,
   "debug": [Function],

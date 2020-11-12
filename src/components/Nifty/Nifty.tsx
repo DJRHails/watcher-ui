@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { box, Box, BoxProps, Image, WithPlatform, AspectRatio, Heading, Flex, Button } from '/components';
+import { box, Box, BoxProps, Image, WithPlatform, AspectRatio, Heading, Flex } from '/components';
 import styled from 'styled-components';
 import { BoxShadowProps, boxShadow } from 'styled-system';
 import { PlatformDefiniton } from '../Platform/Platform';

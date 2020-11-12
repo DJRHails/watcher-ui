@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TransactionModal } from './index';
 import MetamaskIcon from './MetamaskIcon';
-import { Modal, Flex, Text, Button, Box, Circle, ModalHeader, Icon, ModalBody, ModalFooter, Heading, CloseButton, Spinner } from '..';
+import { Modal, Flex, Text, Button, Box, ModalHeader, ModalBody, ModalFooter, Heading, CloseButton, Spinner } from '..';
 import { ModalOverlay, ModalContent } from '../Modal';
 
 const TransactionStarted: React.FC<TransactionModal> = ({

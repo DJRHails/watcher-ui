@@ -14,14 +14,20 @@ import { Color, ColorList } from "./Color";
   <Color color="background" withValue />
   <Color color="brand" withValue />
   <Color color="accent" withValue />
-  <Color color="highlight" withValue />
   <Color color="muted" withValue />
   <Color color="gray" withValue />
   <Color color="success" withValue />
   <Color color="danger" withValue />
+  <Color color="hover" withValue />
 </Grid>
 
-
+<Heading.h3>Badge Colors</Heading.h3>
+<Grid columns={[3, null, 4]} spacing={2}>
+  <Color color="badge.brand" withValue />
+  <Color color="badge.danger" withValue />
+  <Color color="badge.success" withValue />
+  <Color color="badge.accent" withValue />
+</Grid>
 
 <Heading.h3>Usage</Heading.h3>
 <Color color="brand" />

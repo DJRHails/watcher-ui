@@ -27,12 +27,14 @@
     "jazzicon": "^1.5.0",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
-    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "react-remove-scroll": "^2.3.0",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0"
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -121,8 +123,8 @@
     "styled-system": "^5.1.5",
     "ts-jest": "^26.1.1",
     "ts-node": "^9.0.0",
-    "tslib": "^2.0.0",
     "tscpaths": "^0.0.9",
+    "tslib": "^2.0.0",
     "typescript": "^4.0.5",
     "webpack": "^4.44.1"
   }

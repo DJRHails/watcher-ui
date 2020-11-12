@@ -2952,6 +2952,8 @@ __metadata:
     tslib: ^2.0.0
     typescript: ^4.0.5
     webpack: ^4.44.1
+  peerDependencies:
+    react: ^16.14.0
   languageName: unknown
   linkType: soft
 

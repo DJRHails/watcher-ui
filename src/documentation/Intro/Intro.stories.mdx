@@ -1,9 +1,21 @@
 import { Meta } from "@storybook/addon-docs/blocks";
-import { Heading, WatcherProvider } from "../../components";
+import { Heading, Text, Link, WatcherProvider } from "../../components";
 
 <Meta title="Intro/Welcome" />
 
 <WatcherProvider>
   <Heading.h5 uppercase color="brand">Intro</Heading.h5>
   <Heading.h1>Watcher UI</Heading.h1>
+
+  <Text py={5}>
+    Watcher UI is a UI library designed for decentralised React webapps written in TypeScript.
+  </Text>
+
+  <Text py={5}>
+    It is styled and themed with Styled Components and Styled System. Storybook is used heavily to keep the components modular and document use-cases. It also uses Rimble Icons with some custom additions.
+  </Text>
+
+  <Link href="https://github.com/DJRHails/watcher-ui">See the code here...</Link>
+
 </WatcherProvider>
+

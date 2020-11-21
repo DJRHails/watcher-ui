@@ -8,7 +8,21 @@ import theme from '/themes/theme';
 import TransactionSuccess from './TransactionSuccess';
 import { useDisclosure } from '/utils/hooks';
 import { Nifty, Box, Asset } from '..';
-import { ARRtistryNiftyMetadata } from '../Nifty/Nifty.stories';
+
+const exampleMetadata = {
+  src: 'internal://',
+  assetName: 'Artifact',
+  assetId: 16,
+  owner: '0x67C3fD74fd36456FC5b339Fd09Efa330ad3126eE',
+
+  // Optional Asset metadata
+  assetTicker: 'ART',
+
+  // Optional NiftyMetadata
+  name: 'Gorilla',
+  img: 'https://ipfs.io/ipfs/QmYe9Ngo3UBss48ud5Ny7byde3yXE1GeoWGuHH4oeekza6',
+  bg: 'surface'
+};
 
 const story: KindMeta<typeof TransactionSuccess> = {
   title: 'Components/Transaction/Success',
@@ -56,7 +70,7 @@ export const nifty: StoryMeta = () => {
         <Box width={1/2} py={5} mx="auto">
           <Nifty
             id={16}
-            data={ARRtistryNiftyMetadata}
+            data={exampleMetadata}
             platform="eth"
           />
         </Box>

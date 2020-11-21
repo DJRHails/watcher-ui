@@ -31,6 +31,7 @@ export interface NiftyProps extends BoxProps, BoxShadowProps {
   data: NiftyMetadata;
   platform: PlatformDefiniton;
   flipped?: true;
+  className?: string;
   children?: React.ReactNode;
 }
 
@@ -45,6 +46,7 @@ export const Nifty: FC<NiftyProps> = ({
   platform,
   flipped,
   children,
+  className,
 }: NiftyProps) => {
   return (
     <StyledNifty
@@ -52,6 +54,7 @@ export const Nifty: FC<NiftyProps> = ({
       maxWidth="md"
       mx="auto"
       boxShadow="xl"
+      className={className}
     >
       <Box fontSize="5rem">
         <WithPlatform allowOverlap flipped={flipped} platform={platform}>

@@ -19,7 +19,7 @@ const story: KindMeta<typeof Nifty> = {
   decorators: [withCenterComponent],
 };
 
-export const ARRtistryNiftyMetadata: NiftyMetadata = {
+const exampleMetadata: NiftyMetadata = {
   src: 'internal://',
   assetName: 'Artifact',
   assetId: 16,
@@ -37,7 +37,7 @@ export const ARRtistryNiftyMetadata: NiftyMetadata = {
 export const standard: StoryMeta = () => (
   <Nifty
     id={16}
-    data={ARRtistryNiftyMetadata}
+    data={exampleMetadata}
     platform="eth"
   />
 );
@@ -47,7 +47,7 @@ export const flippable: StoryMeta = () => {
   return (
     <Nifty
       id={16}
-      data={ARRtistryNiftyMetadata}
+      data={exampleMetadata}
       platform="eth"
       flipped={flipped || undefined}
     >

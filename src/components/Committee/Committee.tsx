@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import { Circle, Icon } from '..';
+import { WithIcon } from '../Icon/WithIcon';
 import { Identicon } from '/components/Identicon';
 import { isUndefined } from '/utils/assertions';
 
@@ -43,6 +45,23 @@ export type MemberRating = 'approve' | 'reject' | 'pending';
 export interface Member {
   name: string;
   address: string;
+  rating: MemberRating;
+}
+
+function nameFromRating(rating: MemberRating): string {
+  return {
+    'approve': 'CheckCircle',
+    'reject': 'Cancel',
+    'pending': 'DoNotDisturbOn',
+  }[rating];
+}
+
+function colorFromRating(rating: MemberRating): string {
+  return {
+    'approve': 'success',
+    'reject': 'danger',
+    'pending': 'warning',
+  }[rating];
 }
 
 export interface CommitteeProps {
@@ -50,12 +69,14 @@ export interface CommitteeProps {
   memberDiameter?: number;
   committeeDiameter?: number;
   padding?: number;
+  withFlags?: boolean;
 }
 
 export const Committee: FC<CommitteeProps> = ({
   members,
   committeeDiameter,
   memberDiameter,
+  withFlags = false,
   padding = 5,
 }: CommitteeProps) => {
   const n = members.length;
@@ -71,22 +92,41 @@ export const Committee: FC<CommitteeProps> = ({
     committeeDiameter = (memberDiameter * n + (n - 1) * padding) / Math.PI;
   }
 
-  if (!isUndefined(memberDiameter) && !isUndefined(committeeDiameter)) {
-    return (
-      <StyledCommittee
-        n={n}
-        diameter={committeeDiameter}
-        memberDiameter={memberDiameter}
-      >
-        {members.map((mem, idx) => 
-          <StyledMember key={idx} i={idx} title={mem.name}>
-            <Identicon address={mem.address} diameter={memberDiameter}/>
-          </StyledMember>
-        )}
-      </StyledCommittee>
-    );
+  if(isUndefined(memberDiameter) || isUndefined(committeeDiameter)) {
+    return null;
   }
-  
-  return null;
+
+  const Inner = ({mem}: {mem: Member}) => withFlags ? (
+    <WithIcon
+      fontSize={`${memberDiameter as number * 0.75}px`} icon={
+        <Circle width={`${memberDiameter as number * 0.5}px`} bg="background">
+          <Icon
+            name={nameFromRating(mem.rating)}
+            color={colorFromRating(mem.rating)}
+          />
+        </Circle>
+      }
+      offset={{
+        top: -1.25,
+        right: 0.55,
+      }}
+    >
+      <Identicon address={mem.address} diameter={memberDiameter}/>
+    </WithIcon>
+  ) : <Identicon address={mem.address} diameter={memberDiameter}/>;
+
+  return (
+    <StyledCommittee
+      n={n}
+      diameter={committeeDiameter}
+      memberDiameter={memberDiameter}
+    >
+      {members.map((mem, idx) => 
+        <StyledMember key={idx} i={idx} title={mem.name}>
+          <Inner mem={mem}/>
+        </StyledMember>
+      )}
+    </StyledCommittee>
+  );
 };
 Committee.displayName='Committee';

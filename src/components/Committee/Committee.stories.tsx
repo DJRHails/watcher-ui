@@ -1,8 +1,8 @@
 import React from 'react';
 import { KindMeta, StoryMeta } from '/types/storybook';
 
-import { Committee } from './Committee';
-import _ from 'lodash';
+import { Committee, MemberRating } from './Committee';
+import _, { sample } from 'lodash';
 import { randomEthereumAddress } from '/utils/eth';
 import { withKnobs, number } from '@storybook/addon-knobs';
 
@@ -12,13 +12,27 @@ const story: KindMeta<typeof Committee> = {
   decorators: [withKnobs],
 };
 
+const randomRating = (): MemberRating => {
+  const ratings = ['approve', 'reject', 'pending'];
+
+  return sample(ratings) as MemberRating;
+};
+
 const memberList = (n: number) => _.times(n, (_) => ({
   name: 'Daniel',
-  address: randomEthereumAddress()
+  address: randomEthereumAddress(),
+  rating: randomRating(),
 }));
 
 export const five: StoryMeta = () => (
   <Committee members={memberList(5)}/>
+);
+
+export const withVerification: StoryMeta = () => (
+  <Committee
+    members={memberList(5)}
+    withFlags
+  />
 );
 
 export const setCommitteeSize: StoryMeta = () => {

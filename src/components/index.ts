@@ -49,8 +49,8 @@ export { CssReset } from './CssReset';
 export { Asset } from './Asset';
 export type { AssetProps } from './Asset';
 
-export { Icon } from './Icon';
-export type { IconProps } from './Icon';
+export { Icon, WithIcon } from './Icon';
+export type { IconProps, WithIconProps } from './Icon';
 
 export { Circle } from './Circle';
 export type { CircleProps } from './Circle';

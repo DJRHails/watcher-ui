@@ -55,7 +55,7 @@ List.displayName = 'List';
 const StyledListItem = styled.li(space);
 
 export interface ListItemProps extends BaseProps, SpaceProps, Omit<React.HTMLProps<HTMLLIElement>, keyof BaseProps> {
-  variant?: 'check' | 'cross';
+  variant?: 'check' | 'cross' | 'pending';
 }
 
 export const ListItem: React.FC<ListItemProps> = ({
@@ -69,6 +69,7 @@ export const ListItem: React.FC<ListItemProps> = ({
     >
       { variant === 'check' && <ListIcon name="Check" color="success" /> }
       { variant === 'cross' && <ListIcon name="Close" color="danger" /> }
+      { variant === 'pending' && <ListIcon name="Cached" color="warning" />}
       { children }
     </StyledListItem>
   );

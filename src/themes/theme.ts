@@ -26,9 +26,10 @@ export const colors = {
   accent: '#f5af19',
   muted: '#cccccc',
   gray: '#82817d',
-  success: '#22543d',
+  success: '#28a745',
   danger: '#dc3545',
   hover: '#edf2f7',
+  warning: '#ffc107',
   badge: {
     brand: '#ffd2ce',
     danger: '#f5c6cb',

@@ -1,6 +1,6 @@
 import { Meta } from "@storybook/addon-docs/blocks";
 import { List, ListItem, Link, Heading, WatcherProvider, Grid } from "../../../components";
-import { Color, ColorList } from "./Color";
+import { Color, AllColors, ColorList } from "./Color";
 
 <Meta title="Intro/Colours" />
 
@@ -10,15 +10,7 @@ import { Color, ColorList } from "./Color";
 <Heading.h1>Colours</Heading.h1>
 
 <Grid columns={[3, null, 4]} spacing={2}>
-  <Color color="text" withValue />
-  <Color color="background" withValue />
-  <Color color="brand" withValue />
-  <Color color="accent" withValue />
-  <Color color="muted" withValue />
-  <Color color="gray" withValue />
-  <Color color="success" withValue />
-  <Color color="danger" withValue />
-  <Color color="hover" withValue />
+  <AllColors />
 </Grid>
 
 <Heading.h3>Badge Colors</Heading.h3>

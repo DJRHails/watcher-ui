@@ -39,6 +39,7 @@ export const standard: StoryMeta = () => (
   <Nifty
     id={16}
     data={exampleMetadata}
+    ratio={4 / 3}
     platform="eth"
   />
 );
@@ -54,10 +55,44 @@ export const withTrackerId: StoryMeta = () => (
 
       // Optional NiftyMetadata
       name: 'Steven',
-      img: 'https://api.isomorph.network/1/morph/232323',
+      img: 'https://api.isomorph.network/1/morph/232323.svg',
       bg: 'surface'
     }}
     platform="eth"
+  />
+);
+
+export const withTrackerExplorer: StoryMeta = () => (
+  <Nifty
+    id={16}
+    trackerId='0x67C3..eE'
+    trackerExplorer='https://rinkeby.etherscan.io/token/0x25634DF5d85aE48f3D2ed34Dc4870d618BAd7915'
+    data={{
+      assetName: 'MORPH',
+      assetId: '0x67C3..eE',
+      owner: randomHex(32),
+      name: 'Ziggy',
+      img: 'https://api.isomorph.network/1/morph/rand.svg',
+      bg: 'surface'
+    }}
+    platform="eth"
+  />
+);
+
+export const withPlatformChange: StoryMeta = () => (
+  <Nifty
+    id={16}
+    platform="algo"
+    trackerId='0x67C3..eE'
+    trackerExplorer='https://rinkeby.etherscan.io/token/0x25634DF5d85aE48f3D2ed34Dc4870d618BAd7915'
+    data={{
+      assetName: 'MORPH',
+      assetId: '0x67C3..eE',
+      owner: randomHex(32),
+      name: 'Ziggy',
+      img: 'https://api.isomorph.network/1/morph/rand.svg',
+      bg: 'surface'
+    }}
   />
 );
 

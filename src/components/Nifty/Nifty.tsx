@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { box, Box, BoxProps, Image, WithPlatform, AspectRatio, Heading, Flex, Badge } from '/components';
 import styled from 'styled-components';
 import { BoxShadowProps, boxShadow } from 'styled-system';
-import { PlatformDefiniton } from '../Platform/Platform';
+import { getIconBackgroundColor, PlatformDefiniton } from '../Platform/Platform';
 
 // TODO: Migrate address to external
 export type Address = string;
@@ -31,9 +31,11 @@ export interface NiftyProps extends BoxProps, BoxShadowProps {
   platform: PlatformDefiniton;
   id?: number;
   trackerId?: string;
+  trackerExplorer?: string;
   flipped?: true;
   className?: string;
   children?: React.ReactNode;
+  ratio?: number;
 }
 
 const StyledNifty = styled.div<BoxProps & BoxShadowProps>`
@@ -49,6 +51,8 @@ export const Nifty: FC<NiftyProps> = ({
   flipped,
   children,
   className,
+  trackerExplorer,
+  ratio = 1 / 1,
 }: NiftyProps) => {
   return (
     <StyledNifty
@@ -60,7 +64,7 @@ export const Nifty: FC<NiftyProps> = ({
     >
       <Box fontSize="5rem">
         <WithPlatform allowOverlap flipped={flipped} platform={platform}>
-          <AspectRatio maxWidth="full">
+          <AspectRatio ratio={ratio} maxWidth="full">
             {data.img 
               ? <Image
                 height="full"
@@ -76,10 +80,18 @@ export const Nifty: FC<NiftyProps> = ({
         <Heading.h4>
           <Flex justify="space-between">
             {data.name}
-            {trackerId && <Badge>{trackerId}</Badge>}
+            {trackerId &&
+              <Badge
+                variantColor={getIconBackgroundColor(platform) as any}
+                href={trackerExplorer}
+                onClick={() => trackerExplorer && window.open(trackerExplorer, '_blank')}
+              >
+                {trackerId}
+              </Badge>
+            }
           </Flex>
         </Heading.h4>
-        <Heading.h5 color="muted">{data.assetName}{id && ` #${id}`}</Heading.h5>
+        <Heading.h5 color="muted">{data.assetName}{id ? ` #${id}` : ''}</Heading.h5>
       </Box>
       <hr/>
       <Flex>

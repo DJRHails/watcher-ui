@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { typography, SpaceProps, LayoutProps, TypographyProps, space, layout } from 'styled-system';
 import { getValidChildren } from '../../utils/react';
 import { IconProps, Icon, BaseProps } from '/components';
@@ -69,7 +69,7 @@ export const ListItem: React.FC<ListItemProps> = ({
     >
       { variant === 'check' && <ListIcon name="Check" color="success" /> }
       { variant === 'cross' && <ListIcon name="Close" color="danger" /> }
-      { variant === 'pending' && <ListIcon name="Cached" color="warning" />}
+      { variant === 'pending' && <SpinningListIcon name="Cached" color="warning" />}
       { children }
     </StyledListItem>
   );
@@ -91,3 +91,17 @@ export const ListIcon: React.FC<ListIconProps> = (props: ListIconProps) => (
     {...props}
   />
 );
+
+const rotate = keyframes`
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(-360deg);
+}
+`;
+
+const SpinningListIcon = styled(ListIcon)`
+  animation: ${rotate} 2s linear infinite;
+`;

@@ -42,4 +42,15 @@ export const withIcons: StoryMeta = () => (
   </List>
 );
 
+export const pending: StoryMeta = () => (
+  <List spacing={3} my={4}>
+    <ListItem variant="pending">
+    Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+    </ListItem>
+    <ListItem variant="pending">
+    Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+    </ListItem>
+  </List>
+);
+
 export default story;

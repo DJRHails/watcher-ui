@@ -11,7 +11,6 @@ Omit<React.HTMLProps<HTMLDivElement>, keyof BoxProps> {
 const StyledBadge = styled(Box)(
   css({
     fontFamily: 'body',
-    textTransform: 'uppercase',
     px: 2,
     py: 1,
     fontWeight: 'bold',

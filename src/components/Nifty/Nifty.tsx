@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { box, Box, BoxProps, Image, WithPlatform, AspectRatio, Heading, Flex } from '/components';
+import { box, Box, BoxProps, Image, WithPlatform, AspectRatio, Heading, Flex, Badge } from '/components';
 import styled from 'styled-components';
 import { BoxShadowProps, boxShadow } from 'styled-system';
 import { PlatformDefiniton } from '../Platform/Platform';
@@ -20,16 +20,17 @@ export interface AssetMetadata {
 }
 
 export interface NiftyMetadata extends AssetMetadata {
-  src: string; // Source of Metadata e.g. IPFS hash
+  src?: string; // Source of Metadata e.g. IPFS hash
   img?: string;
   bg?: string;
   name?: string;
 }
 
 export interface NiftyProps extends BoxProps, BoxShadowProps {
-  id: number;
   data: NiftyMetadata;
   platform: PlatformDefiniton;
+  id?: number;
+  trackerId?: string;
   flipped?: true;
   className?: string;
   children?: React.ReactNode;
@@ -43,6 +44,7 @@ const StyledNifty = styled.div<BoxProps & BoxShadowProps>`
 export const Nifty: FC<NiftyProps> = ({
   id,
   data,
+  trackerId,
   platform,
   flipped,
   children,
@@ -71,8 +73,13 @@ export const Nifty: FC<NiftyProps> = ({
         </WithPlatform>
       </Box>
       <Box px={3} py={5}>
-        <Heading.h4>{data.name}</Heading.h4>
-        <Heading.h5 color="muted">{data.assetName} #{id}</Heading.h5>
+        <Heading.h4>
+          <Flex justify="space-between">
+            {data.name}
+            {trackerId && <Badge>{trackerId}</Badge>}
+          </Flex>
+        </Heading.h4>
+        <Heading.h5 color="muted">{data.assetName}{id && ` #${id}`}</Heading.h5>
       </Box>
       <hr/>
       <Flex>

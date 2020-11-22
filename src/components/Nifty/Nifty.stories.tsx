@@ -3,6 +3,7 @@ import { KindMeta, StoryMeta, StoryFnType } from '/types/storybook';
 
 import { Nifty, NiftyMetadata } from './Nifty';
 import { Flex, Button } from '/components';
+import { randomHex } from '/utils';
 
 const withCenterComponent: StoryFnType<any, ReactNode> = (context) => <Flex
   width="full"
@@ -22,7 +23,7 @@ const story: KindMeta<typeof Nifty> = {
 const exampleMetadata: NiftyMetadata = {
   src: 'internal://',
   assetName: 'Artifact',
-  assetId: 16,
+  assetId: '0x67C3..eE',
   owner: '0x67C3fD74fd36456FC5b339Fd09Efa330ad3126eE',
 
   // Optional Asset metadata
@@ -38,6 +39,24 @@ export const standard: StoryMeta = () => (
   <Nifty
     id={16}
     data={exampleMetadata}
+    platform="eth"
+  />
+);
+
+export const withTrackerId: StoryMeta = () => (
+  <Nifty
+    id={16}
+    trackerId='0x67C3..eE'
+    data={{
+      assetName: 'MORPH',
+      assetId: '0x67C3..eE',
+      owner: randomHex(32),
+
+      // Optional NiftyMetadata
+      name: 'Steven',
+      img: 'https://api.isomorph.network/1/morph/232323',
+      bg: 'surface'
+    }}
     platform="eth"
   />
 );

@@ -87,7 +87,11 @@ Object {
             font-family="body"
             font-size="3"
             font-weight="bold"
-          />
+          >
+            <div
+              class="sc-AxiKw sc-fzoyAV eeShY"
+            />
+          </h4>
           <h5
             class="sc-AxiKw sc-AxhUy ybPKJ"
             color="muted"
@@ -96,7 +100,6 @@ Object {
             font-weight="bold"
           >
             Artifact
-             #
             0
           </h5>
         </div>
@@ -194,7 +197,11 @@ Object {
           font-family="body"
           font-size="3"
           font-weight="bold"
-        />
+        >
+          <div
+            class="sc-AxiKw sc-fzoyAV eeShY"
+          />
+        </h4>
         <h5
           class="sc-AxiKw sc-AxhUy ybPKJ"
           color="muted"
@@ -203,7 +210,6 @@ Object {
           font-weight="bold"
         >
           Artifact
-           #
           0
         </h5>
       </div>
@@ -358,7 +364,11 @@ Object {
             font-family="body"
             font-size="3"
             font-weight="bold"
-          />
+          >
+            <div
+              class="sc-AxiKw sc-fzoyAV eeShY"
+            />
+          </h4>
           <h5
             class="sc-AxiKw sc-AxhUy jNFJzU"
             color="muted"
@@ -367,7 +377,6 @@ Object {
             font-weight="bold"
           >
             Artifact
-             #
             0
           </h5>
         </div>
@@ -465,7 +474,11 @@ Object {
           font-family="body"
           font-size="3"
           font-weight="bold"
-        />
+        >
+          <div
+            class="sc-AxiKw sc-fzoyAV eeShY"
+          />
+        </h4>
         <h5
           class="sc-AxiKw sc-AxhUy jNFJzU"
           color="muted"
@@ -474,7 +487,6 @@ Object {
           font-weight="bold"
         >
           Artifact
-           #
           0
         </h5>
       </div>

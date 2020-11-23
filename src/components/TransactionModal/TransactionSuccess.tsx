@@ -22,8 +22,11 @@ const TransactionSuccess: React.FC<TransactionSuccessProps> = ({
       onClose={onClose}
     >
       <ModalOverlay>
-        <ModalContent>
-          {/* Border Header top Green */}
+        <ModalContent
+          borderTopColor="success"
+          borderTopStyle="solid"
+          borderTopWidth="thick"
+        >
           <ModalHeader> 
             <Flex
               justify="space-between"

@@ -22,9 +22,11 @@ const TransactionFailure: React.FC<TransactionFailureProps> = ({
       size="lg"
     >
       <ModalOverlay>
-        <ModalContent>
-          {/* className="border-top-danger w-100" */}
-          
+        <ModalContent
+          borderTopColor="danger"
+          borderTopStyle="solid"
+          borderTopWidth="thick"
+        >
           <ModalHeader>
             <Flex
               justify="space-between"
@@ -41,7 +43,7 @@ const TransactionFailure: React.FC<TransactionFailureProps> = ({
             Are you sure you have permissions to transfer this artifact.
           </ModalBody>
           <ModalFooter>
-            <Button href={externalLink}>
+            <Button variant="outline" href={externalLink} mr={3}>
             View on Etherscan
             </Button>
             <Button onClick={onClose}>Return</Button>

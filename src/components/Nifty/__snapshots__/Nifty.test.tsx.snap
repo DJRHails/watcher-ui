@@ -6,37 +6,37 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznWOq kgWrrk"
+        class="sc-fzolEj jxTabr"
         width="full"
       >
         <div
-          class="sc-AxiKw indorZ"
+          class="sc-AxhCb gRCfBp"
           font-size="5rem"
         >
           <div
-            class="sc-AxiKw fPVsD"
+            class="sc-AxhCb fxiuzv"
             font-size="1em"
           >
             <div
-              class="sc-AxiKw estSfk"
+              class="sc-AxhCb dnaiSX"
             >
               <div
-                class="sc-AxiKw GJeuC"
+                class="sc-AxhCb bnOWzC"
                 width="full"
               />
             </div>
             <div
-              class="sc-AxiKw iYSnmW"
+              class="sc-AxhCb jWOsOS"
               font-size="0.6em"
             >
               <div
-                class="sc-AxiKw bkDCjy"
+                class="sc-AxhCb jxnMYO"
               >
                 <div
-                  class="sc-AxiKw hSFVmZ"
+                  class="sc-AxhCb bXtZgN"
                 >
                   <svg
-                    class="sc-fzokOt jqHSVp"
+                    class="sc-fzqBZW dHECMc"
                     color="brand"
                     fill="none"
                     height="1em"
@@ -54,10 +54,10 @@ Object {
                   </svg>
                 </div>
                 <div
-                  class="sc-AxiKw fSecxJ"
+                  class="sc-AxhCb SuUat"
                 >
                   <svg
-                    class="sc-fzokOt ebVCVY"
+                    class="sc-fzqBZW hnFBxJ"
                     color="accent"
                     fill="none"
                     height="1em"
@@ -80,35 +80,35 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxiKw hrhjKn"
+          class="sc-AxhCb hbCgiX"
         >
           <h4
-            class="sc-AxiKw sc-AxhUy BqwwM"
+            class="sc-AxhCb sc-AxgMl fKLLfO"
             font-family="body"
             font-size="3"
             font-weight="bold"
           >
             <div
-              class="sc-AxiKw sc-fzoyAV eeShY"
+              class="sc-AxhCb sc-fzoLag cmXoUc"
             />
           </h4>
           <h5
-            class="sc-AxiKw sc-AxhUy ybPKJ"
+            class="sc-AxhCb sc-AxgMl jpxgEj"
             color="muted"
             font-family="body"
             font-size="2"
             font-weight="bold"
           >
             Artifact
-            0
+            
           </h5>
         </div>
         <hr />
         <div
-          class="sc-AxiKw sc-fzoyAV dikUeM"
+          class="sc-AxhCb sc-fzoLag fgPPbU"
         >
           <div
-            class="sc-AxiKw sc-fzoyAV dikUeM"
+            class="sc-AxhCb sc-fzoLag fgPPbU"
           />
         </div>
       </div>
@@ -116,37 +116,37 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fznWOq kgWrrk"
+      class="sc-fzolEj jxTabr"
       width="full"
     >
       <div
-        class="sc-AxiKw indorZ"
+        class="sc-AxhCb gRCfBp"
         font-size="5rem"
       >
         <div
-          class="sc-AxiKw fPVsD"
+          class="sc-AxhCb fxiuzv"
           font-size="1em"
         >
           <div
-            class="sc-AxiKw estSfk"
+            class="sc-AxhCb dnaiSX"
           >
             <div
-              class="sc-AxiKw GJeuC"
+              class="sc-AxhCb bnOWzC"
               width="full"
             />
           </div>
           <div
-            class="sc-AxiKw iYSnmW"
+            class="sc-AxhCb jWOsOS"
             font-size="0.6em"
           >
             <div
-              class="sc-AxiKw bkDCjy"
+              class="sc-AxhCb jxnMYO"
             >
               <div
-                class="sc-AxiKw hSFVmZ"
+                class="sc-AxhCb bXtZgN"
               >
                 <svg
-                  class="sc-fzokOt jqHSVp"
+                  class="sc-fzqBZW dHECMc"
                   color="brand"
                   fill="none"
                   height="1em"
@@ -164,10 +164,10 @@ Object {
                 </svg>
               </div>
               <div
-                class="sc-AxiKw fSecxJ"
+                class="sc-AxhCb SuUat"
               >
                 <svg
-                  class="sc-fzokOt ebVCVY"
+                  class="sc-fzqBZW hnFBxJ"
                   color="accent"
                   fill="none"
                   height="1em"
@@ -190,35 +190,35 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxiKw hrhjKn"
+        class="sc-AxhCb hbCgiX"
       >
         <h4
-          class="sc-AxiKw sc-AxhUy BqwwM"
+          class="sc-AxhCb sc-AxgMl fKLLfO"
           font-family="body"
           font-size="3"
           font-weight="bold"
         >
           <div
-            class="sc-AxiKw sc-fzoyAV eeShY"
+            class="sc-AxhCb sc-fzoLag cmXoUc"
           />
         </h4>
         <h5
-          class="sc-AxiKw sc-AxhUy ybPKJ"
+          class="sc-AxhCb sc-AxgMl jpxgEj"
           color="muted"
           font-family="body"
           font-size="2"
           font-weight="bold"
         >
           Artifact
-          0
+          
         </h5>
       </div>
       <hr />
       <div
-        class="sc-AxiKw sc-fzoyAV dikUeM"
+        class="sc-AxhCb sc-fzoLag fgPPbU"
       >
         <div
-          class="sc-AxiKw sc-fzoyAV dikUeM"
+          class="sc-AxhCb sc-fzoLag fgPPbU"
         />
       </div>
     </div>
@@ -283,37 +283,37 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznWOq hPaBWi"
+        class="sc-fzolEj iuZGQR"
         width="full"
       >
         <div
-          class="sc-AxiKw indorZ"
+          class="sc-AxhCb gRCfBp"
           font-size="5rem"
         >
           <div
-            class="sc-AxiKw fPVsD"
+            class="sc-AxhCb fxiuzv"
             font-size="1em"
           >
             <div
-              class="sc-AxiKw fgLlBD"
+              class="sc-AxhCb epWFzc"
             >
               <div
-                class="sc-AxiKw kbBPPd"
+                class="sc-AxhCb iGAyYt"
                 width="full"
               />
             </div>
             <div
-              class="sc-AxiKw iYSnmW"
+              class="sc-AxhCb jWOsOS"
               font-size="0.6em"
             >
               <div
-                class="sc-AxiKw bkDCjy"
+                class="sc-AxhCb jxnMYO"
               >
                 <div
-                  class="sc-AxiKw epjIEg"
+                  class="sc-AxhCb cpNvKc"
                 >
                   <svg
-                    class="sc-fzokOt dSWyFL"
+                    class="sc-fzqBZW bvFfUO"
                     color="brand"
                     fill="none"
                     height="1em"
@@ -331,10 +331,10 @@ Object {
                   </svg>
                 </div>
                 <div
-                  class="sc-AxiKw cMMGnE"
+                  class="sc-AxhCb fRKQOE"
                 >
                   <svg
-                    class="sc-fzokOt gTwld"
+                    class="sc-fzqBZW XqQLA"
                     color="accent"
                     fill="none"
                     height="1em"
@@ -357,35 +357,35 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxiKw eLjLHj"
+          class="sc-AxhCb dUvyyX"
         >
           <h4
-            class="sc-AxiKw sc-AxhUy cypOSp"
+            class="sc-AxhCb sc-AxgMl hTYGHj"
             font-family="body"
             font-size="3"
             font-weight="bold"
           >
             <div
-              class="sc-AxiKw sc-fzoyAV eeShY"
+              class="sc-AxhCb sc-fzoLag cmXoUc"
             />
           </h4>
           <h5
-            class="sc-AxiKw sc-AxhUy jNFJzU"
+            class="sc-AxhCb sc-AxgMl bLSDqG"
             color="muted"
             font-family="body"
             font-size="2"
             font-weight="bold"
           >
             Artifact
-            0
+            
           </h5>
         </div>
         <hr />
         <div
-          class="sc-AxiKw sc-fzoyAV dikUeM"
+          class="sc-AxhCb sc-fzoLag fgPPbU"
         >
           <div
-            class="sc-AxiKw sc-fzoyAV dikUeM"
+            class="sc-AxhCb sc-fzoLag fgPPbU"
           />
         </div>
       </div>
@@ -393,37 +393,37 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fznWOq hPaBWi"
+      class="sc-fzolEj iuZGQR"
       width="full"
     >
       <div
-        class="sc-AxiKw indorZ"
+        class="sc-AxhCb gRCfBp"
         font-size="5rem"
       >
         <div
-          class="sc-AxiKw fPVsD"
+          class="sc-AxhCb fxiuzv"
           font-size="1em"
         >
           <div
-            class="sc-AxiKw fgLlBD"
+            class="sc-AxhCb epWFzc"
           >
             <div
-              class="sc-AxiKw kbBPPd"
+              class="sc-AxhCb iGAyYt"
               width="full"
             />
           </div>
           <div
-            class="sc-AxiKw iYSnmW"
+            class="sc-AxhCb jWOsOS"
             font-size="0.6em"
           >
             <div
-              class="sc-AxiKw bkDCjy"
+              class="sc-AxhCb jxnMYO"
             >
               <div
-                class="sc-AxiKw epjIEg"
+                class="sc-AxhCb cpNvKc"
               >
                 <svg
-                  class="sc-fzokOt dSWyFL"
+                  class="sc-fzqBZW bvFfUO"
                   color="brand"
                   fill="none"
                   height="1em"
@@ -441,10 +441,10 @@ Object {
                 </svg>
               </div>
               <div
-                class="sc-AxiKw cMMGnE"
+                class="sc-AxhCb fRKQOE"
               >
                 <svg
-                  class="sc-fzokOt gTwld"
+                  class="sc-fzqBZW XqQLA"
                   color="accent"
                   fill="none"
                   height="1em"
@@ -467,35 +467,35 @@ Object {
         </div>
       </div>
       <div
-        class="sc-AxiKw eLjLHj"
+        class="sc-AxhCb dUvyyX"
       >
         <h4
-          class="sc-AxiKw sc-AxhUy cypOSp"
+          class="sc-AxhCb sc-AxgMl hTYGHj"
           font-family="body"
           font-size="3"
           font-weight="bold"
         >
           <div
-            class="sc-AxiKw sc-fzoyAV eeShY"
+            class="sc-AxhCb sc-fzoLag cmXoUc"
           />
         </h4>
         <h5
-          class="sc-AxiKw sc-AxhUy jNFJzU"
+          class="sc-AxhCb sc-AxgMl bLSDqG"
           color="muted"
           font-family="body"
           font-size="2"
           font-weight="bold"
         >
           Artifact
-          0
+          
         </h5>
       </div>
       <hr />
       <div
-        class="sc-AxiKw sc-fzoyAV dikUeM"
+        class="sc-AxhCb sc-fzoLag fgPPbU"
       >
         <div
-          class="sc-AxiKw sc-fzoyAV dikUeM"
+          class="sc-AxhCb sc-fzoLag fgPPbU"
         />
       </div>
     </div>

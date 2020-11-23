@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw sc-fzoyAV kvlYSr"
+        class="sc-AxhCb sc-fzoLag eYZSBj"
         height="full"
       >
         <main
-          class="sc-AxiKw jRimKA"
+          class="sc-AxhCb efzFyM"
         >
           Foo
         </main>
         <footer
-          class="sc-AxiKw Ibpxa"
+          class="sc-AxhCb fKUxvm"
         >
           <footer />
         </footer>
@@ -24,16 +24,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw sc-fzoyAV kvlYSr"
+      class="sc-AxhCb sc-fzoLag eYZSBj"
       height="full"
     >
       <main
-        class="sc-AxiKw jRimKA"
+        class="sc-AxhCb efzFyM"
       >
         Foo
       </main>
       <footer
-        class="sc-AxiKw Ibpxa"
+        class="sc-AxhCb fKUxvm"
       >
         <footer />
       </footer>
@@ -99,16 +99,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw sc-fzoyAV eGDMoU"
+        class="sc-AxhCb sc-fzoLag dBHrFM"
         height="full"
       >
         <main
-          class="sc-AxiKw jRimKA"
+          class="sc-AxhCb efzFyM"
         >
           Foo
         </main>
         <footer
-          class="sc-AxiKw Ibpxa"
+          class="sc-AxhCb fKUxvm"
         >
           <footer />
         </footer>
@@ -117,16 +117,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw sc-fzoyAV eGDMoU"
+      class="sc-AxhCb sc-fzoLag dBHrFM"
       height="full"
     >
       <main
-        class="sc-AxiKw jRimKA"
+        class="sc-AxhCb efzFyM"
       >
         Foo
       </main>
       <footer
-        class="sc-AxiKw Ibpxa"
+        class="sc-AxhCb fKUxvm"
       >
         <footer />
       </footer>

@@ -2,9 +2,9 @@ import React, { FC, Ref, ReactNode } from 'react';
 import styled from 'styled-components';
 import css from '@styled-system/css';
 import { useModalContext } from '../ModalContext';
-import { Box } from '/components/Box';
+import { Box, BoxProps } from '/components/Box';
 
-export interface ModalContentProps {
+export interface ModalContentProps extends BoxProps {
   children?: ReactNode
 } 
 
